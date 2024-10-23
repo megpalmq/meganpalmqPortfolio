@@ -1,0 +1,624 @@
+@media (max-aspect-ratio: 1 / 1) {
+  .site-wrapper {
+    .nav-holder {
+      height: 90px;
+      .logo {
+        a {
+          margin-left: 0;
+          .reg-logo {
+            display: none;
+          }
+          .mobile-logo {
+            display: block;
+            font-size: 36px;
+            margin-top: 26px;
+          }
+        }
+      }
+    }
+  }
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+    .about-main {
+      flex-direction: column;
+      max-width: 500px;
+      min-width: 500px;
+      height: 1100px;
+      img {
+        width: 400px;
+        height: 300px;
+        margin-top: 22px;
+        object-position: 30% 30%;
+      }
+      .about-desc {
+        max-width: 86%;
+        margin-top: 20px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .home-wrapper {
+    .home-desc {
+      .intro {
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 38px;
+      }
+    }
+  }
+  .projects-wrapper {
+    .projects-header {
+      font-size: 30px;
+      min-height: 100px;
+    }
+    .project-box {
+      width: 400px;
+      height: 500px;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 340px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 18px;
+        margin-top: 0;
+      }
+
+      .project-desc {
+        width: 90%;
+        margin: 0 auto;
+        .project-skills {
+          margin-top: 0px;
+          display: flex;
+          span {
+            font-size: 13px;
+            padding: 2px 10px;
+          }
+        }
+        .arrow-link {
+          right: -10px;
+          top: 10px;
+          font-size: 18px;
+        }
+        .project-title {
+          h3 {
+            font-size: 26px;
+          }
+        }
+        .date {
+          margin-top: 0px;
+        }
+        .desc {
+          font-size: 16px;
+          max-height: 100px;
+          overflow-y: hidden;
+        }
+      }
+    }
+  }
+  .companies {
+    .company-header {
+      font-size: 18px;
+    }
+    .company-box {
+      .company-img {
+        padding: 30px;
+        img {
+          width: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1455px) {
+  .site-wrapper {
+    .box-holder {
+      overflow: visible;
+      height: fit-content;
+      width: fit-content;
+      margin-left: 1550px;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .companies {
+    .company-box {
+      .company-img {
+        padding: 32px;
+      }
+    }
+  }
+  .home-wrapper {
+    .home-desc {
+      margin-left: 4vw;
+    }
+    .socials {
+      width: 94%;
+      margin-top: 20px;
+      .social-box {
+      }
+    }
+
+    .downarrow {
+      a {
+        margin-right: 0vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .companies {
+    .company-header {
+      font-size: 22px;
+    }
+    .company-box {
+      .company-img {
+        padding: 30px;
+        img {
+          width: 160px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .about-main {
+    max-width: 100%;
+    height: 760px;
+    .about-desc {
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+  .companies {
+    .company-header {
+      font-size: 20px;
+    }
+    .company-box {
+      .company-img {
+        padding: 30px;
+        img {
+          width: 140px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .companies {
+    .company-header {
+      font-size: 18px;
+    }
+    .company-box {
+      .company-img {
+        padding: 30px;
+        img {
+          width: 120px;
+        }
+      }
+    }
+  }
+  .about-main {
+    height: 840px;
+  }
+  .site-wrapper {
+    .box-holder {
+      overflow: visible;
+      height: fit-content;
+      width: fit-content;
+      margin-left: 1250px;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .companies {
+    .company-header {
+      font-size: 16px;
+    }
+    .company-box {
+      .company-img {
+        padding: 30px;
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .companies {
+    .company-header {
+      font-size: 16px;
+      text-align: center;
+    }
+    .company-box {
+      flex-direction: column;
+      row-gap: 80px;
+      .company-img {
+        padding: 30px;
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+  .home-wrapper {
+    .home-desc {
+      h1 {
+        font-size: 28px;
+        max-width: 540px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home-wrapper {
+    .home-desc {
+    }
+    .socials {
+      .social-box {
+        a {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .site-wrapper {
+    .box-holder {
+      overflow: visible;
+      height: fit-content;
+      width: fit-content;
+      margin-left: 1050px;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .site-wrapper {
+    .resume-wrapper {
+      margin-top: 100px;
+      .resume-header {
+        font-size: 30px;
+      }
+      .resume-pdf-view {
+        width: 560px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+    .about-main {
+      flex-direction: column;
+      max-width: 370px;
+      min-width: 370px;
+      height: 1200px;
+      img {
+        width: 300px;
+        height: 300px;
+        margin-top: 12px;
+      }
+      .about-desc {
+        h2 {
+          font-size: 34px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .about-skills {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .site-wrapper {
+    .resume-wrapper {
+      .resume-pdf-view {
+        width: 420px;
+        height: 620px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .site-wrapper {
+    .resume-header {
+      h1 {
+        font-size: 40px;
+        margin-top: 20px;
+      }
+    }
+    .resume-wrapper {
+      .resume-pdf-view {
+        width: 350px;
+        height: 500px;
+      }
+    }
+  }
+  .site-wrapper {
+    .box-holder {
+      overflow: visible;
+      height: fit-content;
+      width: fit-content;
+      margin-left: 950px;
+      margin-top: 260px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .site-wrapper {
+    .home-wrapper {
+      .home-desc {
+        .intro {
+          font-size: 14px;
+        }
+        h1 {
+          font-size: 24px;
+          max-width: 330px;
+        }
+      }
+      .socials {
+        width: 94%;
+        margin-top: 20px;
+        .social-box {
+          width: 100%;
+          margin-right: 22px;
+        }
+      }
+    }
+  }
+  .site-wrapper {
+    .resume-wrapper {
+      .resume-pdf-view {
+        width: 300px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .nav-holder {
+    .logo {
+      a {
+        margin-left: 0px;
+        .reg-logo {
+          display: none;
+        }
+        .mobile-logo {
+          display: block;
+        }
+      }
+    }
+  }
+  .home-wrapper {
+    .home-desc {
+      margin-left: 50px;
+      margin-top: 50px;
+      .intro {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 24px;
+        max-width: 330px;
+      }
+    }
+    .socials {
+      width: 94%;
+      margin-top: 20px;
+      .social-box {
+        width: 100%;
+        margin-right: 22px;
+      }
+    }
+  }
+  .about-wrapper {
+    margin: 120px auto 0 auto;
+    .about-main {
+      flex-direction: column;
+      max-width: 330px;
+      min-width: 330px;
+      height: 1160px;
+      position: relative;
+      right: 8px;
+      img {
+        width: 280px;
+        height: 280px;
+        margin-top: 12px;
+      }
+      .about-desc {
+        h2 {
+          font-size: 27px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .about-skills {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .projects-wrapper {
+    .projects-header {
+      font-size: 22px;
+    }
+    .project-box {
+      width: 300px;
+      flex-direction: column;
+      align-items: center;
+      height: 480px;
+      img {
+        width: 250px;
+        height: 160px;
+        object-fit: cover;
+        margin-bottom: 6px;
+        margin-top: 0;
+      }
+
+      .project-desc {
+        width: 90%;
+        margin: 0 auto;
+        .project-skills {
+          display: flex;
+          width: 100%;
+          flex-wrap: wrap;
+          row-gap: 10px;
+          margin-top: 0px;
+          span {
+            font-size: 13px;
+            padding: 2px 10px;
+          }
+        }
+        .desc {
+          font-size: 14px;
+        }
+        .date {
+          font-size: 12px;
+        }
+        .arrow-link {
+          display: none;
+        }
+        .project-title {
+          h3 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-aspect-ratio: 9 / 16) {
+  .nav-holder {
+    .logo {
+      a {
+        margin-left: 0px;
+        .reg-logo {
+          display: none;
+        }
+        .mobile-logo {
+          display: block;
+        }
+      }
+    }
+  }
+  .home-wrapper {
+    .home-desc {
+      margin-left: 50px;
+      margin-top: -180px;
+      .intro {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 24px;
+        max-width: 330px;
+      }
+    }
+    .socials {
+      width: 94%;
+      margin-top: 20px;
+      .social-box {
+        width: 100%;
+        margin-right: 22px;
+      }
+    }
+  }
+  .about-wrapper {
+    margin: 120px auto 0 auto;
+    .about-main {
+      flex-direction: column;
+      max-width: 330px;
+      min-width: 330px;
+      height: 1160px;
+      position: relative;
+      img {
+        width: 280px;
+        height: 280px;
+        margin-top: 12px;
+      }
+      .about-desc {
+        h2 {
+          font-size: 27px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .about-skills {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .projects-wrapper {
+    .projects-header {
+      font-size: 22px;
+    }
+    .project-box {
+      width: 300px;
+      flex-direction: column;
+      align-items: center;
+      height: 480px;
+      img {
+        width: 250px;
+        height: 160px;
+        object-fit: cover;
+        margin-bottom: 6px;
+        margin-top: 0;
+      }
+
+      .project-desc {
+        width: 90%;
+        margin: 0 auto;
+        .project-skills {
+          display: flex;
+          width: 100%;
+          flex-wrap: wrap;
+          row-gap: 10px;
+          margin-top: 0px;
+          span {
+            font-size: 13px;
+            padding: 2px 10px;
+          }
+        }
+        .desc {
+          font-size: 14px;
+        }
+        .date {
+          font-size: 12px;
+        }
+        .arrow-link {
+          display: none;
+        }
+        .project-title {
+          h3 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

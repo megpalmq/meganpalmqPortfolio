@@ -1,0 +1,99 @@
+.about-wrapper {
+  width: 80%;
+  margin: 160px auto 0 auto;
+}
+
+.about-main {
+  background-color: rgba($color: $white, $alpha: 0.03);
+  box-shadow: 0 0 0 12px rgba($color: $white, $alpha: 0.01);
+  width: 1000px;
+  height: 662px;
+  border-radius: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  transition: ease 0.4s;
+  img {
+    width: 46%;
+    height: 94%;
+    border-radius: 40px;
+    object-fit: cover;
+    filter: grayscale(10%);
+  }
+  &:hover {
+    background-color: rgba($color: $white, $alpha: 0.05);
+    box-shadow: 0 0 0 12px rgba($color: $white, $alpha: 0.03);
+    img {
+      filter: grayscale(0%);
+    }
+  }
+}
+.about-desc {
+  height: 91%;
+  max-width: 50%;
+  h2 {
+    font-size: 50px;
+    color: $white;
+    transition: ease 0.35s;
+    span {
+      color: $red;
+      transition: ease 0.35s;
+    }
+  }
+  .about-skills {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    span {
+      color: $white;
+      font-family: $PoppinsR;
+      margin: 0 3px;
+      padding: 2px 12px;
+      background-color: $dark-red;
+      border-radius: 40px;
+      cursor: pointer;
+      border: 2px solid $dark-red;
+      transition: ease 0.2s;
+      &:hover {
+        border: 2px solid $white;
+      }
+    }
+  }
+}
+
+.companies {
+  margin-top: 300px;
+  .company-header {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    span {
+      color: $red;
+    }
+  }
+  .company-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    padding-bottom: 100px;
+    .company-img {
+      background-color: rgba($color: $white, $alpha: 0.03);
+      box-shadow: 0 0 0 12px rgba($color: $white, $alpha: 0.01);
+      border-radius: 300px;
+      padding: 50px;
+      img {
+        width: 200px;
+        object-fit: cover;
+      }
+    }
+    .homedepot {
+      img {
+        border-radius: 80px;
+      }
+    }
+  }
+}
