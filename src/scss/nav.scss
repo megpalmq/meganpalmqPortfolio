@@ -7,14 +7,15 @@
   position: fixed;
   z-index: 999;
   backdrop-filter: blur(10px);
-  background-color: rgba($color: $dark-red, $alpha: 0.88);
+
   box-shadow: 0 0 0 6px rgba($color: $dark-red, $alpha: 0.006);
   a {
+    -webkit-text-stroke: 0.5px purple;
     text-decoration: none;
-    color: $red;
+    color: $dark-red2;
     font-size: 22px;
     font-family: motReg;
-    font-weight: 600;
+    font-weight: 100px;
     z-index: 50;
     transition: ease 0.07s;
   }

@@ -1,7 +1,7 @@
 <script>
   import { page } from "$app/stores";
   import { onMount } from "svelte";
-  import MattS from "$lib/images/pro-pic.jpg";
+  import Meg from "$lib/images/me2.png";
   import Chase from "$lib/images/Chasecomp.png";
   import IU from "$lib/images/IUcomp.png";
   import HD from "$lib/images/HDcomp.png";
@@ -29,9 +29,9 @@
 
 <div class="about-wrapper">
   <div class="about-main hidden">
-    <img src={MattS} alt="" />
+    <img src={Meg} alt="" />
     <div class="about-desc">
-      <h2>Hey there, <br /><span>nice to meet you!</span></h2>
+      <h2>Hi , <br /><span>nice to meet you!</span></h2>
       <p>
         <br /> <br />From a young age, I've been fascinated with creation. In
         middle school, I first began selling graphics and designs tailored for
