@@ -24,10 +24,10 @@
 </script>
 
 <svelte:head>
-  <title>Matthew Sparkman</title>
-  <meta name="description" content="Matthew Sparkman personal portfolio" />
+  <title>Megan Palmquist</title>
+  <meta name="description" content="Megan Palmquist personal portfolio" />
   <meta property="og:image" content={port} />
-  <meta property="og:description" content="Matthew Sparkman Web Portfolio" />
+  <meta property="og:description" content="Megan Palmquist Portfolio" />
 </svelte:head>
 
 <div class="home-wrapper" id="home">
@@ -35,43 +35,16 @@
     <div class="home-desc">
       <div class="home-desc-container hiddenbottom2">
         <p class="intro">Hi, my name is</p>
-        <h1>Matthew Sparkman.</h1>
-        <h1>I am a <span>Fullstack Developer</span>,</h1>
+        <h1>Megan Palmquist.</h1>
+        <h1>
+          I am a <span>web developer/ graphic designer/ and UX/UI designer</span
+          >,
+        </h1>
         <h1 class="dev-desc">
           dedicated to crafting <span>engaging</span> and
           <span>meaningful</span> digital experiences.
         </h1>
       </div>
-      <div class="socials hidden">
-        <div class="social-box">
-          <a
-            href="https://www.linkedin.com/in/matthew-c-sparkman/"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin-in"></i></a
-          >
-          <a href="https://github.com/matspark1" target="_blank"
-            ><i class="fa-brands fa-github"></i></a
-          >
-          <a href="https://twitter.com/mcs_sparkman" target="_blank"
-            ><i class="fa-brands fa-x-twitter"></i></a
-          >
-          <a href="https://www.instagram.com/matt.sparkman/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i></a
-          >
-          <a href="https://www.facebook.com/matt.sparkman.589" target="_blank"
-            ><i class="fa-brands fa-facebook"></i></a
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="box-holder">
-    <div class="box">
-      <div class="wave -one"></div>
-      <div class="wave -two"></div>
-      <div class="wave -three"></div>
     </div>
   </div>
 </div>
@@ -219,5 +192,18 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="socials hidden">
+  <div class="social-box">
+    <a href="https://www.linkedin.com/in/megan-palmquist/" target="_blank">
+      <i class="fa-brands fa-linkedin-in"></i></a
+    >
+    <a href="https://github.com/megpalmq" target="_blank"
+      ><i class="fa-brands fa-github"></i></a
+    >
+    <a href="https://www.instagram.com/megannstone_/" target="_blank"
+      ><i class="fa-brands fa-instagram"></i></a
+    >
   </div>
 </div>

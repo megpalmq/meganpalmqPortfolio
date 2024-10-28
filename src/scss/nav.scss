@@ -7,13 +7,13 @@
   position: fixed;
   z-index: 999;
   backdrop-filter: blur(10px);
-  background-color: rgba($color: $black, $alpha: 0.88);
-  box-shadow: 0 0 0 6px rgba($color: $black, $alpha: 0.006);
+  background-color: rgba($color: $dark-red, $alpha: 0.88);
+  box-shadow: 0 0 0 6px rgba($color: $dark-red, $alpha: 0.006);
   a {
     text-decoration: none;
     color: $red;
     font-size: 22px;
-    font-family: $PoppinsSB;
+    font-family: motReg;
     font-weight: 600;
     z-index: 50;
     transition: ease 0.07s;
@@ -31,7 +31,7 @@
     color: $white;
     background-color: $dark-red;
     &:hover {
-      background-color: $black;
+      background-color: $red;
     }
   }
   .nav-links {
@@ -92,7 +92,7 @@
         margin-top: 16px;
         width: 100%;
         width: 350px;
-        font-family: $PoppinsB;
+        font-family: motReg;
         font-weight: 700;
         font-size: 28px;
         opacity: 1;
@@ -106,7 +106,7 @@
       .mobile-logo {
         display: none;
         margin-top: 16px;
-        font-family: $PoppinsB;
+        font-family: motReg;
         font-weight: 700;
         font-size: 32px;
         opacity: 1;

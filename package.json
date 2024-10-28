@@ -7,6 +7,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"compile": "sass src/scss/styles.scss src/routes/main.css -w"
+
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",

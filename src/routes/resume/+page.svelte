@@ -1,7 +1,7 @@
 <script>
   import { page } from "$app/stores";
   import { onMount } from "svelte";
-  import Resume from "$lib/images/Sparkman-Matthew-Resume-2024.pdf";
+  import Resume from "$lib/images/Megan-Palmquist-RESUME.pdf";
   import port from "$lib/images/portfolio.png";
 
   let currentUrl;

@@ -2,9 +2,9 @@
   <div class="black-box"></div>
   <div class="logo">
     <a href="/">
-      <p class="reg-logo">Matthew <span>Sparkman</span></p>
+      <p class="reg-logo">Megan <span>Palmquist</span></p>
       <p class="mobile-logo">
-        M<span>S</span>
+        M<span>P</span>
       </p>
     </a>
   </div>
