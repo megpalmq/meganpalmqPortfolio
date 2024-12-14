@@ -10,7 +10,10 @@
   </div>
   <nav>
     <ul>
-      <li><a href="/#projects" class="nav-links">Projects</a></li>
+      <li><a href="/#projects" class="nav-links">Web Projects</a></li>
+      <li>
+        <a href="/#projects2" class="nav-links">Graphic Design Projects</a>
+      </li>
       <li><a href="/about" class="nav-links">About</a></li>
       <li>
         <a href="/resume" class="resume-link button-pulse">Resume</a>

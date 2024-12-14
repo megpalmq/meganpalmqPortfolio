@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: motReg;
+  src: url(../lib/fonts/MotleyForcesRegular-w1rZ3.ttf);
+}
 @font-face {
   font-family: motReg;
   src: url(../lib/fonts/MotleyForcesRegular-w1rZ3.ttf);
@@ -258,7 +263,7 @@ h6 {
 }
 .nav-holder {
   height: 110px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -268,12 +273,12 @@ h6 {
   box-shadow: 0 0 0 6px rgba(47, 7, 39, 0.006);
 }
 .nav-holder a {
-  -webkit-text-stroke: 0.5px rgb(90, 35, 90);
+  -webkit-text-stroke: 0.5px rgb(103, 57, 131);
   text-decoration: none;
-  color: rgb(218, 129, 175);
+  color: rgb(209, 185, 233);
   font-size: 22px;
   font-family: motReg;
-  font-weight: 50px;
+  font-weight: 100px;
   z-index: 50;
   transition: ease 0.07s;
 }
@@ -291,11 +296,11 @@ h6 {
   background-color: rgb(47, 7, 39);
 }
 .nav-holder .resume-link:hover {
-  background-color: rgb(47, 7, 39);
+  background-color: rgb(192, 145, 183);
 }
 .nav-holder .nav-links {
   margin-top: 9px;
-  background-image: linear-gradient(to right, rgb(192, 145, 183), #ffffff 50%);
+  background-image: linear-gradient(to right, rgb(209, 185, 233), hsl(307, 57%, 88%) 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position: 100%;
   display: inline-block;
@@ -360,7 +365,7 @@ h6 {
   text-align: center;
 }
 .nav-holder .logo a .reg-logo span {
-  color: rgb(192, 145, 183);
+  color: rgb(209, 185, 233);
   transition: ease 0.4s;
 }
 .nav-holder .logo a .mobile-logo {
@@ -380,7 +385,7 @@ h6 {
   transition: ease 0.4s;
 }
 .nav-holder .logo a:hover .reg-logo {
-  color: rgb(192, 145, 183);
+  color: rgb(209, 185, 233);
 }
 .nav-holder .logo a:hover .reg-logo span {
   color: #ffffff;
@@ -441,8 +446,7 @@ h6 {
   left: 0;
   height: calc(100vh - 90px);
   width: 100%;
-  background: linear-gradient(270deg, #59072f, #a53a9b, #b68597 90.71%);
-  backdrop-filter: blur(10px);
+  background-color: white;
   transition: ease 0.3s;
   z-index: 9999;
   justify-content: space-evenly;
@@ -467,14 +471,15 @@ h6 {
   background-color: rgba(13, 14, 17, 0.1);
 }
 .nav-holder .mobile-menu li .nav-links {
-  color: white;
+  background-image: linear-gradient(to right, rgb(192, 145, 183), rgb(192, 145, 183) 50%, #0d0e11 50%);
   font-size: 28px;
 }
 .nav-holder .mobile-menu li .resume-link {
-  border: 2px solid rgb(47, 7, 39);
+  border: 2px solid #0d0e11;
+  color: #0d0e11;
   font-size: 26px;
   padding: 5px 14px;
-  background-color: rgb(192, 145, 183);
+  background-color: #ffffff;
 }
 .nav-holder .mobile-menu li .resume-link:hover {
   color: #ffffff;
@@ -574,10 +579,25 @@ h6 {
   text-align: center;
 }
 .home-desc .intro {
-  color: rgb(237, 175, 239);
-  -webkit-text-stroke: 2px #970ba1;
+  -webkit-text-stroke: 1px #5e2a72;
   font-size: 28px;
   letter-spacing: 1.5px;
+  margin-bottom: 200px;
+}
+.home-desc .name {
+  font-family: motReg;
+  font-weight: 700;
+  font-size: 5rem;
+  width: 100%;
+  position: absolute;
+  text-shadow: -15px 5px 20px #ced0d3;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: rgb(242, 240, 244);
+  text-shadow: 5px 5px 0px #ff80bf, 10px 10px 0px #ef5097, 15px 15px 0px #a560f0, 20px 20px 0px #b5cbeb;
 }
 .home-desc h1 {
   margin-left: 0px;
@@ -586,10 +606,10 @@ h6 {
   font-weight: 100;
   font-size: 34px;
   max-width: 900px;
+  margin-top: 100px;
 }
 .home-desc h1 span {
-  color: rgb(237, 175, 239);
-  -webkit-text-stroke: 2px #970ba1;
+  color: rgb(194, 148, 241);
 }
 
 .socials {
@@ -700,12 +720,22 @@ h6 {
   transform: translateY(0);
 }
 
+.border {
+  height: 110px;
+  width: 100%;
+  top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+
 #projects,
 .projects-wrapper {
-  background-color: plum;
   border-radius: 50px;
   margin-top: 100px;
-  box-shadow: 5px 5px 15px 10px rgba(221, 0, 255, 0.5);
 }
 
 .projects-header {
@@ -713,9 +743,9 @@ h6 {
   background-color: rgb(47, 7, 39);
   margin-top: 120px;
   box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.01);
-  width: 50vw;
+  width: 55vw;
   border-radius: 20px;
-  height: 134px;
+  height: 190px;
   text-align: center;
   z-index: 40;
   display: flex;
@@ -741,7 +771,6 @@ h6 {
   align-items: center;
   margin-top: 0px;
   z-index: 9;
-  background-color: pink;
 }
 .projects-wrapper .project-box {
   display: flex;
@@ -767,6 +796,7 @@ h6 {
   transition: ease 0.3s;
   width: 210px;
   margin-top: 4px;
+  height: 230px;
   filter: grayscale(36%);
 }
 .projects-wrapper .project-box img:hover {
@@ -795,6 +825,14 @@ h6 {
   color: hsl(307, 57%, 88%);
   margin-top: 18px;
   font-size: 18px;
+}
+.projects-wrapper .project-box .project-desc .desc .here {
+  text-decoration: none;
+  color: hsl(307, 57%, 88%);
+  cursor: pointer;
+  background-color: #b68597;
+  padding: 10px;
+  border-radius: 10px;
 }
 .projects-wrapper .project-box .project-desc .date {
   color: hsl(307, 57%, 88%);
@@ -861,11 +899,10 @@ h6 {
   width: 80%;
   margin: 160px auto 0 auto;
 }
-
-.about-main {
-  background-color: transparent;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.01);
+.about-wrapper .about-main {
+  margin-top: 200px;
+  background-color: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.02);
   width: 1000px;
   height: 662px;
   border-radius: 40px;
@@ -876,43 +913,57 @@ h6 {
   padding: 24px;
   transition: ease 0.4s;
 }
-.about-main img {
-  width: 46%;
-  height: 94%;
+.about-wrapper .about-main .meg {
+  background-image: url(../lib/images/me.png);
+  width: 45%;
+  height: 84%;
   border-radius: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   object-fit: cover;
   filter: grayscale(10%);
 }
-.about-main:hover {
+.about-wrapper .about-main:hover {
   background-color: rgba(255, 255, 255, 0.05);
   box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.03);
 }
-.about-main:hover img {
+.about-wrapper .about-main:hover img {
   filter: grayscale(0%);
 }
-
-.about-desc {
+.about-wrapper .about-desc {
   height: 91%;
   max-width: 50%;
 }
-.about-desc h2 {
+.about-wrapper .about-desc h2 {
   font-size: 50px;
   color: #ffffff;
   transition: ease 0.35s;
+  font-size: 45px;
 }
-.about-desc h2 span {
-  color: rgb(192, 145, 183);
+.about-wrapper .about-desc h2 span {
+  color: #ffffff;
   transition: ease 0.35s;
 }
-.about-desc .about-skills {
+.about-wrapper .about-desc p {
+  margin-top: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 20px;
+}
+.about-wrapper .about-desc p .ha {
+  color: rgb(55, 30, 73);
+  transition: ease 0.35s;
+}
+.about-wrapper .about-desc .about-skills {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 10px;
 }
-.about-desc .about-skills span {
+.about-wrapper .about-desc .about-skills span {
   color: #ffffff;
   font-family: motReg;
+  font-weight: 500;
   margin: 0 3px;
   padding: 2px 12px;
   background-color: rgb(47, 7, 39);
@@ -921,40 +972,39 @@ h6 {
   border: 2px solid rgb(47, 7, 39);
   transition: ease 0.2s;
 }
-.about-desc .about-skills span:hover {
+.about-wrapper .about-desc .about-skills span:hover {
   border: 2px solid #ffffff;
 }
-
-.companies {
+.about-wrapper .companies {
   margin-top: 300px;
 }
-.companies .company-header {
+.about-wrapper .companies .company-header {
   display: flex;
   justify-content: center;
   font-size: 26px;
 }
-.companies .company-header span {
-  color: rgb(192, 145, 183);
+.about-wrapper .companies .company-header span {
+  color: rgb(209, 185, 233);
 }
-.companies .company-box {
+.about-wrapper .companies .company-box {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 80px;
   padding-bottom: 100px;
 }
-.companies .company-box .company-img {
-  background-color: rgba(255, 255, 255, 0.03);
+.about-wrapper .companies .company-box .company-img {
+  background-color: rgba(255, 255, 255, 0.06);
   box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.01);
   border-radius: 300px;
   padding: 50px;
 }
-.companies .company-box .company-img img {
+.about-wrapper .companies .company-box .company-img img {
   width: 200px;
   object-fit: cover;
 }
-.companies .company-box .homedepot img {
-  border-radius: 80px;
+.about-wrapper .companies .company-box .company-img:hover {
+  transform: scale(1.1);
 }
 
 .resume-wrapper {
@@ -967,7 +1017,7 @@ h6 {
   font-size: 40px;
 }
 .resume-wrapper .resume-header span {
-  color: rgb(192, 145, 183);
+  color: rgb(209, 185, 233);
 }
 .resume-wrapper .resume-pdf {
   width: 100vw;

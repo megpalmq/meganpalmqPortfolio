@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap");
+
 .site-wrapper {
   background: linear-gradient(270deg, #59072f, #a53a9b, #b68597 90.71%);
   backdrop-filter: blur(10px);
@@ -45,10 +47,26 @@
   text-align: center;
 
   .intro {
-    color: rgb(237, 175, 239);
-    -webkit-text-stroke: 2px #970ba1;
+    -webkit-text-stroke: 1px #5e2a72;
     font-size: 28px;
     letter-spacing: 1.5px;
+    margin-bottom: 200px;
+  }
+  .name {
+    font-family: motReg;
+    font-weight: 700;
+    font-size: 5rem;
+    width: 100%;
+    position: absolute;
+    text-shadow: -15px 5px 20px #ced0d3;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgb(242, 240, 244);
+    text-shadow: 5px 5px 0px #ff80bf, 10px 10px 0px #ef5097,
+      15px 15px 0px #a560f0, 20px 20px 0px #b5cbeb;
   }
   h1 {
     margin-left: 0px;
@@ -57,10 +75,10 @@
     font-weight: 100;
     font-size: 34px;
     max-width: 900px;
+    margin-top: 100px;
 
     span {
-      color: rgb(237, 175, 239);
-      -webkit-text-stroke: 2px #970ba1;
+      color: rgb(194, 148, 241);
     }
   }
 }
@@ -171,13 +189,21 @@
   filter: blur(0);
   transform: translateY(0);
 }
-
+.border {
+  height: 110px;
+  width: 100%;
+  top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
 #projects,
 .projects-wrapper {
-  background-color: plum;
   border-radius: 50px;
   margin-top: 100px;
-  box-shadow: 5px 5px 15px 10px rgb(221, 0, 255, 0.5);
 }
 
 .projects-header {
@@ -185,9 +211,9 @@
   background-color: $dark-red;
   margin-top: 120px;
   box-shadow: 0 0 0 12px rgba($color: $white, $alpha: 0.01);
-  width: 50vw;
+  width: 55vw;
   border-radius: 20px;
-  height: 134px;
+  height: 190px;
   text-align: center;
   z-index: 40;
   display: flex;
@@ -214,7 +240,6 @@
   align-items: center;
   margin-top: 0px;
   z-index: 9;
-  background-color: pink;
   .project-box {
     display: flex;
     width: 905px;
@@ -238,6 +263,7 @@
       transition: ease 0.3s;
       width: 210px;
       margin-top: 4px;
+      height: 230px;
       filter: grayscale(36%);
       &:hover {
         transform: scale(1.03);
@@ -265,6 +291,15 @@
         color: $grey;
         margin-top: 18px;
         font-size: 18px;
+
+        .here {
+          text-decoration: none;
+          color: $grey;
+          cursor: pointer;
+          background-color: #b68597;
+          padding: 10px;
+          border-radius: 10px;
+        }
       }
       .date {
         color: $grey;

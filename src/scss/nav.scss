@@ -10,7 +10,7 @@
 
   box-shadow: 0 0 0 6px rgba($color: $dark-red, $alpha: 0.006);
   a {
-    -webkit-text-stroke: 0.5px purple;
+    -webkit-text-stroke: 0.5px rgb(103, 57, 131);
     text-decoration: none;
     color: $dark-red2;
     font-size: 22px;
@@ -37,7 +37,12 @@
   }
   .nav-links {
     margin-top: 9px;
-    background-image: linear-gradient(to right, $red, $red 50%, $white 50%);
+    background-image: linear-gradient(
+      to right,
+      $dark-red2,
+      $grey 50%,
+      $white 50%
+    );
     background-size: 200% 100%;
     background-position: 100%;
     display: inline-block;
@@ -100,7 +105,7 @@
         transition: ease 0.4s;
         text-align: center;
         span {
-          color: $red;
+          color: $dark-red2;
           transition: ease 0.4s;
         }
       }
@@ -122,7 +127,7 @@
       }
       &:hover {
         .reg-logo {
-          color: $red;
+          color: $dark-red2;
           span {
             color: $white;
           }

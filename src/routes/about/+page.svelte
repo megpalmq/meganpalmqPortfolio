@@ -2,9 +2,10 @@
   import { page } from "$app/stores";
   import { onMount } from "svelte";
   import Meg from "$lib/images/me2.png";
-  import Chase from "$lib/images/Chasecomp.png";
+  import ENJ from "$lib/images/ENJLOGO-WhiteText.png";
+  import yonseiL from "$lib/images/yonseiL.png";
   import IU from "$lib/images/IUcomp.png";
-  import HD from "$lib/images/HDcomp.png";
+  import KFT from "$lib/images/KFT.png";
   import port from "$lib/images/portfolio.png";
 
   let currentUrl;
@@ -29,18 +30,26 @@
 
 <div class="about-wrapper">
   <div class="about-main hidden">
-    <img src={Meg} alt="" />
+    <div class="meg"></div>
     <div class="about-desc">
-      <h2>Hi , <br /><span>nice to meet you!</span></h2>
+      <h2>Hi , <span>nice to meet you!</span></h2>
       <p>
-        <br /> <br />From a young age, I've been fascinated with creation. In
-        middle school, I first began selling graphics and designs tailored for
-        User Interfaces.
+        <br /> <br />I'm Megan—a passionate web and graphic designer with a
+        knack for crafting innovative digital experiences. As a junior at
+        Indiana University Indianapolis, I'm pursuing a degree in Media Arts and
+        Science with a specialization in <span> web design, development</span>,
+        and <span>digital storytelling</span>. I also am minoring in
+        <span>graphic design</span>. My work seamlessly blends functionality and
+        creativity, ensuring each project not only meets the client's needs but
+        also leaves a lasting impression.
         <br /> <br />
-        My journey has led me through diverse work and creative environments and
-        the skills that I have acquired along the way have equipped me with a versatile
-        set of tools, allowing me to navigate challenges with adaptability and contribute
-        effectively to various projects and teams.
+        From designing intuitive user interfaces to developing dynamic websites,
+        my journey has been fueled by a deep curiosity for technology and an eye
+        for design. Whether I'm collaborating on international projects like my work
+        with Yonsei University or diving into independent creative challenges, I
+        strive to create meaningful and impactful designs. With a versatile skill
+        set, including proficiency in modern frameworks and tools like React, Svelte,
+        and Figma, I'm ready to take on the next exciting opportunity.
       </p>
       <div class="about-skills">
         <span>Javascript</span>
@@ -63,13 +72,13 @@
     </div>
     <div class="company-box">
       <div class="company-img homedepot hidden-about">
-        <img src={HD} alt="HD" />
+        <img src={KFT} alt="Kung Fu Tea" />
       </div>
       <div class="company-img hidden-about">
-        <img src={IU} alt="IU" />
+        <img src={yonseiL} alt="IU" />
       </div>
       <div class="company-img hidden-about">
-        <img src={Chase} alt="Chase" />
+        <img src={ENJ} alt="Ever New Joy" />
       </div>
     </div>
   </div>

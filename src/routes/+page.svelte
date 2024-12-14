@@ -1,9 +1,15 @@
 <script>
   import port from "$lib/images/portfolio.png";
   import helios from "$lib/images/x-proj-helios.png";
+  import jungle from "$lib/images/junglecook.png";
+  import pokemon from "$lib/images/pokemon.png";
+  import yonsei from "$lib/images/yonsei.png";
+  import amend from "$lib/images/amend.png";
   import helium from "$lib/images/helium.jpg";
+  import happy from "$lib/images/happy.png";
   import tempocx from "$lib/images/tempocx.jpg";
   import travel from "$lib/images/travelfly.jpg";
+  import keurig from "$lib/images/keurig.png";
   import urban from "$lib/images/urbanappeal.png";
 
   import { page } from "$app/stores";
@@ -36,13 +42,11 @@
     <div class="home-desc">
       <div class="home-con hiddenbottom2">
         <p class="intro">Hello, my name is</p>
-        <h1><span>Megan Palmquist 😊</span></h1>
+        <h1><span class="name">Megan Palmquist </span></h1>
         <h1>
-          <span>Creative</span> web designer <span> and</span>
-          digital storyteller, <span>blending</span>
-          graphic design <span>to deliver</span>
-          engaging <span>and</span>
-          user-centered <span>experiences!</span>
+          Creative web designer and digital storyteller, blending graphic design
+          to deliver engaging and <br />
+          user-centered experiences!
         </h1>
       </div>
 
@@ -65,6 +69,7 @@
     </div>
   </div>
 </div>
+<div class="border"></div>
 
 <div class="projects-wrapper" id="projects">
   <div class="projects-header">
@@ -73,111 +78,118 @@
   <div class="projects-header-under"></div>
   <div class="project-boxes">
     <div class="project-box hidden">
-      <a href="https://helios-summarizer-project.pages.dev/" target="_blank">
-        <img src={helios} alt="" /></a
+      <a
+        href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/315Finallyyy/dist/"
+        target="_blank"
+      >
+        <img src={keurig} alt="" /></a
       >
       <div class="project-desc">
         <a
-          href="https://helios-summarizer-project.pages.dev/"
+          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/315Finallyyy/dist/"
           class="arrow-link"
           target="_blank"
         >
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://helios-summarizer-project.pages.dev/"
+          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/315Finallyyy/dist/"
           class="project-title"
           target="_blank"
         >
-          <h3>Helios Summarizer</h3>
+          <h3>Keurig CopyCat</h3>
         </a>
-        <p class="date">Fall 2023</p>
+        <p class="date">Fall 2024</p>
         <p class="desc">
-          Using an API and React, this project allows users to post a link to an
-          article and get a summary of the article using OpenAI's GPT-4.
+          An exact replica of the Keurig website, including a fully functional
+          login/sign-up page and cart system, showcasing attention to detail and
+          interactive features.<br /> <br />Site I was meant to replicate:
+          <a
+            href="https://www.keurig.com/c/coffeemakers101?cm_sp=bo+cybermonday21-_-promo+hero+banner-_-shop+coffee+makers"
+            target="_blank"
+            class="here">Here</a
+          >
         </p>
         <div class="project-skills">
-          <span>React</span>
+          <span>MVC Model</span>
           <span>SCSS</span>
-          <span>Typescript</span>
-          <span>RapidAPI</span>
+          <span>HTML</span>
+          <span>JavaScript</span>
+          <span>jQuery</span>
         </div>
       </div>
     </div>
     <div class="project-box hidden">
-      <a
-        href="https://matspark1.github.io/Helium-Cloud-Gaming-Project/"
-        target="_blank"
-      >
-        <img src={urban} alt="" /></a
+      <a href="https://github.com/megpalmq/jungleCookie8" target="_blank">
+        <img src={jungle} alt="" /></a
       >
 
       <div class="project-desc">
         <a
-          href="https://urbanappealdetailing.com/"
+          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/jungleCookieee8/dist/#home"
           class="arrow-link"
           target="_blank"
         >
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://urbanappealdetailing.com/"
+          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/jungleCookieee8/dist/#home"
           class="project-title"
           target="_blank"
         >
-          <h3>Urban Appeal</h3>
+          <h3>Jungle Cook</h3>
         </a>
-        <p class="date">Winter 2024</p>
+        <p class="date">Fall 2024</p>
         <p class="desc">
-          A full stack website which advertsies and sells premium mobile
-          detailing services, with the ability to book appointments.
+          A dynamic website that allows users to create and save their own
+          recipes. The project showcases interactive features and a
+          user-friendly design for a seamless cooking experience.
         </p>
         <div class="project-skills">
           <span>SCSS</span>
           <span>jQuery</span>
-          <span>SvelteKit</span>
+          <span>JavaScript</span>
+          <span>Firebase</span>
         </div>
       </div>
     </div>
     <div class="project-box hidden">
-      <a
-        href="https://matspark1.github.io/Helium-Cloud-Gaming-Project/"
-        target="_blank"
-      >
-        <img src={helium} alt="" /></a
+      <a href="https://github.com/megpalmq/pokemon-pagesReal" target="_blank">
+        <img src={pokemon} alt="" /></a
       >
 
       <div class="project-desc">
         <a
-          href="https://matspark1.github.io/Helium-Cloud-Gaming-Project/"
+          href="https://pokemon-pages-real.vercel.app/?vercelToolbarCode=QpR1RGlppeyOq5h"
           class="arrow-link"
           target="_blank"
         >
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://matspark1.github.io/Helium-Cloud-Gaming-Project/"
+          href="https://pokemon-pages-real.vercel.app/?vercelToolbarCode=QpR1RGlppeyOq5h"
           class="project-title"
           target="_blank"
         >
-          <h3>Helium Gaming</h3>
+          <h3>Pokemon API</h3>
         </a>
         <p class="date">Fall 2023</p>
         <p class="desc">
-          This is a frontend project that features a cloud gaming platform
-          providing a diverse library of games.
+          A fun and interactive project where users can select their favorite
+          Pokémon and save it to a personal favorites menu, demonstrating API
+          integration and dynamic content management.
         </p>
         <div class="project-skills">
           <span>HTML</span>
           <span>SCSS</span>
-          <span>jQuery</span>
-          <span>MVC</span>
+          <span>JavaScript</span>
+          <span>NextJs</span>
         </div>
       </div>
     </div>
     <div class="project-box hidden">
       <a
-        href="https://in-info-web4.informatics.iupui.edu/~matspark/final-project/"
+        href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/oldProjects/homework-seven/homework-seven/"
         target="_blank"
       >
         <img src={travel} alt="" /></a
@@ -185,14 +197,14 @@
 
       <div class="project-desc">
         <a
-          href="https://in-info-web4.informatics.iupui.edu/~matspark/final-project/"
+          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/oldProjects/homework-seven/homework-seven/"
           class="arrow-link"
           target="_blank"
         >
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://in-info-web4.informatics.iupui.edu/~matspark/final-project/"
+          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/oldProjects/homework-seven/homework-seven/"
           class="project-title"
           target="_blank"
         >
@@ -213,148 +225,124 @@
     </div>
   </div>
 </div>
-<div class="projects-wrapper" id="projects">
+<div class="projects-wrapper" id="projects2">
   <div class="projects-header">
-    <h1>My Graphic Design Projects 🎨</h1>
+    <h1>My Graphic <br /> Design Projects 🎨</h1>
   </div>
   <div class="projects-header-under"></div>
   <div class="project-boxes">
     <div class="project-box hidden">
-      <a href="https://helios-summarizer-project.pages.dev/" target="_blank">
-        <img src={helios} alt="" /></a
+      <a
+        href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron"
+        target="_blank"
+      >
+        <img src={yonsei} alt="" /></a
       >
       <div class="project-desc">
         <a
-          href="https://helios-summarizer-project.pages.dev/"
+          href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron"
           class="arrow-link"
           target="_blank"
         >
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://helios-summarizer-project.pages.dev/"
+          href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron"
           class="project-title"
           target="_blank"
         >
-          <h3>Helios Summarizer</h3>
+          <h3>Yonsei x Herron</h3>
         </a>
         <p class="date">Fall 2023</p>
         <p class="desc">
-          Using an API and React, this project allows users to post a link to an
-          article and get a summary of the article using OpenAI's GPT-4.
+          A typography-driven design project that explores the collaboration
+          between Yonsei University and Herron School of Art and Design. The
+          project is 2 infographic poster that talk about food insecurity in
+          Seoul South Korea and Indianapolis Indiana
         </p>
         <div class="project-skills">
-          <span>React</span>
-          <span>SCSS</span>
-          <span>Typescript</span>
-          <span>RapidAPI</span>
+          <span>Indesign</span>
+          <span>Illustrator</span>
+          <span>Typography</span>
         </div>
       </div>
     </div>
     <div class="project-box hidden">
       <a
-        href="https://matspark1.github.io/Helium-Cloud-Gaming-Project/"
+        href="https://www.behance.net/gallery/211130921/The-Happiness-Project"
         target="_blank"
       >
-        <img src={urban} alt="" /></a
+        <img src={happy} alt="" /></a
       >
 
       <div class="project-desc">
         <a
-          href="https://urbanappealdetailing.com/"
+          href="https://www.behance.net/gallery/211130921/The-Happiness-Project"
           class="arrow-link"
           target="_blank"
         >
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://urbanappealdetailing.com/"
+          href="https://www.behance.net/gallery/211130921/The-Happiness-Project"
           class="project-title"
           target="_blank"
         >
-          <h3>Urban Appeal</h3>
+          <h3>The Happiness Project</h3>
         </a>
-        <p class="date">Winter 2024</p>
+        <p class="date">Fall 2024</p>
         <p class="desc">
-          A full stack website which advertsies and sells premium mobile
-          detailing services, with the ability to book appointments.
+          A booklet-style project designed to educate and guide the audience
+          through the experience of a panic attack, offering insights into its
+          emotional and physical symptoms. The project also provides helpful
+          strategies and techniques for managing and overcoming panic attacks,
+          creating a compassionate and informative resource for those seeking
+          support
         </p>
         <div class="project-skills">
-          <span>SCSS</span>
-          <span>jQuery</span>
-          <span>SvelteKit</span>
+          <span>Indesign</span>
+          <span>Typography</span>
+          <span>Adobe Creative Suite</span>
         </div>
       </div>
     </div>
     <div class="project-box hidden">
       <a
-        href="https://matspark1.github.io/Helium-Cloud-Gaming-Project/"
+        href="https://www.behance.net/gallery/208625381/Amendment-Poster-Series"
         target="_blank"
       >
-        <img src={helium} alt="" /></a
+        <img src={amend} alt="" /></a
       >
 
       <div class="project-desc">
         <a
-          href="https://matspark1.github.io/Helium-Cloud-Gaming-Project/"
+          href="https://www.behance.net/gallery/208625381/Amendment-Poster-Series"
           class="arrow-link"
           target="_blank"
         >
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://matspark1.github.io/Helium-Cloud-Gaming-Project/"
+          href="https://www.behance.net/gallery/208625381/Amendment-Poster-Series"
           class="project-title"
           target="_blank"
         >
-          <h3>Helium Gaming</h3>
+          <h3>Democracy Plaza</h3>
         </a>
         <p class="date">Fall 2023</p>
         <p class="desc">
-          This is a frontend project that features a cloud gaming platform
-          providing a diverse library of games.
+          This project explores the 27 amendments to the U.S. Constitution,
+          focusing on women's rights. It highlights the original exclusion of
+          women from the Constitution, with emphasis on the 19th Amendment
+          granting women the right to vote. The poster series reimagines one
+          amendment to enhance inclusivity for women, particularly women of
+          color, and addresses ongoing social issues. It also advocates for
+          changes that further women's rights, emphasizing the intersection of
+          freedom of speech, press, and voting with women's equality.
         </p>
         <div class="project-skills">
-          <span>HTML</span>
-          <span>SCSS</span>
-          <span>jQuery</span>
-          <span>MVC</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-box hidden">
-      <a
-        href="https://in-info-web4.informatics.iupui.edu/~matspark/final-project/"
-        target="_blank"
-      >
-        <img src={travel} alt="" /></a
-      >
-
-      <div class="project-desc">
-        <a
-          href="https://in-info-web4.informatics.iupui.edu/~matspark/final-project/"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://in-info-web4.informatics.iupui.edu/~matspark/final-project/"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>TravelFly</h3>
-        </a>
-        <p class="date">Fall 2023</p>
-        <p class="desc">
-          This is a frontend project that employs a travel booking platform with
-          a wide variety of bookings.
-        </p>
-        <div class="project-skills">
-          <span>HTML</span>
-          <span>SCSS</span>
-          <span>jQuery</span>
-          <span>MVC</span>
+          <span>Typography</span>
+          <span>Indesign</span>
         </div>
       </div>
     </div>
