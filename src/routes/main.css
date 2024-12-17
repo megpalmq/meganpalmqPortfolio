@@ -1299,6 +1299,35 @@ h6 {
     width: 560px;
   }
 }
+@media screen and (max-width: 600px) {
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+  }
+  .about-wrapper .about-main {
+    flex-direction: column;
+    max-width: 370px;
+    min-width: 370px;
+    height: 1200px;
+  }
+  .about-wrapper .about-main img {
+    width: 300px;
+    height: 300px;
+    margin-top: 12px;
+  }
+  .about-wrapper .about-main .about-desc h2 {
+    font-size: 34px;
+  }
+  .about-wrapper .about-main .about-desc p {
+    font-size: 15px;
+  }
+  .about-wrapper .about-main .about-desc .about-skills span {
+    font-size: 14px;
+  }
+  .site-wrapper .resume-wrapper .resume-pdf-view {
+    width: 420px;
+    height: 620px;
+  }
+}
 @media screen and (max-width: 440px) {
   .site-wrapper .resume-header h1 {
     font-size: 40px;
@@ -1314,6 +1343,36 @@ h6 {
     width: fit-content;
     margin-left: 950px;
     margin-top: 260px;
+  }
+}
+@media screen and (max-width: 553px) {
+  .site-wrapper .home-wrapper .home-desc {
+    padding-right: 14px;
+  }
+  .site-wrapper .home-wrapper .home-desc .intro {
+    font-size: 18px;
+  }
+  .site-wrapper .home-wrapper .home-desc h1 {
+    font-size: 24px;
+    max-width: 330px;
+  }
+  .site-wrapper .home-wrapper .home-desc .name {
+    margin-right: 150px;
+    font-size: 55px;
+    text-align: center;
+    padding: 10px;
+  }
+  .site-wrapper .home-wrapper .socials {
+    width: 94%;
+    margin-top: 20px;
+  }
+  .site-wrapper .home-wrapper .socials .social-box {
+    width: 100%;
+    margin-right: 22px;
+  }
+  .site-wrapper .resume-wrapper .resume-pdf-view {
+    width: 300px;
+    height: 400px;
   }
 }
 @media (max-width: 530px) {
@@ -1362,8 +1421,7 @@ h6 {
     height: 75%;
   }
   .about-wrapper .about-main .about-desc h2 {
-    margin-top: 10px;
-    font-size: 18px;
+    font-size: 27px;
   }
   .about-wrapper .about-main .about-desc p {
     font-size: 15px;

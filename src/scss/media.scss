@@ -300,6 +300,44 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+    .about-main {
+      flex-direction: column;
+      max-width: 370px;
+      min-width: 370px;
+      height: 1200px;
+      img {
+        width: 300px;
+        height: 300px;
+        margin-top: 12px;
+      }
+      .about-desc {
+        h2 {
+          font-size: 34px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .about-skills {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .site-wrapper {
+    .resume-wrapper {
+      .resume-pdf-view {
+        width: 420px;
+        height: 620px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 440px) {
   .site-wrapper {
     .resume-header {
@@ -322,6 +360,45 @@
       width: fit-content;
       margin-left: 950px;
       margin-top: 260px;
+    }
+  }
+}
+
+@media screen and (max-width: 553px) {
+  .site-wrapper {
+    .home-wrapper {
+      .home-desc {
+        padding-right: 14px;
+        .intro {
+          font-size: 18px;
+        }
+        h1 {
+          font-size: 24px;
+          max-width: 330px;
+        }
+        .name {
+          margin-right: 150px;
+          font-size: 55px;
+          text-align: center;
+          padding: 10px;
+        }
+      }
+      .socials {
+        width: 94%;
+        margin-top: 20px;
+        .social-box {
+          width: 100%;
+          margin-right: 22px;
+        }
+      }
+    }
+  }
+  .site-wrapper {
+    .resume-wrapper {
+      .resume-pdf-view {
+        width: 300px;
+        height: 400px;
+      }
     }
   }
 }
@@ -377,8 +454,7 @@
       }
       .about-desc {
         h2 {
-          margin-top: 10px;
-          font-size: 18px;
+          font-size: 27px;
         }
         p {
           font-size: 15px;
