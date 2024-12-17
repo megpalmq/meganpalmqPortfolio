@@ -369,11 +369,15 @@
     .home-wrapper {
       .home-desc {
         .intro {
-          font-size: 14px;
+          font-size: 18px;
         }
         h1 {
           font-size: 24px;
           max-width: 330px;
+        }
+        .name {
+          margin-right: 150px;
+          font-size: 45px;
         }
       }
       .socials {
