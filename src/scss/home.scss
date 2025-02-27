@@ -51,6 +51,7 @@
     font-size: 28px;
     letter-spacing: 1.5px;
     margin-bottom: 200px;
+    font-family: motReg;
   }
   .name {
     font-family: motReg;
@@ -199,6 +200,19 @@
   position: relative;
   z-index: 999;
   backdrop-filter: blur(10px);
+
+  .seemore {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    font-size: 60px;
+    margin-top: 30px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    font-family: motReg;
+  }
 }
 #projects,
 .projects-wrapper {
@@ -272,6 +286,7 @@
     .project-desc {
       margin-left: 20px;
       position: relative;
+
       .project-skills {
         margin-top: 30px;
       }
@@ -291,6 +306,7 @@
         color: $grey;
         margin-top: 18px;
         font-size: 18px;
+        font-family: pop;
 
         .here {
           text-decoration: none;
@@ -305,6 +321,7 @@
         color: $grey;
         font-size: 14px;
         margin: 0px 0 4px 0;
+        font-family: pop;
       }
       .project-title {
         display: flex;

@@ -11,6 +11,9 @@
   import travel from "$lib/images/travelfly.jpg";
   import keurig from "$lib/images/keurig.png";
   import urban from "$lib/images/urbanappeal.png";
+  import DFD from "$lib/images/DFD.png";
+  import CYS from "$lib/images/CYS.png";
+  import FOV from "$lib/images/FOV.png";
 
   import { page } from "$app/stores";
   import { onMount } from "svelte";
@@ -69,7 +72,11 @@
     </div>
   </div>
 </div>
-<div class="border"></div>
+<div class="border">
+  <div class="seemore">
+    See my projects <i class="fa-solid fa-angle-down"></i>
+  </div>
+</div>
 
 <div class="projects-wrapper" id="projects">
   <div class="projects-header">
@@ -82,6 +89,42 @@
         href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/315Finallyyy/dist/"
         target="_blank"
       >
+        <img src={DFD} alt="" /></a
+      >
+      <div class="project-desc">
+        <a
+          href="https://design-for-dignity.vercel.app/"
+          class="arrow-link"
+          target="_blank"
+        >
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a
+          href="https://github.com/megpalmq/DesignForDignity"
+          class="project-title"
+          target="_blank"
+        >
+          <h3>Design For Dignity</h3>
+        </a>
+        <p class="date">Spring 2025</p>
+        <p class="desc">
+          The Design for Dignity website is a collaborative project dedicated to
+          showcasing design solutions that promote dignity and accessibility. It
+          features a seamless backend for optimal functionality and a
+          thoughtfully crafted frontend design. The site highlights the
+          initiative's mission, projects, and impact, serving as a platform for
+          meaningful design work aimed at improving lives.
+        </p>
+        <div class="project-skills">
+          <span>SCSS</span>
+          <span>HTML</span>
+          <span>JavaScript</span>
+          <span>jQuery</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-box hidden">
+      <a href="https://github.com/megpalmq/315Final" target="_blank">
         <img src={keurig} alt="" /></a
       >
       <div class="project-desc">
@@ -120,8 +163,8 @@
       </div>
     </div>
     <div class="project-box hidden">
-      <a href="https://github.com/megpalmq/jungleCookie8" target="_blank">
-        <img src={jungle} alt="" /></a
+      <a href="https://github.com/megpalmq/CurlingYouSay2" target="_blank">
+        <img src={CYS} alt="" /></a
       >
 
       <div class="project-desc">
@@ -133,23 +176,26 @@
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/jungleCookieee8/dist/#home"
+          href="https://curling-you-say2.vercel.app/"
           class="project-title"
           target="_blank"
         >
-          <h3>Jungle Cook</h3>
+          <h3>Curling You Say?</h3>
         </a>
         <p class="date">Fall 2024</p>
         <p class="desc">
-          A dynamic website that allows users to create and save their own
-          recipes. The project showcases interactive features and a
-          user-friendly design for a seamless cooking experience.
+          This curling UI/UX website is a modern, interactive platform built
+          with Next.js and Sass. It features user authentication, allowing
+          account creation and login, alongside dynamic visuals and smooth
+          navigation. The site highlights curling rules, strategies, and player
+          insights, offering an engaging experience for all users.
         </p>
         <div class="project-skills">
           <span>SCSS</span>
-          <span>jQuery</span>
+          <span>Next.js</span>
           <span>JavaScript</span>
-          <span>Firebase</span>
+          <span>Clerk</span>
+          <span>User Authentication</span>
         </div>
       </div>
     </div>
@@ -233,6 +279,44 @@
   <div class="project-boxes">
     <div class="project-box hidden">
       <a
+        href="https://www.behance.net/gallery/218521699/Fragments-of-Vulnerability"
+        target="_blank"
+      >
+        <img src={FOV} alt="" /></a
+      >
+      <div class="project-desc">
+        <a
+          href="https://www.behance.net/gallery/218521699/Fragments-of-Vulnerability"
+          class="arrow-link"
+          target="_blank"
+        >
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a
+          href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron"
+          class="project-title"
+          target="_blank"
+        >
+          <h3>Fragments of Vulnerability</h3>
+        </a>
+        <p class="date">Fall 2024</p>
+        <p class="desc">
+          The **Vulnerability Zine** is a typography-focused project that tells
+          the powerful, real-life story of an individual affected by human
+          trafficking. Through expressive typography and design, the zine
+          captures the emotional depth of the experience, using visual
+          storytelling to raise awareness and foster empathy for those impacted
+          by this issue.
+        </p>
+        <div class="project-skills">
+          <span>Indesign</span>
+          <span>Illustrator</span>
+          <span>Typography</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-box hidden">
+      <a
         href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron"
         target="_blank"
       >
@@ -258,7 +342,7 @@
           A typography-driven design project that explores the collaboration
           between Yonsei University and Herron School of Art and Design. The
           project is 2 infographic poster that talk about food insecurity in
-          Seoul South Korea and Indianapolis Indiana
+          Seoul South Korea and Indianapolis Indiana.
         </p>
         <div class="project-skills">
           <span>Indesign</span>
@@ -297,7 +381,7 @@
           emotional and physical symptoms. The project also provides helpful
           strategies and techniques for managing and overcoming panic attacks,
           creating a compassionate and informative resource for those seeking
-          support
+          support.
         </p>
         <div class="project-skills">
           <span>Indesign</span>

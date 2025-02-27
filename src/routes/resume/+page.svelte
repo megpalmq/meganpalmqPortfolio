@@ -1,7 +1,7 @@
 <script>
   import { page } from "$app/stores";
   import { onMount } from "svelte";
-  import Resume from "$lib/images/MegPalmqResume.pdf";
+  import Resume from "$lib/images/RESUME.pdf";
   import port from "$lib/images/portfolio.png";
 
   let currentUrl;
@@ -23,7 +23,7 @@
 
 <div class="resume-wrapper">
   <div class="resume-header">
-    <h1>My <span>Resume</span></h1>
+    <h1><span>Resume</span></h1>
   </div>
   <div class="resume-pdf">
     <div class="resume-pdf-view">

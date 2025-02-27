@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: motReg;
 }
 
 .mobile-overflow {
@@ -22,13 +21,17 @@ body {
   src: url(../lib/fonts/MotleyForcesRegular-w1rZ3.ttf);
 }
 @font-face {
-  font-family: motReg;
-  src: url(../lib/fonts/MotleyForcesRegular-w1rZ3.ttf);
+  font-family: gum;
+  src: url(../lib/fonts/static/SourGummy-Medium.ttf);
+}
+
+@font-face {
+  font-family: pop;
+  src: url(../lib/fonts/Poppins-Regular.ttf);
 }
 p {
   margin-bottom: 16px;
   color: $white;
-  font-family: motReg;
 }
 h1,
 h2,
