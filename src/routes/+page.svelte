@@ -169,7 +169,7 @@
 
       <div class="project-desc">
         <a
-          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/jungleCookieee8/dist/#home"
+          href="https://curling-you-say2.vercel.app/"
           class="arrow-link"
           target="_blank"
         >

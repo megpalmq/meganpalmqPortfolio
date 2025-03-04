@@ -165,20 +165,8 @@
       >
 
       <div class="project-desc">
-        <a
-          href="https://matspark1.github.io/Tempo.cx-project/"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://matspark1.github.io/Tempo.cx-project/"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Tempo.cx</h3>
-        </a>
+        <h3>Tempo.cx</h3>
+
         <p class="date">Fall 2023</p>
         <p class="desc">
           This is a frontend project in which users can search for music and
