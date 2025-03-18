@@ -19,11 +19,11 @@
       background-image: url(../lib/images/me2.png);
       width: 45%;
       height: 84%;
-      border-radius: 40px;
+      border-radius:35px;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
-      object-fit: cover;
+      background-size: contain;
+      object-fit: contain;
       filter: grayscale(10%);
     }
 

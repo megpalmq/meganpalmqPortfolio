@@ -934,11 +934,11 @@ h6 {
   background-image: url(../lib/images/me2.png);
   width: 45%;
   height: 84%;
-  border-radius: 40px;
+  border-radius: 35px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
+  background-size: contain;
+  object-fit: contain;
   filter: grayscale(10%);
 }
 .about-wrapper .about-main:hover {
@@ -1226,7 +1226,7 @@ h6 {
 @media screen and (max-width: 1180px) {
   .about-main {
     max-width: 100%;
-    height: 760px;
+    min-height: 880px;
   }
   .about-main .about-desc h2 {
     font-size: 40px;
@@ -1273,6 +1273,53 @@ h6 {
     width: 100px;
   }
 }
+@media screen and (max-width: 900px) {
+  .projects-wrapper .projects-header {
+    font-size: 22px;
+    width: 100%;
+    padding: 10px;
+  }
+  .projects-wrapper .project-box {
+    width: 800px;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+  }
+  .projects-wrapper .project-box img {
+    width: 650px;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 6px;
+    margin-top: 0;
+  }
+  .projects-wrapper .project-box .project-desc {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .projects-wrapper .project-box .project-desc .project-skills {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-top: 40px;
+  }
+  .projects-wrapper .project-box .project-desc .project-skills span {
+    font-size: 20px;
+    padding: 2px 5px;
+  }
+  .projects-wrapper .project-box .project-desc .desc {
+    font-size: 14px;
+  }
+  .projects-wrapper .project-box .project-desc .date {
+    font-size: 12px;
+  }
+  .projects-wrapper .project-box .project-desc .arrow-link {
+    display: none;
+  }
+  .projects-wrapper .project-box .project-desc .project-title h3 {
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 820px) {
   .companies .company-header {
     font-size: 16px;
@@ -1303,6 +1350,55 @@ h6 {
     width: fit-content;
     margin-left: 1050px;
     margin-top: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .projects-wrapper .projects-header {
+    font-size: 22px;
+    width: 100%;
+    padding: 10px;
+  }
+  .projects-wrapper .project-box {
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+  }
+  .projects-wrapper .project-box img {
+    width: 450px;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 6px;
+    margin-top: 0;
+  }
+  .projects-wrapper .project-box .project-desc {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .projects-wrapper .project-box .project-desc .project-skills {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-top: 20px;
+  }
+  .projects-wrapper .project-box .project-desc .project-skills span {
+    font-size: 16px;
+    padding: 2px 5px;
+  }
+  .projects-wrapper .project-box .project-desc .desc {
+    font-size: 14px;
+    min-height: 150px;
+  }
+  .projects-wrapper .project-box .project-desc .date {
+    font-size: 12px;
+  }
+  .projects-wrapper .project-box .project-desc .arrow-link {
+    display: none;
+  }
+  .projects-wrapper .project-box .project-desc .project-title h3 {
+    font-size: 22px;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -1345,6 +1441,107 @@ h6 {
     height: 620px;
   }
 }
+@media screen and (max-width: 600px) {
+  .projects-wrapper .projects-header {
+    font-size: 22px;
+    width: 100%;
+    padding: 10px;
+  }
+  .projects-wrapper .project-box {
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    height: 730px;
+  }
+  .projects-wrapper .project-box img {
+    width: 350px;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 6px;
+    margin-top: 0;
+  }
+  .projects-wrapper .project-box .project-desc {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .projects-wrapper .project-box .project-desc .project-skills {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-top: 10px;
+  }
+  .projects-wrapper .project-box .project-desc .project-skills span {
+    font-size: 16px;
+    padding: 2px 5px;
+  }
+  .projects-wrapper .project-box .project-desc .desc {
+    font-size: 14px;
+    min-height: 250px;
+  }
+  .projects-wrapper .project-box .project-desc .date {
+    font-size: 12px;
+  }
+  .projects-wrapper .project-box .project-desc .arrow-link {
+    display: none;
+  }
+  .projects-wrapper .project-box .project-desc .project-title h3 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 465px) {
+  .border .seemore {
+    font-size: 13px;
+  }
+  .projects-wrapper .projects-header {
+    font-size: 22px;
+    width: 100%;
+    padding: 10px;
+  }
+  .projects-wrapper .project-box {
+    width: 350px;
+    flex-direction: column;
+    align-items: center;
+    height: 830px;
+  }
+  .projects-wrapper .project-box img {
+    width: 280px;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 6px;
+    margin-top: 0;
+  }
+  .projects-wrapper .project-box .project-desc {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .projects-wrapper .project-box .project-desc .project-skills {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-top: 10px;
+  }
+  .projects-wrapper .project-box .project-desc .project-skills span {
+    font-size: 16px;
+    padding: 2px 5px;
+  }
+  .projects-wrapper .project-box .project-desc .desc {
+    font-size: 14px;
+    min-height: 340px;
+  }
+  .projects-wrapper .project-box .project-desc .date {
+    font-size: 12px;
+  }
+  .projects-wrapper .project-box .project-desc .arrow-link {
+    display: none;
+  }
+  .projects-wrapper .project-box .project-desc .project-title h3 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 440px) {
   .site-wrapper .resume-header h1 {
     font-size: 40px;
@@ -1364,17 +1561,20 @@ h6 {
 }
 @media screen and (max-width: 553px) {
   .site-wrapper .home-wrapper .home-desc {
-    padding-right: 14px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
   .site-wrapper .home-wrapper .home-desc .intro {
     font-size: 18px;
+    padding: 20px;
   }
   .site-wrapper .home-wrapper .home-desc h1 {
     font-size: 24px;
     max-width: 330px;
   }
   .site-wrapper .home-wrapper .home-desc .name {
-    margin-right: 150px;
+    justify-content: center;
     font-size: 55px;
     text-align: center;
     padding: 10px;
@@ -1382,211 +1582,17 @@ h6 {
   .site-wrapper .home-wrapper .socials {
     width: 94%;
     margin-top: 20px;
+    margin-left: 5px;
   }
   .site-wrapper .home-wrapper .socials .social-box {
     width: 100%;
-    margin-right: 22px;
   }
   .site-wrapper .resume-wrapper .resume-pdf-view {
     width: 300px;
     height: 400px;
   }
-}
-@media (max-width: 530px) {
-  .nav-holder .logo a {
-    margin-left: 0px;
-  }
-  .nav-holder .logo a .reg-logo {
-    display: none;
-  }
-  .nav-holder .logo a .mobile-logo {
-    display: block;
-  }
-  .home-wrapper .home-desc {
-    margin-left: 50px;
-    margin-top: 50px;
-  }
-  .home-wrapper .home-desc .intro {
-    font-size: 14px;
-  }
-  .home-wrapper .home-desc h1 {
-    font-size: 24px;
-    max-width: 330px;
-  }
-  .home-wrapper .socials {
-    width: 94%;
-    margin-top: 20px;
-  }
-  .home-wrapper .socials .social-box {
-    width: 100%;
-    margin-right: 22px;
-  }
-  .about-wrapper {
-    margin: 120px auto 0 auto;
-  }
-  .about-wrapper .about-main {
-    flex-direction: column;
-    max-width: 330px;
-    min-width: 330px;
-    min-height: 1500px;
-    position: relative;
-    right: 8px;
-  }
-  .about-wrapper .about-main .meg {
-    margin-top: 20px;
-    width: 100%;
-    height: 75%;
-  }
-  .about-wrapper .about-main .about-desc h2 {
-    font-size: 27px;
-  }
-  .about-wrapper .about-main .about-desc p {
-    font-size: 15px;
-  }
-  .about-wrapper .about-main .about-desc .about-skills span {
-    font-size: 14px;
-  }
-  .projects-wrapper .projects-header {
-    font-size: 22px;
-    width: 100%;
-    padding: 10px;
-  }
-  .projects-wrapper .project-box {
-    width: 300px;
-    flex-direction: column;
-    align-items: center;
-    height: 480px;
-  }
-  .projects-wrapper .project-box img {
-    width: 250px;
-    height: 160px;
-    object-fit: cover;
-    margin-bottom: 6px;
-    margin-top: 0;
-  }
-  .projects-wrapper .project-box .project-desc {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .projects-wrapper .project-box .project-desc .project-skills {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    row-gap: 10px;
-    margin-top: 0px;
-  }
-  .projects-wrapper .project-box .project-desc .project-skills span {
-    font-size: 13px;
-    padding: 2px 10px;
-  }
-  .projects-wrapper .project-box .project-desc .desc {
-    font-size: 14px;
-  }
-  .projects-wrapper .project-box .project-desc .date {
-    font-size: 12px;
-  }
-  .projects-wrapper .project-box .project-desc .arrow-link {
-    display: none;
-  }
-  .projects-wrapper .project-box .project-desc .project-title h3 {
-    font-size: 22px;
-  }
-}
-@media (max-aspect-ratio: 9/16) {
-  .nav-holder .logo a {
-    margin-left: 0px;
-  }
-  .nav-holder .logo a .reg-logo {
-    display: none;
-  }
-  .nav-holder .logo a .mobile-logo {
-    display: block;
-  }
-  .home-wrapper .home-desc {
-    margin-left: 100px;
-    margin-top: -180px;
-  }
-  .home-wrapper .home-desc .intro {
-    font-size: 14px;
-  }
-  .home-wrapper .home-desc h1 {
-    font-size: 24px;
-    max-width: 330px;
-  }
-  .home-wrapper .socials {
-    width: 94%;
-    margin-top: 20px;
-  }
-  .home-wrapper .socials .social-box {
-    width: 100%;
-    margin-right: 22px;
-  }
-  .about-wrapper {
-    margin: 120px auto 0 auto;
-  }
-  .about-wrapper .about-main {
-    flex-direction: column;
-    max-width: 330px;
-    min-width: 330px;
-    height: 1160px;
-    position: relative;
-  }
-  .about-wrapper .about-main img {
-    width: 280px;
-    height: 280px;
-    margin-top: 12px;
-  }
-  .about-wrapper .about-main .about-desc h2 {
-    font-size: 27px;
-  }
-  .about-wrapper .about-main .about-desc p {
-    font-size: 15px;
-  }
-  .about-wrapper .about-main .about-desc .about-skills span {
-    font-size: 14px;
-  }
-  .projects-wrapper .projects-header {
-    font-size: 22px;
-  }
-  .projects-wrapper .project-box {
-    width: 300px;
-    flex-direction: column;
-    align-items: center;
-    height: 480px;
-  }
-  .projects-wrapper .project-box img {
-    width: 250px;
-    height: 160px;
-    object-fit: cover;
-    margin-bottom: 6px;
-    margin-top: 0;
-  }
-  .projects-wrapper .project-box .project-desc {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .projects-wrapper .project-box .project-desc .project-skills {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    row-gap: 10px;
-    margin-top: 0px;
-  }
-  .projects-wrapper .project-box .project-desc .project-skills span {
-    font-size: 13px;
-    padding: 2px 10px;
-  }
-  .projects-wrapper .project-box .project-desc .desc {
-    font-size: 14px;
-  }
-  .projects-wrapper .project-box .project-desc .date {
-    font-size: 12px;
-  }
-  .projects-wrapper .project-box .project-desc .arrow-link {
-    display: none;
-  }
-  .projects-wrapper .project-box .project-desc .project-title h3 {
-    font-size: 22px;
+  .border .seemore {
+    font-size: 35px;
   }
 }
 

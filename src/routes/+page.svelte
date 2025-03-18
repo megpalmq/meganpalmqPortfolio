@@ -86,7 +86,7 @@
   <div class="project-boxes">
     <div class="project-box hidden">
       <a
-        href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/315Finallyyy/dist/"
+        href="https://design-for-dignity.vercel.app/"
         target="_blank"
       >
         <img src={DFD} alt="" /></a
@@ -124,7 +124,7 @@
       </div>
     </div>
     <div class="project-box hidden">
-      <a href="https://github.com/megpalmq/315Final" target="_blank">
+      <a href=" https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/315Finallyyy/dist/" target="_blank">
         <img src={keurig} alt="" /></a
       >
       <div class="project-desc">
@@ -136,7 +136,7 @@
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/315Finallyyy/dist/"
+          href="https://github.com/megpalmq/315Final"
           class="project-title"
           target="_blank"
         >
@@ -163,7 +163,7 @@
       </div>
     </div>
     <div class="project-box hidden">
-      <a href="https://github.com/megpalmq/CurlingYouSay2" target="_blank">
+      <a href="https://curling-you-say2.vercel.app" target="_blank">
         <img src={CYS} alt="" /></a
       >
 
@@ -176,7 +176,7 @@
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://curling-you-say2.vercel.app/"
+          href="https://github.com/megpalmq/CurlingYouSay2"
           class="project-title"
           target="_blank"
         >
@@ -200,7 +200,7 @@
       </div>
     </div>
     <div class="project-box hidden">
-      <a href="https://github.com/megpalmq/pokemon-pagesReal" target="_blank">
+      <a href="https://pokemon-pages-real.vercel.app/?vercelToolbarCode=QpR1RGlppeyOq5h" target="_blank">
         <img src={pokemon} alt="" /></a
       >
 
@@ -213,7 +213,7 @@
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://pokemon-pages-real.vercel.app/?vercelToolbarCode=QpR1RGlppeyOq5h"
+          href="https://github.com/megpalmq/pokemon-pagesReal"
           class="project-title"
           target="_blank"
         >
@@ -250,7 +250,7 @@
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/oldProjects/homework-seven/homework-seven/"
+          href="https://github.com/n215-megpalmq/homework-seven"
           class="project-title"
           target="_blank"
         >
