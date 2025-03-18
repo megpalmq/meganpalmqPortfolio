@@ -911,6 +911,24 @@ h6 {
 .projects-wrapper .project-box span:hover {
   border: 2px solid #ffffff;
 }
+.projects-wrapper .aboutme {
+  height: 200px;
+}
+.projects-wrapper .aboutme .aboutme-link {
+  background-color: white;
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(47, 7, 39);
+  font-family: motReg;
+  margin-bottom: 100px;
+  transition: ease 0.2s;
+}
+.projects-wrapper .aboutme .aboutme-link:hover {
+  background-color: rgb(47, 7, 39);
+  color: white;
+}
 
 .about-wrapper {
   width: 80%;

@@ -56,7 +56,6 @@
         <span>jQuery</span>
         <span>Typescript</span>
         <span>PHP</span>
-        <span>Python</span>
         <span>SQL</span>
         <span>Figma</span>
         <span>React</span>

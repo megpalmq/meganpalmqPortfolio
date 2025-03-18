@@ -380,4 +380,22 @@
       }
     }
   }
+  .aboutme{
+    height: 200px;
+    .aboutme-link{
+      background-color: white;
+      font-size: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: $dark-red;
+      font-family: motReg;
+      margin-bottom: 100px;
+      transition: ease 0.2s;
+      &:hover{
+        background-color: $dark-red;
+        color: white;
+      }
+    }
+  }
 }

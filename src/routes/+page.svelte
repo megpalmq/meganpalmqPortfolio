@@ -431,4 +431,8 @@
       </div>
     </div>
   </div>
+  <div class="aboutme">
+    <a href="/about" class="aboutme-link">About Me <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
 </div>
