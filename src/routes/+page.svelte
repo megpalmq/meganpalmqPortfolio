@@ -124,12 +124,12 @@
       </div>
     </div>
     <div class="project-box hidden">
-      <a href=" https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/315Finallyyy/dist/" target="_blank">
+      <a href="https://keurigcopycat.vercel.app/" target="_blank">
         <img src={keurig} alt="" /></a
       >
       <div class="project-desc">
         <a
-          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/315Finallyyy/dist/"
+          href="https://keurigcopycat.vercel.app/"
           class="arrow-link"
           target="_blank"
         >
