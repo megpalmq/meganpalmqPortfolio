@@ -85,10 +85,7 @@
   <div class="projects-header-under"></div>
   <div class="project-boxes">
     <div class="project-box hidden">
-      <a
-        href="https://design-for-dignity.vercel.app/"
-        target="_blank"
-      >
+      <a href="https://design-for-dignity.vercel.app/" target="_blank">
         <img src={DFD} alt="" /></a
       >
       <div class="project-desc">
@@ -200,7 +197,10 @@
       </div>
     </div>
     <div class="project-box hidden">
-      <a href="https://pokemon-pages-real.vercel.app/?vercelToolbarCode=QpR1RGlppeyOq5h" target="_blank">
+      <a
+        href="https://pokemon-pages-real.vercel.app/?vercelToolbarCode=QpR1RGlppeyOq5h"
+        target="_blank"
+      >
         <img src={pokemon} alt="" /></a
       >
 
@@ -432,7 +432,8 @@
     </div>
   </div>
   <div class="aboutme">
-    <a href="/about" class="aboutme-link">About Me <i class="fa-solid fa-arrow-right"></i></a>
+    <a href="/about" class="aboutme-link"
+      >About Me <i class="fa-solid fa-arrow-right"></i></a
+    >
   </div>
-
 </div>
