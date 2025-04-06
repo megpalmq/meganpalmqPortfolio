@@ -14,6 +14,8 @@
   import DFD from "$lib/images/DFD.png";
   import CYS from "$lib/images/CYS.png";
   import FOV from "$lib/images/FOV.png";
+  import Osaka from "$lib/images/Osaka.jpg";
+  import FD from "$lib/images/FreezeDry.png";
 
   import { page } from "$app/stores";
   import { onMount } from "svelte";
@@ -279,6 +281,91 @@
   <div class="project-boxes">
     <div class="project-box hidden">
       <a
+        href="https://www.behance.net/gallery/222967549/Osaka-2036-Olympics"
+        target="_blank"
+      >
+        <img src={Osaka} alt="" /></a
+      >
+      <div class="project-desc">
+        <a
+          href="https://www.behance.net/gallery/222967549/Osaka-2036-Olympics"
+          class="arrow-link"
+          target="_blank"
+        >
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a
+          href="https://www.behance.net/gallery/222967549/Osaka-2036-Olympics"
+          class="project-title"
+          target="_blank"
+        >
+          <h3>Osaka 2036 Olympics</h3>
+        </a>
+        <p class="date">Spring 2025</p>
+        <p class="desc">
+          For this project, I created a complete brand identity for the Olympics
+          in Osaka, Japan. To develop an authentic and visually striking brand,
+          I first studied Osaka's culture, history, and design influences. The
+          project encompassed designing a distinctive logo, brochure, poster,
+          custom pattern, event tickets, lanyard, and website mockup. Drawing
+          inspiration from Osaka's dynamic cityscape, traditional art, and
+          modern innovation, the branding captures the essence of both the city
+          and the Olympic Games. The result is a visually compelling and
+          culturally authentic brand that seamlessly integrates Osaka's unique
+          identity into the global Olympic experience.
+        </p>
+        <div class="project-skills">
+          <span>Branding</span>
+          <span>Indesign</span>
+          <span>Figma</span>
+          <span>Illustrator</span>
+          <span>Typography</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-box hidden">
+      <a
+        href="https://www.behance.net/gallery/223089271/Freeze-Dried? "
+        target="_blank"
+      >
+        <img src={FD} alt="" /></a
+      >
+      <div class="project-desc">
+        <a
+          href="https://www.behance.net/gallery/223089271/Freeze-Dried?"
+          class="arrow-link"
+          target="_blank"
+        >
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a
+          href="https://www.behance.net/gallery/223089271/Freeze-Dried?"
+          class="project-title"
+          target="_blank"
+        >
+          <h3>Freeze Dried</h3>
+        </a>
+        <p class="date">Spring 2025</p>
+        <p class="desc">
+          For this branding and packaging project, I designed a playful and
+          vibrant identity for a freeze-dried candy brand. Inspired by the cool,
+          frozen process of freeze-drying, I focused on using icy colors and
+          dynamic typography to reflect the candy's light, airy texture. The
+          packaging design features bold, modern elements that stand out on
+          shelves, aiming to capture the fun and refreshing qualities of the
+          product. This project showcases my ability to create engaging,
+          eye-catching designs that connect with a youthful audience.
+        </p>
+        <div class="project-skills">
+          <span>Branding</span>
+          <span>Product Design</span>
+          <span>Illustrator</span>
+          <span>Typography</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-box hidden">
+      <a
         href="https://www.behance.net/gallery/218521699/Fragments-of-Vulnerability"
         target="_blank"
       >
@@ -301,8 +388,8 @@
         </a>
         <p class="date">Fall 2024</p>
         <p class="desc">
-          The **Vulnerability Zine** is a typography-focused project that tells
-          the powerful, real-life story of an individual affected by human
+          The Vulnerability Zine is a typography-focused project that tells the
+          powerful, real-life story of an individual affected by human
           trafficking. Through expressive typography and design, the zine
           captures the emotional depth of the experience, using visual
           storytelling to raise awareness and foster empathy for those impacted
