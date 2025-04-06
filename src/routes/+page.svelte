@@ -304,15 +304,13 @@
         <p class="date">Spring 2025</p>
         <p class="desc">
           For this project, I created a complete brand identity for the Olympics
-          in Osaka, Japan. To develop an authentic and visually striking brand,
-          I first studied Osaka's culture, history, and design influences. The
-          project encompassed designing a distinctive logo, brochure, poster,
-          custom pattern, event tickets, lanyard, and website mockup. Drawing
-          inspiration from Osaka's dynamic cityscape, traditional art, and
-          modern innovation, the branding captures the essence of both the city
-          and the Olympic Games. The result is a visually compelling and
-          culturally authentic brand that seamlessly integrates Osaka's unique
-          identity into the global Olympic experience.
+          in Osaka, Japan. I began by studying Osaka's culture, history, and
+          design influences. The project included designing a logo, brochure,
+          poster, custom pattern, event tickets, lanyard, and website mockup.
+          Drawing inspiration from Osaka's cityscape, traditional art, and
+          modern innovation, the branding captures the city's essence and the
+          spirit of the Olympic Games, resulting in a visually compelling and
+          culturally authentic brand.
         </p>
         <div class="project-skills">
           <span>Branding</span>
