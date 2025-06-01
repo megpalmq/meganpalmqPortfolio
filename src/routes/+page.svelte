@@ -378,7 +378,7 @@
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron"
+          href="https://www.behance.net/gallery/218521699/Fragments-of-Vulnerability"
           class="project-title"
           target="_blank"
         >
