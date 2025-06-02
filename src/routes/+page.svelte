@@ -76,7 +76,9 @@
 </div>
 <div class="border">
   <div class="seemore">
-    See my projects <i class="fa-solid fa-angle-down"></i>
+    <a style="text-decoration: none; color: black" href="#projects">
+      See my projects <i class="fa-solid fa-angle-down"></i></a
+    >
   </div>
 </div>
 

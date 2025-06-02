@@ -1,9 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap");
 
 .site-wrapper {
-  background: linear-gradient(270deg, #59072f, #a53a9b, #b68597 90.71%);
+  background: linear-gradient(300deg, #dccef7, #b756f7, #843a67, #cc98e9);
+  background-size: 200% 200%;
+  animation: gradient-animation 26s ease infinite;
   backdrop-filter: blur(10px);
 }
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .home-wrapper {
   position: relative;
 }
@@ -380,9 +395,9 @@
       }
     }
   }
-  .aboutme{
+  .aboutme {
     height: 200px;
-    .aboutme-link{
+    .aboutme-link {
       background-color: white;
       font-size: 40px;
       padding: 20px;
@@ -392,7 +407,7 @@
       font-family: motReg;
       margin-bottom: 100px;
       transition: ease 0.2s;
-      &:hover{
+      &:hover {
         background-color: $dark-red;
         color: white;
       }

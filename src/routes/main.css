@@ -187,7 +187,7 @@ h6 {
   -ms-flex-align: center;
   align-items: center;
   background: rgb(192, 145, 183);
-  background: -webkit-linear-gradient(rgb(192, 145, 183), rgb(47, 7, 39));
+  background: -webkit-linear-gradient(rgb(192, 145, 183), rgb(46, 9, 56));
   background: linear-gradient(rgb(192, 145, 183), rgb(192, 145, 183));
 }
 
@@ -272,7 +272,7 @@ h6 {
   position: fixed;
   z-index: 999;
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 0 6px rgba(47, 7, 39, 0.006);
+  box-shadow: 0 0 0 6px rgba(46, 9, 56, 0.006);
 }
 .nav-holder a {
   -webkit-text-stroke: 0.5px rgb(103, 57, 131);
@@ -295,7 +295,7 @@ h6 {
   background-image: none;
   border: 2px solid #ffffff;
   color: #ffffff;
-  background-color: rgb(47, 7, 39);
+  background-color: rgb(46, 9, 56);
 }
 .nav-holder .resume-link:hover {
   background-color: rgb(192, 145, 183);
@@ -485,8 +485,8 @@ h6 {
 }
 .nav-holder .mobile-menu li .resume-link:hover {
   color: #ffffff;
-  border: 2px solid rgb(47, 7, 39);
-  background-color: rgb(47, 7, 39);
+  border: 2px solid rgb(46, 9, 56);
+  background-color: rgb(46, 9, 56);
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -535,10 +535,23 @@ h6 {
   }
 }
 .site-wrapper {
-  background: linear-gradient(270deg, #59072f, #a53a9b, #b68597 90.71%);
+  background: linear-gradient(300deg, #dccef7, #b756f7, #843a67, #cc98e9);
+  background-size: 200% 200%;
+  animation: gradient-animation 26s ease infinite;
   backdrop-filter: blur(10px);
 }
 
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .home-wrapper {
   position: relative;
 }
@@ -628,7 +641,7 @@ h6 {
   align-items: center;
   width: 90%;
   justify-content: space-evenly;
-  background-color: rgba(47, 7, 39, 0.7);
+  background-color: rgba(46, 9, 56, 0.7);
   padding: 12px;
   border-radius: 20px;
   box-shadow: 5px 5px 15px rgb(221, 0, 255);
@@ -755,7 +768,7 @@ h6 {
 
 .projects-header {
   font-size: 36px;
-  background-color: rgb(47, 7, 39);
+  background-color: rgb(46, 9, 56);
   margin-top: 120px;
   box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.01);
   width: 55vw;
@@ -790,7 +803,7 @@ h6 {
 .projects-wrapper .project-box {
   display: flex;
   width: 905px;
-  background-color: rgb(47, 7, 39);
+  background-color: rgb(46, 9, 56);
   box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.01);
   border-radius: 60px;
   margin: 84px 0;
@@ -902,10 +915,10 @@ h6 {
   font-weight: 400;
   margin: 0 3px;
   padding: 2px 12px;
-  background-color: rgb(47, 7, 39);
+  background-color: rgb(46, 9, 56);
   border-radius: 40px;
   cursor: pointer;
-  border: 2px solid rgb(47, 7, 39);
+  border: 2px solid rgb(46, 9, 56);
   transition: ease 0.2s;
 }
 .projects-wrapper .project-box span:hover {
@@ -920,13 +933,13 @@ h6 {
   padding: 20px;
   border-radius: 10px;
   text-decoration: none;
-  color: rgb(47, 7, 39);
+  color: rgb(46, 9, 56);
   font-family: motReg;
   margin-bottom: 100px;
   transition: ease 0.2s;
 }
 .projects-wrapper .aboutme .aboutme-link:hover {
-  background-color: rgb(47, 7, 39);
+  background-color: rgb(46, 9, 56);
   color: white;
 }
 
@@ -1001,10 +1014,10 @@ h6 {
   font-weight: 500;
   margin: 0 3px;
   padding: 2px 12px;
-  background-color: rgb(47, 7, 39);
+  background-color: rgb(46, 9, 56);
   border-radius: 40px;
   cursor: pointer;
-  border: 2px solid rgb(47, 7, 39);
+  border: 2px solid rgb(46, 9, 56);
   transition: ease 0.2s;
 }
 .about-wrapper .about-desc .about-skills span:hover {
@@ -1107,7 +1120,7 @@ h6 {
   font-size: 22px;
 }
 .download a:hover {
-  background-color: rgb(47, 7, 39);
+  background-color: rgb(46, 9, 56);
 }
 
 @media (max-aspect-ratio: 1/1) {
