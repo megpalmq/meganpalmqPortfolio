@@ -1,6 +1,5 @@
 <script>
   import port from "$lib/images/portfolio.png";
-  import pokemon from "$lib/images/pokemon.png";
   import yonsei from "$lib/images/yonsei.png";
   import amend from "$lib/images/amend.png";
   import happy from "$lib/images/happy.png";
