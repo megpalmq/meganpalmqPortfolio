@@ -1065,7 +1065,7 @@ h6 {
   font-size: 40px;
 }
 .resume-wrapper .resume-header span {
-  color: rgb(209, 185, 233);
+  color: #ffffff;
 }
 .resume-wrapper .resume-pdf {
   width: 100vw;
@@ -1086,7 +1086,7 @@ h6 {
   font-weight: 600;
   font-size: 24px;
   text-decoration: underline;
-  color: rgb(192, 145, 183);
+  color: #ffffff;
   padding: 2px;
   border-radius: 40px;
 }

@@ -1,21 +1,17 @@
 <script>
   import port from "$lib/images/portfolio.png";
-  import helios from "$lib/images/x-proj-helios.png";
-  import jungle from "$lib/images/junglecook.png";
   import pokemon from "$lib/images/pokemon.png";
   import yonsei from "$lib/images/yonsei.png";
   import amend from "$lib/images/amend.png";
-  import helium from "$lib/images/helium.jpg";
   import happy from "$lib/images/happy.png";
-  import tempocx from "$lib/images/tempocx.jpg";
   import travel from "$lib/images/travelfly.jpg";
   import keurig from "$lib/images/keurig.png";
-  import urban from "$lib/images/urbanappeal.png";
   import DFD from "$lib/images/DFD.png";
   import CYS from "$lib/images/CYS.png";
   import FOV from "$lib/images/FOV.png";
   import Osaka from "$lib/images/Osaka.jpg";
   import FD from "$lib/images/FreezeDry.png";
+  import oddJobs from "$lib/images/oddJobs.png";
 
   import { page } from "$app/stores";
   import { onMount } from "svelte";
@@ -201,39 +197,41 @@
       </div>
     </div>
     <div class="project-box hidden">
-      <a
-        href="https://pokemon-pages-real.vercel.app/?vercelToolbarCode=QpR1RGlppeyOq5h"
-        target="_blank"
-      >
-        <img src={pokemon} alt="" /></a
+      <a href="https://odd-jobs-board.vercel.app/" target="_blank">
+        <img src={oddJobs} alt="" /></a
       >
 
       <div class="project-desc">
         <a
-          href="https://pokemon-pages-real.vercel.app/?vercelToolbarCode=QpR1RGlppeyOq5h"
+          href="https://odd-jobs-board.vercel.app/"
           class="arrow-link"
           target="_blank"
         >
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://github.com/megpalmq/pokemon-pagesReal"
+          href="https://github.com/megpalmq/odd-jobs-board"
           class="project-title"
           target="_blank"
         >
-          <h3>Pokemon API</h3>
+          <h3>Odd Job Board</h3>
         </a>
-        <p class="date">Fall 2023</p>
+        <p class="date">Spring 2025</p>
         <p class="desc">
-          A fun and interactive project where users can select their favorite
-          Pokémon and save it to a personal favorites menu, demonstrating API
-          integration and dynamic content management.
+          Odd Job Board is a website I designed and built to help people find or
+          post small, one-time jobs—like pet sitting, lawn care, or tutoring.
+          It's meant to be a simple, user-friendly space where anyone can
+          connect over quick gigs without needing to sign up or go through a
+          long process. I used HTML, CSS, and JavaScript to create a clean,
+          modern look, with hover effects and a responsive layout so it works
+          well on both desktop and mobile.
         </p>
         <div class="project-skills">
           <span>HTML</span>
-          <span>SCSS</span>
+          <span>CSS</span>
           <span>JavaScript</span>
-          <span>NextJs</span>
+          <span>API</span>
+          <span>Database</span>
         </div>
       </div>
     </div>

@@ -1,10 +1,8 @@
 <script>
   import { page } from "$app/stores";
   import { onMount } from "svelte";
-  import Meg from "$lib/images/me2.png";
   import ENJ from "$lib/images/ENJLOGO-WhiteText.png";
   import yonseiL from "$lib/images/yonseiL.png";
-  import IU from "$lib/images/IUcomp.png";
   import KFT from "$lib/images/KFT.png";
   import port from "$lib/images/portfolio.png";
 
