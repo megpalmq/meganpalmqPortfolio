@@ -1,10 +1,5 @@
 <script>
   import port from "$lib/images/portfolio.png";
-  import helios from "$lib/images/x-proj-helios.png";
-  import helium from "$lib/images/helium.jpg";
-  import tempocx from "$lib/images/tempocx.jpg";
-  import travel from "$lib/images/travelfly.jpg";
-  import urban from "$lib/images/urbanappeal.png";
 
   import { page } from "$app/stores";
   import { onMount } from "svelte";
@@ -54,7 +49,6 @@
     <h1>My Projects</h1>
   </div>
   <div class="projects-header-under"></div>
-  
 </div>
 <div class="socials hidden">
   <div class="social-box">
