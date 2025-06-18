@@ -38,9 +38,11 @@
         functional and fun—because why not make things work and look cool doing it?
         <br />
         <br /> I'm currently studying Media Arts and Science at IU Indianapolis,
-        specializing in web design, development, and digital storytelling.
-        Basically, I like telling stories with pixels. And if I can sneak in
-        some unexpected animations or weird typography choices, even better.
+        specializing in web design, development, and digital storytelling. I'm
+        also minoring in Graphic Design. Basically, I like building sleek,
+        creative websites that actually work the way you want them to. And if I
+        can sneak in some unexpected animations or weird typography choices,
+        even better.
         <br /> <br />
         I spend a lot of time experimenting—whether that's with code, color, or the
         perfect hover state. I care about the little things. The way a page feels.

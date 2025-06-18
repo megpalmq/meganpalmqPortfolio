@@ -952,7 +952,7 @@ h6 {
   background-color: rgba(255, 255, 255, 0.09);
   box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.02);
   width: 1400px;
-  height: 662px;
+  height: 700px;
   border-radius: 40px;
   margin: 0 auto;
   display: flex;
@@ -1451,7 +1451,7 @@ h6 {
     flex-direction: column;
     max-width: 370px;
     min-width: 370px;
-    height: 1700px;
+    height: 1750px;
   }
   .about-wrapper .about-main .meg {
     min-width: 300px;
@@ -1472,46 +1472,17 @@ h6 {
     height: 620px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .about-wrapper {
     margin: 130px auto 0 auto;
-  }
-  .about-wrapper .about-main {
-    flex-direction: column;
-    max-width: 370px;
-    min-width: 370px;
-    height: 1700px;
     margin: 0 auto;
-  }
-  .about-wrapper .about-main .meg {
-    min-width: 300px;
-    min-height: 40vh;
-    margin-top: 12px;
-  }
-  .about-wrapper .about-main .about-desc h2 {
-    font-size: 34px;
-  }
-  .about-wrapper .about-main .about-desc p {
-    font-size: 15px;
-  }
-  .about-wrapper .about-main .about-desc .about-skills span {
-    font-size: 14px;
-  }
-  .site-wrapper .resume-wrapper .resume-pdf-view {
-    width: 420px;
-    height: 620px;
-  }
-}
-@media screen and (max-width: 410px) {
-  .about-wrapper {
-    margin: 130px auto 0 auto;
-    margin-right: 70px;
+    margin-top: 100px;
   }
   .about-wrapper .about-main {
     flex-direction: column;
     min-width: 250px;
     padding: 40px;
-    height: 1700px;
+    height: 1750px;
     margin: 0 auto;
   }
   .about-wrapper .about-main .meg {
@@ -1528,6 +1499,48 @@ h6 {
   }
   .about-wrapper .about-main .about-desc .about-skills span {
     font-size: 14px;
+  }
+  .site-wrapper .resume-wrapper .resume-pdf-view {
+    width: 420px;
+    height: 620px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-right: 50px;
+  }
+  .about-wrapper .about-main {
+    flex-direction: column;
+    width: 320px;
+    height: 1750px;
+    margin: 0 auto;
+  }
+  .about-wrapper .about-main .meg {
+    min-width: 200px;
+    min-height: 30vh;
+    margin-top: 12px;
+    border-radius: 30px;
+  }
+  .about-wrapper .about-main .about-desc h2 {
+    font-size: 34px;
+  }
+  .about-wrapper .about-main .about-desc p {
+    font-size: 15px;
+  }
+  .about-wrapper .about-main .about-desc .about-skills span {
+    font-size: 14px;
+  }
+  .about-wrapper .companies .company-header {
+    font-size: 18px;
+  }
+  .about-wrapper .companies .company-box .company-img {
+    padding: 30px;
+  }
+  .about-wrapper .companies .company-box .company-img img {
+    width: 150px;
   }
   .site-wrapper .resume-wrapper .resume-pdf-view {
     width: 420px;
