@@ -30,26 +30,36 @@
   <div class="about-main hidden">
     <div class="meg"></div>
     <div class="about-desc">
-      <h2>Hi , <span>nice to meet you!</span></h2>
+      <h2>Nice to meet you!</h2>
       <p>
-        <br /> <br />I'm Megan—a passionate web and graphic designer with a
-        knack for crafting innovative digital experiences. As a junior at
-        Indiana University Indianapolis, I'm pursuing a degree in Media Arts and
-        Science with a specialization in <span> web design, development</span>,
-        and <span>digital storytelling</span>. I also am minoring in
-        <span>graphic design</span>. My work seamlessly blends functionality and
-        creativity, ensuring each project not only meets the client's needs but
-        also leaves a lasting impression.
+        <br />
+        Hi, Im Megan. I make websites that move, glow, scroll, and speak. Sometimes
+        literally. Im a web and graphic designer who likes to blur the line between
+        functional and fun—because why not make things work and look cool doing it?
+        <br />
+        <br /> I'm currently studying Media Arts and Science at IU Indianapolis,
+        specializing in web design, development, and digital storytelling.
+        Basically, I like telling stories with pixels. And if I can sneak in
+        some unexpected animations or weird typography choices, even better.
         <br /> <br />
-        From designing intuitive user interfaces to developing dynamic websites,
-        my journey has been fueled by a deep curiosity for technology and an eye
-        for design. Whether I'm collaborating on international projects like my work
-        with Yonsei University or diving into independent creative challenges, I
-        strive to create meaningful and impactful designs. With a versatile skill
-        set, including proficiency in modern frameworks and tools like React, Svelte,
-        and Figma, I'm ready to take on the next exciting opportunity.
+        I spend a lot of time experimenting—whether that's with code, color, or the
+        perfect hover state. I care about the little things. The way a page feels.
+        The way a design communicates before you even read it. I want the work to
+        feel alive, and I want people to feel something when they see it.
+        <br />
+        <br /> Lately, I've been building with tools like React, Next.js, and
+        jQuery. I design in Figma, animate with CSS and JavaScript, and
+        occasionally break things just to figure out how to fix them. I love
+        learning new tools, exploring new styles, and geeking out over details
+        most people would scroll right past.
+        <br />
+        <br />
+        And yes, I'm probably thinking about fonts right now.
       </p>
       <div class="about-skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>SCSS</span>
         <span>Javascript</span>
         <span>jQuery</span>
         <span>Typescript</span>
@@ -69,10 +79,17 @@
     </div>
     <div class="company-box">
       <div class="company-img homedepot hidden-about">
-        <img src={KFT} alt="Kung Fu Tea" />
+        <a
+          href="https://www.kungfutea.com/?srsltid=AfmBOopL4IReX1ZBpGis6pQJAxMIyrB2yQU5Vkq7gaLXUBd34_rjtcOs"
+          target="_blank"
+        >
+          <img src={KFT} alt="Kung Fu Tea" /></a
+        >
       </div>
       <div class="company-img hidden-about">
-        <img src={yonseiL} alt="IU" />
+        <a href="https://www.yonsei.ac.kr/en_sc/index.do">
+          <img src={yonseiL} alt="IU" />
+        </a>
       </div>
       <div class="company-img hidden-about">
         <img src={ENJ} alt="Ever New Joy" />

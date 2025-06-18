@@ -612,7 +612,7 @@ h6 {
   transform: translate(-50%, -50%);
   letter-spacing: 0.02em;
   text-align: center;
-  color: rgb(242, 240, 244);
+  color: rgb(255, 255, 255);
   text-shadow: 5px 5px 0px #ff80bf, 10px 10px 0px #ef5097, 15px 15px 0px #a560f0, 20px 20px 0px #b5cbeb;
 }
 .home-desc h1 {
@@ -621,7 +621,7 @@ h6 {
   font-family: motReg;
   font-weight: 100;
   font-size: 34px;
-  max-width: 900px;
+  max-width: 700px;
   margin-top: 100px;
 }
 .home-desc h1 span {
@@ -951,8 +951,8 @@ h6 {
   margin-top: 200px;
   background-color: rgba(255, 255, 255, 0.09);
   box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.02);
-  width: 1000px;
-  height: 662px;
+  width: 1200px;
+  height: 62px;
   border-radius: 40px;
   margin: 0 auto;
   display: flex;
@@ -1451,12 +1451,11 @@ h6 {
     flex-direction: column;
     max-width: 370px;
     min-width: 370px;
-    height: 1200px;
+    height: 1700px;
   }
-  .about-wrapper .about-main img {
-    width: 300px;
-    height: 300px;
-    margin-top: 12px;
+  .about-wrapper .about-main .meg {
+    min-height: 50vh;
+    width: 80%;
   }
   .about-wrapper .about-main .about-desc h2 {
     font-size: 34px;
@@ -1578,6 +1577,9 @@ h6 {
     font-size: 40px;
     margin-top: 20px;
   }
+  .site-wrapper .resume-wrapper {
+    height: 100vh;
+  }
   .site-wrapper .resume-wrapper .resume-pdf-view {
     width: 350px;
     height: 500px;
@@ -1617,10 +1619,6 @@ h6 {
   }
   .site-wrapper .home-wrapper .socials .social-box {
     width: 100%;
-  }
-  .site-wrapper .resume-wrapper .resume-pdf-view {
-    width: 300px;
-    height: 400px;
   }
   .border .seemore {
     font-size: 35px;

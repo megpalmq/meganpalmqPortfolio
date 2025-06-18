@@ -44,9 +44,8 @@
         <p class="intro">Hello, my name is</p>
         <h1><span class="name">Megan Palmquist </span></h1>
         <h1>
-          Creative web designer and digital storyteller, blending graphic design
-          to deliver engaging and <br />
-          user-centered experiences!
+          a creative web designer weaving color, code, and stories into
+          scroll-stopping digital experiences!
         </h1>
       </div>
 
