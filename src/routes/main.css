@@ -1472,6 +1472,68 @@ h6 {
     height: 620px;
   }
 }
+@media screen and (max-width: 450px) {
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+  }
+  .about-wrapper .about-main {
+    flex-direction: column;
+    max-width: 370px;
+    min-width: 370px;
+    height: 1700px;
+    margin: 0 auto;
+  }
+  .about-wrapper .about-main .meg {
+    min-width: 300px;
+    min-height: 40vh;
+    margin-top: 12px;
+  }
+  .about-wrapper .about-main .about-desc h2 {
+    font-size: 34px;
+  }
+  .about-wrapper .about-main .about-desc p {
+    font-size: 15px;
+  }
+  .about-wrapper .about-main .about-desc .about-skills span {
+    font-size: 14px;
+  }
+  .site-wrapper .resume-wrapper .resume-pdf-view {
+    width: 420px;
+    height: 620px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+    margin-right: 70px;
+  }
+  .about-wrapper .about-main {
+    flex-direction: column;
+    min-width: 250px;
+    padding: 40px;
+    height: 1700px;
+    margin: 0 auto;
+  }
+  .about-wrapper .about-main .meg {
+    min-width: 400px;
+    min-height: 30vh;
+    margin-top: 12px;
+    border-radius: 30px;
+  }
+  .about-wrapper .about-main .about-desc h2 {
+    font-size: 34px;
+  }
+  .about-wrapper .about-main .about-desc p {
+    font-size: 15px;
+  }
+  .about-wrapper .about-main .about-desc .about-skills span {
+    font-size: 14px;
+  }
+  .site-wrapper .resume-wrapper .resume-pdf-view {
+    width: 420px;
+    height: 620px;
+  }
+}
 @media screen and (max-width: 600px) {
   .projects-wrapper .projects-header {
     font-size: 22px;
