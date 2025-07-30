@@ -949,9 +949,7 @@ h6 {
 }
 .about-wrapper .about-main {
   margin-top: 200px;
-  background-color: rgba(255, 255, 255, 0.09);
-  box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.02);
-  width: 1400px;
+  background-color: pink;
   height: 700px;
   border-radius: 40px;
   margin: 0 auto;
@@ -971,10 +969,6 @@ h6 {
   background-size: contain;
   object-fit: contain;
   filter: grayscale(10%);
-}
-.about-wrapper .about-main:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.03);
 }
 .about-wrapper .about-main:hover img {
   filter: grayscale(0%);
