@@ -631,6 +631,7 @@ h6 {
 .home-wrapper .home-desc-wrapper {
   position: relative;
   z-index: 2;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -665,6 +666,7 @@ h6 {
   transform: translateY(15px);
   animation: fadeInUp 1s forwards;
   animation-delay: 0.8s;
+  height: 150px;
 }
 .home-wrapper .socials .social-box a {
   margin: 0 0.5rem;
@@ -921,7 +923,7 @@ h6 {
   background-color: white;
   padding: 30px;
   border-radius: 20px;
-  font-family: motReg;
+  font-family: pop;
 }
 
 #projects,
