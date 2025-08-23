@@ -11,7 +11,7 @@
   import Osaka from "$lib/images/Osaka.jpg";
   import FD from "$lib/images/FreezeDry.png";
   import oddJobs from "$lib/images/oddJobs.png";
-
+  import thomasF from "$lib/images/thomasFielding.png";
   import { page } from "$app/stores";
   import { onMount } from "svelte";
 
@@ -36,33 +36,34 @@
   <meta property="og:description" content="Megan Palmquist Portfolio" />
 </svelte:head>
 
-<div class="home-wrapper" id="home">
-  <div class="home-desc-wrapper">
-    <div class="background"></div>
-    <div class="home-desc">
-      <div class="home-con hiddenbottom2">
-        <p class="intro">Hello, my name is</p>
-        <h1><span class="name">Megan Palmquist </span></h1>
-        <h1>
-          a creative web designer weaving color, code, and stories into
-          scroll-stopping digital experiences!
-        </h1>
-      </div>
+<div class="frosted-glass">
+  <video autoplay muted loop playsinline src="/src/lib/images/Background.mp4"
+  ></video>
+  <div class="home-wrapper" id="home">
+    <div class="home-desc-wrapper">
+      <div class="background"></div>
+      <div class="home-desc">
+        <div class="home-con hiddenbottom2">
+          <p class="intro">Hello, my name is</p>
+          <div class="megpal">Megan Palmquist</div>
+          <h2>I craft clean, engaging websites with purpose and style.</h2>
+        </div>
 
-      <div class="socials hiddenbottom3">
-        <div class="social-box">
-          <a
-            href="https://www.linkedin.com/in/megan-palmquist/"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/megpalmq" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.instagram.com/megannstone_/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+        <div class="socials hiddenbottom3">
+          <div class="social-box">
+            <a
+              href="https://www.linkedin.com/in/megan-palmquist/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/megpalmq" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/megannstone_/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -115,6 +116,45 @@
           <span>HTML</span>
           <span>JavaScript</span>
           <span>jQuery</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-box hidden">
+      <a href="https://www.thomasfielding.com/" target="_blank">
+        <img src={thomasF} alt="" /></a
+      >
+
+      <div class="project-desc">
+        <a
+          href="https://www.thomasfielding.com/"
+          class="arrow-link"
+          target="_blank"
+        >
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a
+          href="https://www.thomasfielding.com/"
+          class="project-title"
+          target="_blank"
+        >
+          <h3>Portfolio & E-Commerce Site</h3>
+        </a>
+        <p class="date">Summer 2025</p>
+        <p class="desc">
+          I redesigned Thomas Fielding's WordPress portfolio website to create a
+          cleaner, more professional platform for showcasing his work. Alongside
+          the design refresh, I also integrated an e-commerce solution for
+          selling his sheet music. To protect his digital products, I
+          implemented a dynamic watermark system that applies a unique watermark
+          to each purchased sheet, ensuring security while maintaining a
+          seamless customer experience.
+        </p>
+        <div class="project-skills">
+          <span>Wordpress</span>
+          <span>E-Commerce Integration (WooCommerce)</span>
+          <br />
+          <br />
+          <span>Client Engagement</span>
         </div>
       </div>
     </div>
@@ -230,42 +270,6 @@
           <span>JavaScript</span>
           <span>API</span>
           <span>Database</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-box hidden">
-      <a
-        href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/oldProjects/homework-seven/homework-seven/"
-        target="_blank"
-      >
-        <img src={travel} alt="" /></a
-      >
-
-      <div class="project-desc">
-        <a
-          href="https://in-info-web4.luddy.indianapolis.iu.edu/~megpalmq/oldProjects/homework-seven/homework-seven/"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://github.com/n215-megpalmq/homework-seven"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>TravelFly</h3>
-        </a>
-        <p class="date">Fall 2023</p>
-        <p class="desc">
-          This is a frontend project that employs a travel booking platform with
-          a wide variety of bookings.
-        </p>
-        <div class="project-skills">
-          <span>HTML</span>
-          <span>SCSS</span>
-          <span>jQuery</span>
-          <span>MVC</span>
         </div>
       </div>
     </div>

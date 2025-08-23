@@ -37,7 +37,7 @@
     max-width: 50%;
     h2 {
       font-size: 50px;
-      color: $white;
+      color: rgb(87, 58, 104);
       transition: ease 0.35s;
       font-size: 45px;
       span {
@@ -47,11 +47,11 @@
     }
     p {
       margin-top: 10px;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-family: pop;
       line-height: 20px;
+      color: rgb(87, 58, 104);
       .ha {
-        color: rgb(55, 30, 73);
+        color: rgb(87, 58, 104);
         transition: ease 0.35s;
       }
     }
@@ -62,7 +62,7 @@
       row-gap: 10px;
       span {
         color: $white;
-        font-family: motReg;
+        font-family: pop;
         font-weight: 500;
         margin: 0 3px;
         padding: 2px 12px;
@@ -73,6 +73,8 @@
         transition: ease 0.2s;
         &:hover {
           border: 2px solid $white;
+          background-color: aliceblue;
+          color: rgb(87, 58, 104);
         }
       }
     }

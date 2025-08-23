@@ -33,9 +33,9 @@
       <h2>Nice to meet you!</h2>
       <p>
         <br />
-        Hi, Im Megan. I make websites that move, glow, scroll, and speak. Sometimes
-        literally. Im a web and graphic designer who likes to blur the line between
-        functional and fun—because why not make things work and look cool doing it?
+        Hi, I'm Megan. I make websites that move, glow, scroll… and sometimes even
+        talk. I'm a web and graphic designer who likes mixing function with a little
+        bit of fun—because why not make things work and look cool?
         <br />
         <br /> I'm currently studying Media Arts and Science at IU Indianapolis,
         specializing in web design, development, and digital storytelling. I'm
@@ -46,14 +46,13 @@
         <br /> <br />
         I spend a lot of time experimenting—whether that's with code, color, or the
         perfect hover state. I care about the little things. The way a page feels.
-        The way a design communicates before you even read it. I want the work to
-        feel alive, and I want people to feel something when they see it.
+        The way a design communicates before you even read it.
         <br />
         <br /> Lately, I've been building with tools like React, Next.js, and
         jQuery. I design in Figma, animate with CSS and JavaScript, and
         occasionally break things just to figure out how to fix them. I love
-        learning new tools, exploring new styles, and geeking out over details
-        most people would scroll right past.
+        trying out new tools, experimenting with styles, and obsessing over the
+        details most people scroll right past.
         <br />
         <br />
         And yes, I'm probably thinking about fonts right now.

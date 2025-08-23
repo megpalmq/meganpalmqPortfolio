@@ -70,6 +70,7 @@
         margin: 0 auto;
         .project-skills {
           margin-top: 0px;
+          padding: 10px;
           display: flex;
           span {
             font-size: 13px;
@@ -265,6 +266,7 @@
           flex-wrap: wrap;
           row-gap: 10px;
           margin-top: 40px;
+          padding: 20px;
           span {
             font-size: 20px;
             padding: 2px 5px;
@@ -364,6 +366,7 @@
         .project-skills {
           display: flex;
           width: 100%;
+          padding: 10px;
           flex-wrap: wrap;
           row-gap: 10px;
           margin-top: 20px;
@@ -569,11 +572,11 @@
           display: flex;
           width: 100%;
           flex-wrap: wrap;
+          padding: 10px;
           row-gap: 10px;
-          margin-top: 10px;
           span {
             font-size: 16px;
-            padding: 2px 5px;
+            padding: 10px 5px;
           }
         }
         .desc {
@@ -613,7 +616,7 @@
       width: 350px;
       flex-direction: column;
       align-items: center;
-      height: 830px;
+      height: 950px;
       img {
         width: 280px;
         height: 260px;
@@ -631,10 +634,10 @@
           width: 100%;
           flex-wrap: wrap;
           row-gap: 10px;
-          margin-top: 10px;
+
           span {
             font-size: 16px;
-            padding: 2px 5px;
+            padding: 10px 10px;
           }
         }
         .desc {
@@ -685,7 +688,7 @@
   }
 }
 
-@media screen and (max-width: 553px) {
+@media screen and (max-width: 600px) {
   .site-wrapper {
     .home-wrapper {
       .home-desc {
@@ -715,6 +718,60 @@
         margin-left: 5px;
         .social-box {
           width: 100%;
+        }
+      }
+    }
+  }
+  .projects-wrapper {
+    .projects-header {
+      font-size: 22px;
+      width: 100%;
+      padding: 10px;
+    }
+    .project-box {
+      width: 450px;
+      flex-direction: column;
+      align-items: center;
+      height: 900px;
+      img {
+        width: 280px;
+        height: 260px;
+        object-fit: cover;
+        margin-bottom: 6px;
+        margin-top: 0;
+      }
+
+      .project-desc {
+        width: 90%;
+        margin: 0 auto;
+
+        .project-skills {
+          display: flex;
+          width: 100%;
+          flex-wrap: wrap;
+          row-gap: 10px;
+
+          span {
+            font-size: 16px;
+            padding: 10px 10px;
+          }
+        }
+        .desc {
+          font-size: 14px;
+
+          min-height: 350px;
+        }
+        .date {
+          font-size: 12px;
+        }
+        .arrow-link {
+          display: none;
+        }
+        .project-title {
+          h3 {
+            font-size: 22px;
+            margin-top: 20px;
+          }
         }
       }
     }
