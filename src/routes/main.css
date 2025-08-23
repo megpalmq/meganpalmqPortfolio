@@ -979,6 +979,7 @@ h6 {
   padding: 24px 28px;
   transition: ease 0.4s;
   z-index: 9;
+  will-change: transform, opacity;
 }
 .projects-wrapper .project-box:hover {
   transform: scale(1.05);
@@ -1764,6 +1765,58 @@ h6 {
 }
 @media screen and (max-width: 465px) {
   .border .seemore {
+    font-size: 23px;
+  }
+  .projects-wrapper .projects-header {
+    font-size: 22px;
+    width: 100%;
+    padding: 10px;
+  }
+  .projects-wrapper .project-box {
+    width: 350px;
+    flex-direction: column;
+    align-items: center;
+    height: 980px;
+  }
+  .projects-wrapper .project-box img {
+    width: 280px;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 6px;
+    margin-top: 0;
+  }
+  .projects-wrapper .project-box .project-desc {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .projects-wrapper .project-box .project-desc .project-skills {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .projects-wrapper .project-box .project-desc .project-skills span {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  .projects-wrapper .project-box .project-desc .desc {
+    font-size: 14px;
+    min-height: 350px;
+  }
+  .projects-wrapper .project-box .project-desc .date {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+  .projects-wrapper .project-box .project-desc .arrow-link {
+    display: none;
+  }
+  .projects-wrapper .project-box .project-desc .project-title h3 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .border .seemore {
     font-size: 13px;
   }
   .projects-wrapper .projects-header {
@@ -1811,105 +1864,6 @@ h6 {
   .projects-wrapper .project-box .project-desc .project-title h3 {
     font-size: 22px;
     margin-top: 20px;
-  }
-}
-@media screen and (max-width: 440px) {
-  .site-wrapper .resume-header h1 {
-    font-size: 40px;
-    margin-top: 20px;
-  }
-  .site-wrapper .resume-wrapper .resume-pdf-view {
-    width: 350px;
-    height: 500px;
-  }
-  .site-wrapper .box-holder {
-    overflow: visible;
-    height: fit-content;
-    width: fit-content;
-    margin-left: 950px;
-    margin-top: 260px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .site-wrapper .home-wrapper .home-desc {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .site-wrapper .home-wrapper .home-desc .intro {
-    font-size: 18px;
-    padding: 20px;
-  }
-  .site-wrapper .home-wrapper .home-desc h1 {
-    font-size: 24px;
-    max-width: 330px;
-  }
-  .site-wrapper .home-wrapper .home-desc .name {
-    justify-content: center;
-    font-size: 55px;
-    text-align: center;
-    padding: 10px;
-  }
-  .site-wrapper .home-wrapper .socials {
-    width: 94%;
-    margin-top: 20px;
-    margin-left: 5px;
-  }
-  .site-wrapper .home-wrapper .socials .social-box {
-    width: 100%;
-  }
-  .projects-wrapper .projects-header {
-    font-size: 22px;
-    width: 100%;
-    padding: 10px;
-  }
-  .projects-wrapper .project-box {
-    width: 450px;
-    flex-direction: column;
-    align-items: center;
-    height: 900px;
-  }
-  .projects-wrapper .project-box img {
-    width: 280px;
-    height: 260px;
-    object-fit: cover;
-    margin-bottom: 6px;
-    margin-top: 0;
-  }
-  .projects-wrapper .project-box .project-desc {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .projects-wrapper .project-box .project-desc .project-skills {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    row-gap: 10px;
-  }
-  .projects-wrapper .project-box .project-desc .project-skills span {
-    font-size: 16px;
-    padding: 10px 10px;
-  }
-  .projects-wrapper .project-box .project-desc .desc {
-    font-size: 14px;
-    min-height: 350px;
-  }
-  .projects-wrapper .project-box .project-desc .date {
-    font-size: 12px;
-  }
-  .projects-wrapper .project-box .project-desc .arrow-link {
-    display: none;
-  }
-  .projects-wrapper .project-box .project-desc .project-title h3 {
-    font-size: 22px;
-    margin-top: 20px;
-  }
-  .site-wrapper .resume-wrapper .resume-pdf-view {
-    width: 300px;
-    height: 400px;
-  }
-  .border .seemore {
-    font-size: 35px;
   }
 }
 

@@ -495,6 +495,7 @@
     padding: 24px 28px;
     transition: ease 0.4s;
     z-index: 9;
+     will-change: transform, opacity;
     &:hover {
       transform: scale(1.05);
       transition: ease 0.4s;
