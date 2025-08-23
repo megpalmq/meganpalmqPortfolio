@@ -11,7 +11,7 @@
   import Osaka from "$lib/images/Osaka.jpg";
   import FD from "$lib/images/FreezeDry.png";
   import oddJobs from "$lib/images/oddJobs.png";
-  import thomasF from "$lib/images/thomasFielding.png";
+  import thomasF from "$lib/images/thomasfielding.png";
   import { page } from "$app/stores";
   import { onMount } from "svelte";
 
