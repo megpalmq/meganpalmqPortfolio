@@ -37,7 +37,13 @@
 </svelte:head>
 
 <div class="frosted-glass">
-  <video autoplay muted loop playsinline src="/src/lib/images/Background.mp4"
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    src="/public/Background.mp4"
+    type="video/mp4"
   ></video>
   <div class="home-wrapper" id="home">
     <div class="home-desc-wrapper">
