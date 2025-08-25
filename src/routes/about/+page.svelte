@@ -62,6 +62,7 @@
         <span>CSS</span>
         <span>SCSS</span>
         <span>Javascript</span>
+        <span>WordPress</span>
         <span>jQuery</span>
         <span>Typescript</span>
         <span>PHP</span>
