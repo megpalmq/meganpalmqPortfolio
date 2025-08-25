@@ -30,6 +30,10 @@ body {
   font-family: pop;
   src: url(../lib/fonts/Poppins-Regular.ttf);
 }
+@font-face {
+  font-family: mango;
+  src: url(../lib/fonts/black-mango-regular.ttf);
+}
 p {
   margin-bottom: 16px;
   color: #ffffff;
@@ -269,7 +273,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 0 6px rgba(46, 9, 56, 0.006);
 }
@@ -305,6 +309,7 @@ h6 {
   background-position: 100%;
   display: inline-block;
   padding: 5px 0;
+  color: #5a3572;
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -357,7 +362,7 @@ h6 {
   margin-top: 16px;
   width: 100%;
   width: 350px;
-  font-family: motReg;
+  font-family: pop;
   font-weight: 700;
   font-size: 28px;
   opacity: 1;
@@ -371,7 +376,7 @@ h6 {
 .nav-holder .logo a .mobile-logo {
   display: none;
   margin-top: 16px;
-  font-family: motReg;
+  font-family: pop;
   font-weight: 700;
   font-size: 32px;
   opacity: 1;
@@ -409,7 +414,7 @@ h6 {
   z-index: 50;
 }
 .nav-holder .hamburger-icon div {
-  background-color: #ffffff;
+  background-color: #5a3572;
   width: 34px;
   height: 3px;
   margin: 8px 0;
@@ -487,7 +492,7 @@ h6 {
   background-color: rgb(46, 9, 56);
 }
 
-@media (max-aspect-ratio: 1/1) {
+@media (max-width: 1095px) {
   .nav-holder nav {
     display: none;
   }
@@ -538,7 +543,7 @@ h6 {
   align-items: center;
   min-height: 100vh;
   padding: 4rem 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: pop;
 }
 .frosted-glass video {
   width: 100vw;
@@ -696,7 +701,7 @@ h6 {
 .home-desc .megpal {
   font-weight: 700;
   font-size: 50px;
-  color: #37064e;
+  color: #5e2a72;
 }
 .home-desc h2 {
   color: #5e2a72;

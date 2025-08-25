@@ -29,6 +29,11 @@ body {
   font-family: pop;
   src: url(../lib/fonts/Poppins-Regular.ttf);
 }
+
+@font-face {
+  font-family: mango;
+  src: url(../lib/fonts/black-mango-regular.ttf);
+}
 p {
   margin-bottom: 16px;
   color: $white;

@@ -5,7 +5,7 @@
   min-height: 100vh;
   padding: 4rem 1rem;
 
-  font-family: "Poppins", sans-serif;
+  font-family: pop;
   video {
     width: 100vw;
     height: 100%;
@@ -191,7 +191,7 @@
   .megpal {
     font-weight: 700;
     font-size: 50px;
-    color: #37064e;
+    color: #5e2a72;
   }
   h2 {
     color: #5e2a72;
@@ -495,7 +495,7 @@
     padding: 24px 28px;
     transition: ease 0.4s;
     z-index: 9;
-     will-change: transform, opacity;
+    will-change: transform, opacity;
     &:hover {
       transform: scale(1.05);
       transition: ease 0.4s;
