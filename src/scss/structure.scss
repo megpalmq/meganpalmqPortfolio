@@ -34,6 +34,10 @@ body {
   font-family: mango;
   src: url(../lib/fonts/black-mango-regular.ttf);
 }
+@font-face {
+  font-family: sino;
+  src: url(../lib/fonts/Sinoreta.otf);
+}
 p {
   margin-bottom: 16px;
   color: $white;

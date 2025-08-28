@@ -34,6 +34,10 @@ body {
   font-family: mango;
   src: url(../lib/fonts/black-mango-regular.ttf);
 }
+@font-face {
+  font-family: sino;
+  src: url(../lib/fonts/Sinoreta.otf);
+}
 p {
   margin-bottom: 16px;
   color: #ffffff;
@@ -617,7 +621,8 @@ h6 {
 .home-wrapper {
   position: relative;
   max-width: 1000px;
-  padding: 4rem 3rem;
+  margin: 0 auto;
+  padding: 4rem;
   border-radius: 25px;
   text-align: center;
   /* Soft glass effect */
@@ -636,11 +641,10 @@ h6 {
 .home-wrapper .home-desc-wrapper {
   position: relative;
   z-index: 2;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -653,39 +657,18 @@ h6 {
 .home-wrapper .home-con p.intro {
   font-size: 1.4rem;
   color: #333;
-  margin-bottom: 1rem;
 }
 .home-wrapper .home-con h1 {
   font-size: 2rem;
   color: #fff;
   line-height: 1.3;
-  margin-bottom: 1rem;
 }
 .home-wrapper .home-con h1 .name {
   font-weight: 700;
   color: #222;
 }
-.home-wrapper .socials {
-  margin-top: 2rem;
-  opacity: 0;
-  transform: translateY(15px);
-  animation: fadeInUp 1s forwards;
-  animation-delay: 0.8s;
-  height: 150px;
-}
-.home-wrapper .socials .social-box a {
-  margin: 0 0.5rem;
-  font-size: 1.6rem;
-  color: #555;
-  transition: all 0.2s ease;
-}
-.home-wrapper .socials .social-box a:hover {
-  color: #000;
-  transform: scale(1.2);
-}
 
 .home-desc {
-  height: 35vh;
   display: flex;
   flex-direction: column;
   z-index: 20;
@@ -696,12 +679,25 @@ h6 {
   -webkit-text-stroke: 1px #5e2a72;
   font-size: 28px;
   letter-spacing: 1.5px;
-  margin-bottom: 50px;
 }
 .home-desc .megpal {
+  font-family: sino;
   font-weight: 700;
   font-size: 50px;
   color: #5e2a72;
+  background-image: url(../lib/images/SVG/Asset4.svg);
+  width: 100%;
+  background-size: contain; /* fit the whole image */
+  background-position: center;
+  background-repeat: no-repeat; /* prevent tiling */
+  height: 18vh;
+}
+.home-desc .fancy-text {
+  font-family: sino;
+  font-size: 3rem;
+  font-variant-ligatures: discretionary-ligatures;
+  font-feature-settings: "swsh" 1, "liga" 1, "dlig" 1;
+  line-height: 1.2;
 }
 .home-desc h2 {
   color: #5e2a72;

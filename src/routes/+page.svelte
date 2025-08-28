@@ -45,7 +45,8 @@
       <div class="home-desc">
         <div class="home-con hiddenbottom2">
           <p class="intro">Hello, my name is</p>
-          <div class="megpal">Megan Palmquist</div>
+          <br>
+          <div class="megpal fancy-text"></div>
           <h2>I craft clean, engaging websites with purpose and style.</h2>
         </div>
 
@@ -70,11 +71,11 @@
   </div>
 </div>
 <div class="border">
-  <div class="seemore">
+  <!-- <div class="seemore">
     <a style="text-decoration: none; color: black" href="#projects">
       See my projects <i class="fa-solid fa-angle-down"></i></a
     >
-  </div>
+  </div> -->
 </div>
 
 <div class="projects-wrapper" id="projects">

@@ -32,31 +32,17 @@
     <div class="about-desc">
       <h2>Nice to meet you!</h2>
       <p>
-        <br />
-        Hi, I'm Megan. I make websites that move, glow, scroll… and sometimes even
-        talk. I'm a web and graphic designer who likes mixing function with a little
-        bit of fun—because why not make things work and look cool?
-        <br />
-        <br /> I'm currently studying Media Arts and Science at IU Indianapolis,
-        specializing in web design, development, and digital storytelling. I'm
-        also minoring in Graphic Design. Basically, I like building sleek,
-        creative websites that actually work the way you want them to. And if I
-        can sneak in some unexpected animations or weird typography choices,
-        even better.
-        <br /> <br />
-        I spend a lot of time experimenting—whether that's with code, color, or the
-        perfect hover state. I care about the little things. The way a page feels.
-        The way a design communicates before you even read it.
-        <br />
-        <br /> Lately, I've been building with tools like React, Next.js, and
-        jQuery. I design in Figma, animate with CSS and JavaScript, and
-        occasionally break things just to figure out how to fix them. I love
-        trying out new tools, experimenting with styles, and obsessing over the
-        details most people scroll right past.
-        <br />
-        <br />
-        And yes, I'm probably thinking about fonts right now.
-      </p>
+  Hi, I'm Megan. I'm into a lot of different corners of design—front-end web, UX/UI, brand design, etc. I like combining the technical side of coding with the creative side of design to build things that not only work but also feel good to use.
+  <br><br>
+  I'm studying Media Arts and Science at IU Indianapolis, focusing on web design, development, and digital storytelling, with a minor in Graphic Design. That's given me the chance to dive into both the coding side of projects and the storytelling side of design.
+  <br><br>
+  What I really care about is how things feel. A page that scrolls just right, a logo that makes sense for the brand, a color palette that communicates before you even read the text. I like the details—the small stuff most people don't notice but would miss if it wasn't there.
+  <br><br>
+  I work with tools like React, Next.js, and jQuery for building, and Figma and Adobe for design. I love experimenting, breaking things, fixing them, and finding new ways to make my work a little more fun and a little more unexpected.
+  <br><br>
+  And yeah… I'm almost always thinking about fonts.
+</p>
+
       <div class="about-skills">
         <span>HTML</span>
         <span>CSS</span>
