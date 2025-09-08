@@ -19,10 +19,6 @@ body {
 }
 
 @font-face {
-  font-family: motReg;
-  src: url(../lib/fonts/MotleyForcesRegular-w1rZ3.ttf);
-}
-@font-face {
   font-family: gum;
   src: url(../lib/fonts/static/SourGummy-Medium.ttf);
 }
@@ -1247,7 +1243,7 @@ h6 {
   height: 735px;
 }
 .resume-wrapper .resume-pdf-view a {
-  font-family: motReg;
+  font-family: pop;
   font-weight: 600;
   font-size: 24px;
   text-decoration: underline;
@@ -1280,7 +1276,7 @@ h6 {
   color: #ffffff;
   background-color: #0d0e11;
   text-decoration: none;
-  font-family: motReg;
+  font-family: pop;
   font-weight: 200;
   font-size: 22px;
 }

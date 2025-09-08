@@ -31,7 +31,7 @@
         <p>
           Your web browser doesn't support this PDF. Instead, you can view my
           Resume <a
-            href="https://drive.google.com/file/d/1Bd1CbvA5_lPUaEXqu6CtKGWyj0QTlLf3/view?usp=sharing"
+            href="https://drive.google.com/file/d/1rCCFNbGNlI2Twq2hIEN_NryIPx1DZT8I/view?usp=sharing"
             target="_blank">Here</a
           > or click the download button below.
         </p>
