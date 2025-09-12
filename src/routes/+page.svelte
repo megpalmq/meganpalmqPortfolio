@@ -47,7 +47,7 @@
           <p class="intro">Hello, my name is</p>
           <br>
           <div class="megpal fancy-text"></div>
-          <h2>I craft clean, engaging websites with purpose and style.</h2>
+          <h2>I bring creativity to life through design, detail, and purpose.</h2>
         </div>
 
         <div class="socials hiddenbottom3">
