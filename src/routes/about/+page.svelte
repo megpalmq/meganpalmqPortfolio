@@ -44,6 +44,9 @@
 </p>
 
       <div class="about-skills">
+
+        <div class="skills-category1">
+        <h3>Development:</h3>
         <span>HTML</span>
         <span>CSS</span>
         <span>SCSS</span>
@@ -53,10 +56,20 @@
         <span>Typescript</span>
         <span>PHP</span>
         <span>SQL</span>
-        <span>Figma</span>
-        <span>React</span>
         <span>Svelte</span>
         <span>Next.js</span>
+        </div>
+        <div class="skills-category2">
+        <h3>Design:</h3>
+        <span>Figma</span>
+        <span>Adobe Creative Suite</span>
+        <br>
+        <span>UX/UI Design</span>
+        <span>Branding</span>
+        <span>Wireframing</span>
+        <span>Prototyping</span>
+        </div>
+        
       </div>
     </div>
   </div>
@@ -81,6 +94,9 @@
       </div>
       <div class="company-img hidden-about">
         <img src={ENJ} alt="Ever New Joy" />
+        <br>
+        <br>
+        <p style="font-family: pop;  color: rgb(87, 58, 104);">I designed that ^  :) </p>
       </div>
     </div>
   </div>

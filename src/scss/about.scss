@@ -6,7 +6,7 @@
     margin-top: 200px;
     background-color: rgba($color: $white, $alpha: 0.09);
     box-shadow: 0 0 0 12px rgba($color: $white, $alpha: 0.02);
-    height: 700px;
+    height: 750px;
     border-radius: 40px;
     margin: 0 auto;
     display: flex;
@@ -57,24 +57,92 @@
     }
     .about-skills {
       margin-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      row-gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 23px;
+      width: 100%;
+
+      h3 {
+        margin-bottom: 10px;
+        color: rgb(87, 58, 104);
+      }
+
+      .skills-category1,
+      .skills-category2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
       span {
+        display: inline-block;
         color: $white;
         font-family: pop;
         font-weight: 500;
-        margin: 0 3px;
-        padding: 2px 12px;
+        padding: 4px 12px;
         background-color: $dark-red;
         border-radius: 40px;
         cursor: pointer;
         border: 2px solid $dark-red;
         transition: ease 0.2s;
+
         &:hover {
           border: 2px solid $white;
-          background-color: aliceblue;
+          background-color: transparent;
           color: rgb(87, 58, 104);
+        }
+      }
+    }
+    ut-skills {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 23px;
+      width: 100%;
+
+      .skills-category1 {
+        display: inline-block;
+        margin-top: 10px;
+        span {
+          color: $white;
+          font-family: pop;
+          font-weight: 500;
+          padding: 2px 12px;
+          background-color: $dark-red;
+          border-radius: 40px;
+          cursor: pointer;
+          border: 2px solid $dark-red;
+          transition: ease 0.2s;
+          margin-top: 10px;
+          &:hover {
+            border: 2px solid $white;
+            background-color: transparent;
+            color: rgb(87, 58, 104);
+          }
+        }
+      }
+      .skills-category2 {
+        display: inline-block;
+        margin-top: 10px;
+        span {
+          color: $white;
+          font-family: pop;
+          font-weight: 500;
+          margin: 0 3px;
+          padding: 2px 12px;
+          background-color: $dark-red;
+          border-radius: 40px;
+          cursor: pointer;
+          border: 2px solid $dark-red;
+          transition: ease 0.2s;
+          &:hover {
+            border: 2px solid $white;
+            background-color: transparent;
+            color: rgb(87, 58, 104);
+          }
         }
       }
     }

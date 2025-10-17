@@ -41,7 +41,7 @@
       $grey 50%,
       $white 50%
     );
-    background-size: 200% 100%;
+    background-size: 210% 100%;
     background-position: 100%;
     display: inline-block;
     padding: 5px 0;
@@ -64,7 +64,7 @@
       left: 0;
       transform-origin: left;
       transform: scaleX(0);
-      transition: transform 0.14s ease-in-out;
+      transition: transform 0.19s ease-in-out;
     }
     &:hover {
       background-position: 0;

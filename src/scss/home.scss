@@ -593,7 +593,8 @@
       transition: ease 0.2s;
       &:hover {
         border: 2px solid $white;
-        background-color: #bcb2e7;
+        background-color: transparent;
+        color: #5e2a72;
       }
     }
   }

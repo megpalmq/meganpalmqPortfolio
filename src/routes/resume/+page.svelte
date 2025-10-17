@@ -1,7 +1,7 @@
 <script>
   import { page } from "$app/stores";
   import { onMount } from "svelte";
-  import Resume from "$lib/images/meganPalmquistResume.pdf";
+  import Resume from "$lib/images/MPalmquistResume.pdf";
   import port from "$lib/images/portfolio.png";
 
   let currentUrl;
@@ -16,14 +16,14 @@
 </script>
 
 <svelte:head>
-  <title>Resume</title>
+  <title>Résumé</title>
   <meta name="description" content="My resume" />
   <meta property="og:image" content={port} />
 </svelte:head>
 
 <div class="resume-wrapper">
   <div class="resume-header">
-    <h1><span>Resume</span></h1>
+    <h1><span>Résumé</span></h1>
   </div>
   <div class="resume-pdf">
     <div class="resume-pdf-view">

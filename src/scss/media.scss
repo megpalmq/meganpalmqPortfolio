@@ -17,26 +17,7 @@
       }
     }
   }
-  .about-wrapper {
-    margin: 130px auto 0 auto;
-    .about-main {
-      flex-direction: column;
-      max-width: 500px;
-      min-width: 500px;
-      height: 1100px;
-      img {
-        width: 400px;
-        height: 300px;
-        margin-top: 22px;
-        object-position: 30% 30%;
-      }
-      .about-desc {
-        max-width: 86%;
-        margin-top: 20px;
-        padding-bottom: 10px;
-      }
-    }
-  }
+
   .home-wrapper {
     .home-desc {
       .intro {
@@ -167,11 +148,10 @@
     }
   }
 }
-
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1700px) {
   .about-main {
     max-width: 100%;
-    min-height: 880px;
+    min-height: 1080px;
     .about-desc {
       h2 {
         font-size: 40px;
@@ -188,6 +168,42 @@
         img {
           width: 140px;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .about-main {
+    max-width: 100%;
+    min-height: 1080px;
+    .about-desc {
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+  .companies {
+    .company-header {
+      font-size: 20px;
+    }
+    .company-box {
+      .company-img {
+        padding: 30px;
+        img {
+          width: 140px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about-main {
+    max-width: 100%;
+    min-height: 1300px;
+    .about-desc {
+      h2 {
+        font-size: 40px;
       }
     }
   }
@@ -217,6 +233,33 @@
       width: fit-content;
       margin-left: 1250px;
       margin-top: 50px;
+    }
+  }
+}
+@media screen and (max-width: 950px) {
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+
+    .about-main {
+      flex-direction: column;
+      width: 90%;
+      max-width: 800px;
+      min-width: unset;
+      align-items: center;
+
+      img {
+        width: 400px;
+        height: 500px;
+        margin-top: 22px;
+        object-position: 30% 30%;
+      }
+
+      .about-desc {
+        width: 90%;
+        max-width: 600px;
+        margin-top: 20px;
+        padding-bottom: 10px;
+      }
     }
   }
 }
@@ -411,14 +454,51 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 615px) {
   .about-wrapper {
     margin: 130px auto 0 auto;
     .about-main {
       flex-direction: column;
       max-width: 370px;
       min-width: 370px;
-      height: 1750px;
+      height: 1850px;
+      .meg {
+        min-width: 300px;
+        min-height: 60vh;
+        margin-top: 12px;
+      }
+      .about-desc {
+        h2 {
+          font-size: 34px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .about-skills {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .site-wrapper {
+    .resume-wrapper {
+      .resume-pdf-view {
+        width: 420px;
+        height: 620px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 465px) {
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+    .about-main {
+      flex-direction: column;
+      max-width: 370px;
+      min-width: 370px;
+      height: 1850px;
       .meg {
         min-width: 300px;
         min-height: 60vh;
@@ -490,7 +570,7 @@
     }
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 460px) {
   .about-wrapper {
     margin: 130px auto 0 auto;
     margin: 0 auto;
@@ -499,7 +579,7 @@
     .about-main {
       flex-direction: column;
       width: 320px;
-      height: 1750px;
+      height: 1850px;
       margin: 0 auto;
       .meg {
         min-width: 200px;
