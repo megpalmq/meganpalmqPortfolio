@@ -7,6 +7,7 @@
   import keurig from "$lib/images/keurig.png";
   import DFD from "$lib/images/DFD.png";
   import CYS from "$lib/images/CYS.png";
+  import BL from "$lib/images/bloodletting.png";
   import FOV from "$lib/images/FOV.png";
   import Osaka from "$lib/images/Osaka.jpg";
   import FD from "$lib/images/FreezeDry.png";
@@ -195,6 +196,39 @@
           <span>HTML</span>
           <span>JavaScript</span>
           <span>jQuery</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-box hidden">
+      <a href="https://bloodletting.vercel.app/" target="_blank">
+        <img src={BL} alt="" /></a
+      >
+
+      <div class="project-desc">
+        <a
+          href="https://bloodletting.vercel.app/"
+          class="arrow-link"
+          target="_blank"
+        >
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a
+          href="https://github.com/megpalmq/bloodletting"
+          class="project-title"
+          target="_blank"
+        >
+          <h3>Bloodletting</h3>
+        </a>
+        <p class="date">Summer 2025</p>
+        <p class="desc">
+          I collaborated with Witless Crusade Games to design and develop the official website for their asymmetric board game, Bloodletting. The site introduces the game's dark, apocalyptic world through immersive visuals, smooth scroll animations, and responsive layouts. It highlights each of the four factions — War, Death, Famine, and Pestilence — with distinctive imagery and motion to reflect their unique identities, creating an atmospheric and engaging online showcase for the game.
+        </p>
+        <div class="project-skills">
+          <span>HTML5</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Responsive Designerk</span>
+          <span>UI Animation</span>
         </div>
       </div>
     </div>
