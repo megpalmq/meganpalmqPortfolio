@@ -546,43 +546,43 @@
     }
   }
 }
-@media screen and (max-width: 465px) {
-  .about-wrapper {
-    margin: 130px auto 0 auto;
-    .about-main {
-      flex-direction: column;
-      max-width: 370px;
-      min-width: 370px;
-      height: 1850px;
-      .meg {
-        min-width: 300px;
-        min-height: 60vh;
-        margin-top: 12px;
-      }
-      .about-desc {
-        h2 {
-          font-size: 34px;
-        }
-        p {
-          font-size: 15px;
-        }
-        .about-skills {
-          span {
-            font-size: 14px;
-          }
-        }
-      }
-    }
-  }
-  .site-wrapper {
-    .resume-wrapper {
-      .resume-pdf-view {
-        width: 420px;
-        height: 620px;
-      }
-    }
-  }
-}
+// @media screen and (max-width: 465px) {
+//   .about-wrapper {
+//     margin: 130px auto 0 auto;
+//     .about-main {
+//       flex-direction: column;
+//       max-width: 370px;
+//       min-width: 370px;
+//       height: 1850px;
+//       .meg {
+//         width: 100px;
+//         height: 70vh;
+//         margin-top: 12px;
+//       }
+//       .about-desc {
+//         h2 {
+//           font-size: 34px;
+//         }
+//         p {
+//           font-size: 15px;
+//         }
+//         .about-skills {
+//           span {
+//             font-size: 14px;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .site-wrapper {
+//     .resume-wrapper {
+//       .resume-pdf-view {
+//         width: 420px;
+//         height: 620px;
+//       }
+//     }
+//   }
+// }
 
 @media screen and (max-width: 500px) {
   .about-wrapper {
@@ -597,8 +597,8 @@
       height: 1900px;
       margin: 0 auto;
       .meg {
-        min-width: 300px;
-        min-height: 35vh;
+        width: 200px;
+        height: 30vh;
         margin-top: 12px;
         border-radius: 30px;
       }
@@ -626,61 +626,61 @@
     }
   }
 }
-@media screen and (max-width: 460px) {
-  .about-wrapper {
-    margin: 130px auto 0 auto;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-right: 50px;
-    .about-main {
-      flex-direction: column;
-      width: 320px;
-      height: 1850px;
-      margin: 0 auto;
-      .meg {
-        width: 150px;
-        height: 10vh;
-        padding: 40px;
-        margin-top: 12px;
-        border-radius: 30px;
-      }
-      .about-desc {
-        h2 {
-          font-size: 34px;
-        }
-        p {
-          font-size: 15px;
-        }
-        .about-skills {
-          span {
-            font-size: 14px;
-          }
-        }
-      }
-    }
-    .companies {
-      .company-header {
-        font-size: 18px;
-      }
-      .company-box {
-        .company-img {
-          padding: 30px;
-          img {
-            width: 150px;
-          }
-        }
-      }
-    }
-  }
-  .site-wrapper {
-    .resume-wrapper {
-      .resume-pdf-view {
-        width: 420px;
-        height: 620px;
-      }
-    }
-  }
-}
+// @media screen and (max-width: 460px) {
+//   .about-wrapper {
+//     margin: 130px auto 0 auto;
+//     margin: 0 auto;
+//     margin-top: 100px;
+//     margin-right: 50px;
+//     .about-main {
+//       flex-direction: column;
+//       width: 320px;
+//       height: 1850px;
+//       margin: 0 auto;
+//       .meg {
+//         width: 100px !important;
+//         height: 40vh;
+//         padding: 20px;
+//         margin-top: 12px;
+//         border-radius: 30px;
+//       }
+//       .about-desc {
+//         h2 {
+//           font-size: 34px;
+//         }
+//         p {
+//           font-size: 15px;
+//         }
+//         .about-skills {
+//           span {
+//             font-size: 14px;
+//           }
+//         }
+//       }
+//     }
+//     .companies {
+//       .company-header {
+//         font-size: 18px;
+//       }
+//       .company-box {
+//         .company-img {
+//           padding: 30px;
+//           img {
+//             width: 150px;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .site-wrapper {
+//     .resume-wrapper {
+//       .resume-pdf-view {
+//         width: 420px;
+//         height: 620px;
+//       }
+//     }
+//   }
+// }
 @media screen and (max-width: 600px) {
   .projects-wrapper {
     .projects-header {

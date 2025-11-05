@@ -1353,7 +1353,7 @@ h6 {
   color: #ffffff;
   background-color: #0d0e11;
   text-decoration: none;
-  font-family: motReg;
+  font-family: pop;
   font-weight: 200;
   font-size: 22px;
 }
@@ -1791,35 +1791,6 @@ h6 {
     height: 620px;
   }
 }
-@media screen and (max-width: 465px) {
-  .about-wrapper {
-    margin: 130px auto 0 auto;
-  }
-  .about-wrapper .about-main {
-    flex-direction: column;
-    max-width: 370px;
-    min-width: 370px;
-    height: 1850px;
-  }
-  .about-wrapper .about-main .meg {
-    min-width: 300px;
-    min-height: 60vh;
-    margin-top: 12px;
-  }
-  .about-wrapper .about-main .about-desc h2 {
-    font-size: 34px;
-  }
-  .about-wrapper .about-main .about-desc p {
-    font-size: 15px;
-  }
-  .about-wrapper .about-main .about-desc .about-skills span {
-    font-size: 14px;
-  }
-  .site-wrapper .resume-wrapper .resume-pdf-view {
-    width: 420px;
-    height: 620px;
-  }
-}
 @media screen and (max-width: 500px) {
   .about-wrapper {
     margin: 130px auto 0 auto;
@@ -1835,8 +1806,8 @@ h6 {
     margin: 0 auto;
   }
   .about-wrapper .about-main .meg {
-    min-width: 300px;
-    min-height: 35vh;
+    width: 200px;
+    height: 30vh;
     margin-top: 12px;
     border-radius: 30px;
   }
@@ -1848,49 +1819,6 @@ h6 {
   }
   .about-wrapper .about-main .about-desc .about-skills span {
     font-size: 14px;
-  }
-  .site-wrapper .resume-wrapper .resume-pdf-view {
-    width: 420px;
-    height: 620px;
-  }
-}
-@media screen and (max-width: 460px) {
-  .about-wrapper {
-    margin: 130px auto 0 auto;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-right: 50px;
-  }
-  .about-wrapper .about-main {
-    flex-direction: column;
-    width: 320px;
-    height: 1850px;
-    margin: 0 auto;
-  }
-  .about-wrapper .about-main .meg {
-    width: 150px;
-    height: 10vh;
-    padding: 40px;
-    margin-top: 12px;
-    border-radius: 30px;
-  }
-  .about-wrapper .about-main .about-desc h2 {
-    font-size: 34px;
-  }
-  .about-wrapper .about-main .about-desc p {
-    font-size: 15px;
-  }
-  .about-wrapper .about-main .about-desc .about-skills span {
-    font-size: 14px;
-  }
-  .about-wrapper .companies .company-header {
-    font-size: 18px;
-  }
-  .about-wrapper .companies .company-box .company-img {
-    padding: 30px;
-  }
-  .about-wrapper .companies .company-box .company-img img {
-    width: 150px;
   }
   .site-wrapper .resume-wrapper .resume-pdf-view {
     width: 420px;
