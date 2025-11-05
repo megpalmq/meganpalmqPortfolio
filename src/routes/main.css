@@ -1135,8 +1135,8 @@ h6 {
 }
 .about-wrapper .about-main .meg {
   background-image: url(../lib/images/me2.png);
-  width: 30vw;
-  height: 70vh;
+  width: 28vw;
+  height: 65vh;
   border-radius: 56px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1147,7 +1147,7 @@ h6 {
 }
 .about-wrapper .about-desc {
   height: 91%;
-  max-width: 50%;
+  max-width: 60%;
 }
 .about-wrapper .about-desc h2 {
   font-size: 50px;
