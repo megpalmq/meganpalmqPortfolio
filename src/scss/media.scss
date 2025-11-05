@@ -626,6 +626,40 @@
     }
   }
 }
+@media screen and (max-width: 430px) {
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    min-width: 85vw;
+    .about-main {
+      flex-direction: column;
+      min-width: 250px;
+      padding: 40px;
+      height: 1900px;
+      margin: 0 auto;
+      .meg {
+        min-width: 200px;
+        min-height: 30vh;
+        margin-top: 12px;
+        border-radius: 30px;
+      }
+      .about-desc {
+        h2 {
+          font-size: 34px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .about-skills {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
 // @media screen and (max-width: 460px) {
 //   .about-wrapper {
 //     margin: 130px auto 0 auto;
