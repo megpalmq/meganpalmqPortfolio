@@ -951,6 +951,11 @@ h6 {
   margin-top: 10px;
   font-weight: 100;
 }
+.projects-header .graphic-title {
+  font-variant-ligatures: discretionary-ligatures;
+  font-feature-settings: "swsh" 1, "liga" 1, "dlig" 1;
+  line-height: 1.2;
+}
 
 .project-boxes {
   margin-top: 40px;
@@ -1480,6 +1485,16 @@ h6 {
   }
   .companies .company-box .company-img img {
     width: 140px;
+  }
+}
+@media screen and (max-width: 1215px) {
+  .projects-header h1 {
+    padding: 20px;
+  }
+  .projects-header .graphic-title {
+    font-variant-ligatures: discretionary-ligatures;
+    font-feature-settings: "swsh" 1, "liga" 1, "dlig" 1;
+    line-height: 1.2;
   }
 }
 @media screen and (max-width: 1180px) {

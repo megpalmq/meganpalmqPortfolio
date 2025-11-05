@@ -278,7 +278,7 @@
 </div>
 <div class="projects-wrapper" id="projects2">
   <div class="projects-header">
-    <h1>My Graphic <br /> Design Projects 🎨</h1>
+    <h1 class="graphic-title">My Graphic <br /> Design Projects 🎨</h1>
   </div>
   <div class="projects-header-under"></div>
   <div class="project-boxes">
@@ -475,46 +475,6 @@
           <span>Indesign</span>
           <span>Typography</span>
           <span>Adobe Creative Suite</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-box hidden">
-      <a
-        href="https://www.behance.net/gallery/208625381/Amendment-Poster-Series"
-        target="_blank"
-      >
-        <img src={amend} alt="" /></a
-      >
-
-      <div class="project-desc">
-        <a
-          href="https://www.behance.net/gallery/208625381/Amendment-Poster-Series"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://www.behance.net/gallery/208625381/Amendment-Poster-Series"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Democracy Plaza</h3>
-        </a>
-        <p class="date">Fall 2023</p>
-        <p class="desc">
-          This project explores the 27 amendments to the U.S. Constitution,
-          focusing on women's rights. It highlights the original exclusion of
-          women from the Constitution, with emphasis on the 19th Amendment
-          granting women the right to vote. The poster series reimagines one
-          amendment to enhance inclusivity for women, particularly women of
-          color, and addresses ongoing social issues. It also advocates for
-          changes that further women's rights, emphasizing the intersection of
-          freedom of speech, press, and voting with women's equality.
-        </p>
-        <div class="project-skills">
-          <span>Typography</span>
-          <span>Indesign</span>
         </div>
       </div>
     </div>

@@ -172,7 +172,18 @@
     }
   }
 }
-
+@media screen and (max-width: 1215px) {
+  .projects-header {
+    h1 {
+      padding: 20px;
+    }
+    .graphic-title {
+      font-variant-ligatures: discretionary-ligatures;
+      font-feature-settings: "swsh" 1, "liga" 1, "dlig" 1;
+      line-height: 1.2;
+    }
+  }
+}
 @media screen and (max-width: 1180px) {
   .about-main {
     max-width: 100%;

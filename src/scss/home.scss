@@ -456,6 +456,11 @@
     margin-top: 10px;
     font-weight: 100;
   }
+  .graphic-title {
+    font-variant-ligatures: discretionary-ligatures;
+    font-feature-settings: "swsh" 1, "liga" 1, "dlig" 1;
+    line-height: 1.2;
+  }
 }
 
 .project-boxes {
