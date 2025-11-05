@@ -209,12 +209,28 @@
   }
 }
 @media screen and (max-width: 1000px) {
-  .about-main {
-    max-width: 100%;
-    min-height: 1300px;
-    .about-desc {
-      h2 {
-        font-size: 40px;
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+    .about-main {
+      max-width: 100%;
+      min-height: 1300px;
+      .meg {
+        width: 300px;
+        height: 40vh;
+        margin-top: 12px;
+      }
+      .about-desc {
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 17px;
+        }
+        .about-skills {
+          span {
+            font-size: 14px;
+          }
+        }
       }
     }
   }
@@ -345,6 +361,33 @@
   }
 }
 @media screen and (max-width: 820px) {
+  .about-wrapper {
+    margin: 130px auto 0 auto;
+    .about-main {
+      flex-direction: column;
+      max-width: 570px;
+      min-width: 370px;
+      height: 1850px;
+      .meg {
+        width: 300px;
+        height: 40vh;
+        margin-top: 12px;
+      }
+      .about-desc {
+        h2 {
+          font-size: 34px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .about-skills {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
   .companies {
     .company-header {
       font-size: 16px;
@@ -468,14 +511,15 @@
 @media screen and (max-width: 615px) {
   .about-wrapper {
     margin: 130px auto 0 auto;
+
     .about-main {
       flex-direction: column;
       max-width: 370px;
-      min-width: 370px;
+      min-width: 90%;
       height: 1850px;
       .meg {
-        min-width: 300px;
-        min-height: 60vh;
+        width: 300px;
+        height: 40vh;
         margin-top: 12px;
       }
       .about-desc {
@@ -545,15 +589,16 @@
     margin: 130px auto 0 auto;
     margin: 0 auto;
     margin-top: 100px;
+    min-width: 85vw;
     .about-main {
       flex-direction: column;
       min-width: 250px;
       padding: 40px;
-      height: 1750px;
+      height: 1900px;
       margin: 0 auto;
       .meg {
-        min-width: 400px;
-        min-height: 30vh;
+        min-width: 300px;
+        min-height: 35vh;
         margin-top: 12px;
         border-radius: 30px;
       }
@@ -593,8 +638,9 @@
       height: 1850px;
       margin: 0 auto;
       .meg {
-        min-width: 200px;
-        min-height: 30vh;
+        width: 150px;
+        height: 10vh;
+        padding: 40px;
         margin-top: 12px;
         border-radius: 30px;
       }

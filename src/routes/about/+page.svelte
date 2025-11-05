@@ -34,9 +34,9 @@
       <p>
   Hi, I'm Megan. I'm into a lot of different corners of design—front-end web, UX/UI, brand design, etc. I like combining the technical side of coding with the creative side of design to build things that not only work but also feel good to use.
   <br><br>
-  I'm studying Media Arts and Science at IU Indianapolis, focusing on web design, development, and digital storytelling, with a minor in Graphic Design. That's given me the chance to dive into both the coding side of projects and the storytelling side of design.
+  I'm studying Media Arts and Science at IU Indianapolis, specializing in Web Design, Development, and Digital Storytelling, with a minor in Graphic Design. That's given me the chance to dive into both the coding side of projects and the storytelling side of design.
   <br><br>
-  What I really care about is how things feel. A page that scrolls just right, a logo that makes sense for the brand, a color palette that communicates before you even read the text. I like the details—the small stuff most people don't notice but would miss if it wasn't there.
+  What I really care about is how things feel. A page that scrolls just right, a logo that makes sense for the brand, a color palette that communicates before you even read the text. I like the details, the small things most people don't notice but would miss if it wasn't there.
   <br><br>
   I work with tools like React, Next.js, and jQuery for building, and Figma and Adobe for design. I love experimenting, breaking things, fixing them, and finding new ways to make my work a little more fun and a little more unexpected.
   <br><br>
