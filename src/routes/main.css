@@ -1854,6 +1854,10 @@ h6 {
   .about-wrapper .about-main .about-desc .about-skills span {
     font-size: 14px;
   }
+  .about-wrapper .about-main .skills-category1,
+  .about-wrapper .about-main .skills-category2 {
+    width: 85%;
+  }
 }
 @media screen and (max-width: 600px) {
   .projects-wrapper .projects-header {
