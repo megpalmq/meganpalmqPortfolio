@@ -1025,6 +1025,18 @@ h6 {
 .projects-wrapper .project-box .project-desc .arrow-link:hover {
   color: #ffffff;
 }
+.projects-wrapper .project-box .project-desc .github {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  color: #5e2a72;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 25px;
+}
+.projects-wrapper .project-box .project-desc .github:hover {
+  color: #ffffff;
+}
 .projects-wrapper .project-box .project-desc .desc {
   color: #5e2a72;
   margin-top: 18px;
@@ -1416,6 +1428,11 @@ h6 {
     right: -10px;
     top: 10px;
     font-size: 18px;
+  }
+  .projects-wrapper .project-box .project-desc .github {
+    right: -10px;
+    top: 20px;
+    font-size: 26px;
   }
   .projects-wrapper .project-box .project-desc .project-title h3 {
     font-size: 26px;
@@ -1869,7 +1886,7 @@ h6 {
     width: 450px;
     flex-direction: column;
     align-items: center;
-    height: 730px;
+    height: 830px;
   }
   .projects-wrapper .project-box img {
     width: 350px;

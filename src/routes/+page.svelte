@@ -10,6 +10,7 @@
   import BL from "$lib/images/bloodletting.png";
   import FOV from "$lib/images/FOV.png";
   import Osaka from "$lib/images/Osaka.jpg";
+  import DT from "$lib/images/DT.png";
   import FD from "$lib/images/FreezeDry.png";
   import oddJobs from "$lib/images/oddJobs.png";
   import thomasF from "$lib/images/thomasfielding.png";
@@ -86,10 +87,59 @@
   <div class="projects-header-under"></div>
   <div class="project-boxes">
     <div class="project-box hidden">
+      <a href="https://n423-6048d.web.app/" target="_blank">
+        <img src={DT} alt="" /></a
+      >
+
+      <div class="project-desc">
+        <a
+          href="https://github.com/n423DreamTeam/dreamTeamPRT2Laptop"
+          class="github"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="https://n423-6048d.web.app/"
+          class="arrow-link"
+          target="_blank"
+        >
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        
+        <a
+          href="https://n423-6048d.web.app/"
+          class="project-title"
+          target="_blank"
+        >
+          <h3>Dream Team</h3>
+        </a>
+        <p class="date">Fall 2025</p>
+        <p class="desc">
+          Dream Team is an interactive Pacers fan web app I designed and developed to give users a fun, engaging way to build their ideal starting lineup. The app allows fans to create their own all-time Pacers “dream team,” explore a full roster pulled dynamically from an API, and participate in a daily Stat Match puzzle where they can select any Pacers player in franchise history to complete the challenge. Dream Team also includes a chat feature, a rewards tab, an account system, and all custom graphics created by me. This project showcases my skills in front-end development, UI/UX design, API integration, and creating cohesive branding for a digital product.
+        </p>
+        <div class="project-skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>API</span>
+          <span>UI</span>
+          <span>Graphic Design</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-box hidden">
       <a href="https://design-for-dignity.vercel.app/" target="_blank">
         <img src={DFD} alt="" /></a
       >
       <div class="project-desc">
+        <a
+          href="https://github.com/megpalmq/DesignForDignity"
+          class="github"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
         <a
           href="https://design-for-dignity.vercel.app/"
           class="arrow-link"
@@ -98,7 +148,7 @@
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://github.com/megpalmq/DesignForDignity"
+          href="https://design-for-dignity.vercel.app/"
           class="project-title"
           target="_blank"
         >
@@ -166,6 +216,13 @@
       >
       <div class="project-desc">
         <a
+          href="https://github.com/megpalmq/315Final"
+          class="github"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
           href="https://keurigcopycat.vercel.app/"
           class="arrow-link"
           target="_blank"
@@ -173,7 +230,7 @@
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://github.com/megpalmq/315Final"
+          href="https://keurigcopycat.vercel.app/"
           class="project-title"
           target="_blank"
         >
@@ -206,6 +263,13 @@
 
       <div class="project-desc">
         <a
+          href="https://github.com/megpalmq/bloodletting"
+          class="github"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
           href="https://bloodletting.vercel.app/"
           class="arrow-link"
           target="_blank"
@@ -213,7 +277,7 @@
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a
-          href="https://github.com/megpalmq/bloodletting"
+          href="https://bloodletting.vercel.app/"
           class="project-title"
           target="_blank"
         >
@@ -232,82 +296,7 @@
         </div>
       </div>
     </div>
-    <div class="project-box hidden">
-      <a href="https://curling-you-say2.vercel.app" target="_blank">
-        <img src={CYS} alt="" /></a
-      >
-
-      <div class="project-desc">
-        <a
-          href="https://curling-you-say2.vercel.app/"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://github.com/megpalmq/CurlingYouSay2"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Curling You Say?</h3>
-        </a>
-        <p class="date">Fall 2024</p>
-        <p class="desc">
-          This curling UI/UX website is a modern, interactive platform built
-          with Next.js and Sass. It features user authentication, allowing
-          account creation and login, alongside dynamic visuals and smooth
-          navigation. The site highlights curling rules, strategies, and player
-          insights, offering an engaging experience for all users.
-        </p>
-        <div class="project-skills">
-          <span>SCSS</span>
-          <span>Next.js</span>
-          <span>JavaScript</span>
-          <span>Clerk</span>
-          <span>User Authentication</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-box hidden">
-      <a href="https://odd-jobs-board.vercel.app/" target="_blank">
-        <img src={oddJobs} alt="" /></a
-      >
-
-      <div class="project-desc">
-        <a
-          href="https://odd-jobs-board.vercel.app/"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://github.com/megpalmq/odd-jobs-board"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Odd Job Board</h3>
-        </a>
-        <p class="date">Spring 2025</p>
-        <p class="desc">
-          Odd Job Board is a website I designed and built to help people find or
-          post small, one-time jobs—like pet sitting, lawn care, or tutoring.
-          It's meant to be a simple, user-friendly space where anyone can
-          connect over quick gigs without needing to sign up or go through a
-          long process. I used HTML, CSS, and JavaScript to create a clean,
-          modern look, with hover effects and a responsive layout so it works
-          well on both desktop and mobile.
-        </p>
-        <div class="project-skills">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>API</span>
-          <span>Database</span>
-        </div>
-      </div>
-    </div>
+    
   </div>
 </div>
 <div class="projects-wrapper" id="projects2">
