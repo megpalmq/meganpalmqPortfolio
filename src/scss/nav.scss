@@ -1,36 +1,45 @@
 .nav-holder {
-  height: 110px;
+  height: 96px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   z-index: 9999;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 0 6px rgba($color: $dark-red, $alpha: 0.006);
+  background-color: rgba($white, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba($white, 0.42);
+  box-shadow: 0 12px 28px rgba($dark-red, 0.08);
   a {
     text-decoration: none;
     color: rgb(87, 58, 104);
     font-size: 22px;
-    font-family: pop;
+    font-family: pop, sans-serif;
     font-weight: bold;
     z-index: 50;
-    transition: ease 0.07s;
+    transition:
+      color 0.2s ease,
+      opacity 0.2s ease,
+      transform 0.2s ease;
   }
   .resume-link {
     margin-top: 6px;
     padding: 6px 11px;
     border-radius: 40px;
-    color: $red;
+    color: $white;
     transition: ease 0.4s;
     position: relative;
     display: inline-block;
     background-image: none;
-    border: 2px solid $white;
-    color: $white;
-    background-color: rgb(87, 58, 104);
+    border: 1px solid rgba($white, 0.6);
+    background-color: $dark-red;
     &:hover {
-      background-color: $red;
+      background-color: lighten($dark-red, 8%);
+      transform: translateY(-1px);
+    }
+    &.active {
+      background-color: lighten($dark-red, 8%);
     }
   }
   .nav-links {
@@ -39,7 +48,7 @@
       to right,
       $dark-red2,
       $grey 50%,
-      $white 50%
+      $dark-red 50%
     );
     background-size: 210% 100%;
     background-position: 100%;
@@ -53,7 +62,7 @@
     -moz-text-fill-color: purple;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: all 0.14s ease-in-out;
+    transition: all 0.2s ease-in-out;
     &:before {
       content: "";
       position: absolute;
@@ -73,6 +82,12 @@
       transform-origin: left;
       transform: scaleX(1);
     }
+    &.active {
+      background-position: 0;
+      &:before {
+        transform: scaleX(1);
+      }
+    }
   }
   .logo {
     position: absolute;
@@ -81,7 +96,9 @@
       display: flex;
       align-items: center;
       height: 80px;
-      transition: ease 0.3s;
+      transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
       margin-left: 20px;
       margin-top: 6px;
       z-index: 9999;
@@ -97,31 +114,31 @@
         margin-top: 16px;
         width: 100%;
         width: 350px;
-        font-family: pop;
+        font-family: pop, sans-serif;
         font-weight: 700;
         font-size: 28px;
         opacity: 1;
-        transition: ease 0.4s;
+        transition: color 0.25s ease;
         text-align: center;
         span {
           color: rgb(87, 58, 104);
-          transition: ease 0.4s;
+          transition: color 0.25s ease;
         }
       }
       .mobile-logo {
         display: none;
         margin-top: 16px;
-        font-family: pop;
+        font-family: pop, sans-serif;
         font-weight: 700;
         font-size: 32px;
         opacity: 1;
-        transition: ease 0.4s;
+        transition: color 0.25s ease;
         text-align: center;
         margin-left: 40px;
         position: absolute;
         span {
           color: rgb(87, 58, 104);
-          transition: ease 0.4s;
+          transition: color 0.25s ease;
         }
       }
       &:hover {
@@ -150,14 +167,16 @@
   .hamburger-icon {
     margin: auto 0;
     display: none;
-    transition: ease 0.3s;
+    transition: transform 0.3s ease;
     z-index: 50;
     div {
       background-color: #5a3572;
       width: 34px;
       height: 3px;
       margin: 8px 0;
-      transition: ease 0.3s;
+      transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
       border-radius: 10px;
     }
   }
@@ -175,7 +194,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: slide-down 0.25s ease-in-out;
+    animation: slide-down 0.28s ease-in-out;
   }
 
   @keyframes slide-down {
@@ -189,9 +208,9 @@
   .mobile-menu {
     display: none;
     position: absolute;
-    top: 90px;
+    top: 96px;
     left: 0;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 96px);
     width: 100%;
     background-color: rgba($color: $white, $alpha: 1);
     transition: ease 0.3s;
@@ -218,6 +237,11 @@
       .nav-links {
         background-image: linear-gradient(to right, $red, $red 50%, $black 50%);
         font-size: 28px;
+        font-family: pop, sans-serif;
+        font-weight: 700;
+        &.active {
+          background-position: 0;
+        }
       }
       .resume-link {
         border: 2px solid $black;
@@ -225,7 +249,14 @@
         font-size: 26px;
         padding: 5px 14px;
         background-color: $white;
+        font-family: pop, sans-serif;
+        font-weight: 700;
         &:hover {
+          color: $white;
+          border: 2px solid $dark-red;
+          background-color: $dark-red;
+        }
+        &.active {
           color: $white;
           border: 2px solid $dark-red;
           background-color: $dark-red;

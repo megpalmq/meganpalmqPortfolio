@@ -15,9 +15,6 @@
       document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
   });
-  if (currentUrl == "/about") {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-  }
 </script>
 
 <svelte:head>
@@ -84,16 +81,16 @@
           href="https://www.kungfutea.com/?srsltid=AfmBOopL4IReX1ZBpGis6pQJAxMIyrB2yQU5Vkq7gaLXUBd34_rjtcOs"
           target="_blank"
         >
-          <img src={KFT} alt="Kung Fu Tea" /></a
+          <img src={KFT} alt="Kung Fu Tea" loading="lazy" decoding="async" /></a
         >
       </div>
       <div class="company-img hidden-about">
         <a href="https://www.yonsei.ac.kr/en_sc/index.do">
-          <img src={yonseiL} alt="IU" />
+          <img src={yonseiL} alt="IU" loading="lazy" decoding="async" />
         </a>
       </div>
       <div class="company-img hidden-about">
-        <img src={ENJ} alt="Ever New Joy" />
+        <img src={ENJ} alt="Ever New Joy" loading="lazy" decoding="async" />
         <br>
         <br>
         <p style="font-family: pop;  color: rgb(87, 58, 104);">I designed that ^  :) </p>

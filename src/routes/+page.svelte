@@ -1,19 +1,7 @@
 <script>
   import port from "$lib/images/portfolio.png";
-  import yonsei from "$lib/images/yonsei.png";
-  import amend from "$lib/images/amend.png";
-  import happy from "$lib/images/happy.png";
-  import travel from "$lib/images/travelfly.jpg";
-  import keurig from "$lib/images/keurig.png";
-  import DFD from "$lib/images/DFD.png";
-  import CYS from "$lib/images/CYS.png";
-  import BL from "$lib/images/bloodletting.png";
-  import FOV from "$lib/images/FOV.png";
   import Osaka from "$lib/images/Osaka.jpg";
   import DT from "$lib/images/DT.png";
-  import FD from "$lib/images/FreezeDry.png";
-  import oddJobs from "$lib/images/oddJobs.png";
-  import thomasF from "$lib/images/thomasfielding.png";
   import { page } from "$app/stores";
   import { onMount } from "svelte";
 
@@ -26,9 +14,6 @@
       document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
   });
-  if (currentUrl == "/") {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-  }
 </script>
 
 <svelte:head>
@@ -39,7 +24,7 @@
 </svelte:head>
 
 <div class="frosted-glass">
-  <video autoplay muted loop playsinline src="/Background.mp4" type="video/mp4"
+  <video autoplay muted loop playsinline preload="metadata" src="/Background.mp4" type="video/mp4"
   ></video>
   <div class="home-wrapper" id="home">
     <div class="home-desc-wrapper">
@@ -47,7 +32,6 @@
       <div class="home-desc">
         <div class="home-con hiddenbottom2">
           <p class="intro">Hello, my name is</p>
-          <br>
           <div class="megpal fancy-text"></div>
           <h2>I bring creativity to life through design, detail, and purpose.</h2>
         </div>
@@ -57,13 +41,14 @@
             <a
               href="https://www.linkedin.com/in/megan-palmquist/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/megpalmq" target="_blank">
+            <a href="https://github.com/megpalmq" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/megannstone_/" target="_blank">
+            <a href="https://www.instagram.com/megannstone_/" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-instagram"></i>
             </a>
           </div>
@@ -80,431 +65,33 @@
   </div> -->
 </div>
 
-<div class="projects-wrapper" id="projects">
-  <div class="projects-header">
-    <h1>My Web Projects 🖥️</h1>
-  </div>
-  <div class="projects-header-under"></div>
-  <div class="project-boxes">
-    <div class="project-box hidden">
-      <a href="https://n423-6048d.web.app/" target="_blank">
-        <img src={DT} alt="" /></a
-      >
+<section class="project-hub hiddenbottom" id="projects">
+  <h2 class="reveal-title" data-mask-reveal>Explore My Work</h2>
+  <div class="hub-grid">
+    <a href="/web-projects" class="hub-card hidden">
+      <img src={DT} alt="Preview of web projects" loading="lazy" decoding="async" />
+      <div class="hub-copy">
+        <h3>Web Projects</h3>
+        <p>Interactive builds, UI/UX thinking, and front-end development.</p>
+        <span>View Web Portfolio <i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+    </a>
 
-      <div class="project-desc">
-        <a
-          href="https://github.com/n423DreamTeam/dreamTeamPRT2Laptop"
-          class="github"
-          target="_blank"
+    <a href="/graphic-projects" class="hub-card hidden">
+      <img src={Osaka} alt="Preview of graphic design projects" loading="lazy" decoding="async" />
+      <div class="hub-copy">
+        <h3>Graphic Design Projects</h3>
+        <p>Brand identity, typography systems, and visual storytelling.</p>
+        <span
+          >View Design Portfolio <i class="fa-solid fa-arrow-right"></i></span
         >
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a
-          href="https://n423-6048d.web.app/"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        
-        <a
-          href="https://n423-6048d.web.app/"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Dream Team</h3>
-        </a>
-        <p class="date">Fall 2025</p>
-        <p class="desc">
-          Dream Team is an interactive Pacers fan web app I designed and developed to give users a fun, engaging way to build their ideal starting lineup. The app allows fans to create their own all-time Pacers “dream team,” explore a full roster pulled dynamically from an API, and participate in a daily Stat Match puzzle where they can select any Pacers player in franchise history to complete the challenge. Dream Team also includes a chat feature, a rewards tab, an account system, and all custom graphics created by me. This project showcases my skills in front-end development, UI/UX design, API integration, and creating cohesive branding for a digital product.
-        </p>
-        <div class="project-skills">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>API</span>
-          <span>UI</span>
-          <span>Graphic Design</span>
-        </div>
       </div>
-    </div>
-    <div class="project-box hidden">
-      <a href="https://design-for-dignity.vercel.app/" target="_blank">
-        <img src={DFD} alt="" /></a
-      >
-      <div class="project-desc">
-        <a
-          href="https://github.com/megpalmq/DesignForDignity"
-          class="github"
-          target="_blank"
-        >
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a
-          href="https://design-for-dignity.vercel.app/"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://design-for-dignity.vercel.app/"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Design For Dignity</h3>
-        </a>
-        <p class="date">Spring 2025</p>
-        <p class="desc">
-          The Design for Dignity website is a collaborative project dedicated to
-          showcasing design solutions that promote dignity and accessibility. It
-          features a seamless backend for optimal functionality and a
-          thoughtfully crafted frontend design. The site highlights the
-          initiative's mission, projects, and impact, serving as a platform for
-          meaningful design work aimed at improving lives.
-        </p>
-        <div class="project-skills">
-          <span>SCSS</span>
-          <span>HTML</span>
-          <span>JavaScript</span>
-          <span>jQuery</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-box hidden">
-      <a href="https://www.thomasfielding.com/" target="_blank">
-        <img src={thomasF} alt="" /></a
-      >
+    </a>
+  </div>
+</section>
 
-      <div class="project-desc">
-        <a
-          href="https://www.thomasfielding.com/"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://www.thomasfielding.com/"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Portfolio & E-Commerce Site</h3>
-        </a>
-        <p class="date">Summer 2025</p>
-        <p class="desc">
-          I redesigned Thomas Fielding's WordPress portfolio website to create a
-          cleaner, more professional platform for showcasing his work. Alongside
-          the design refresh, I also integrated an e-commerce solution for
-          selling his sheet music. To protect his digital products, I
-          implemented a dynamic watermark system that applies a unique watermark
-          to each purchased sheet, ensuring security while maintaining a
-          seamless customer experience.
-        </p>
-        <div class="project-skills">
-          <span>Wordpress</span>
-          <span>E-Commerce Integration (WooCommerce)</span>
-          <br />
-          <br />
-          <span>Client Engagement</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-box hidden">
-      <a href="https://keurigcopycat.vercel.app/" target="_blank">
-        <img src={keurig} alt="" /></a
-      >
-      <div class="project-desc">
-        <a
-          href="https://github.com/megpalmq/315Final"
-          class="github"
-          target="_blank"
-        >
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a
-          href="https://keurigcopycat.vercel.app/"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://keurigcopycat.vercel.app/"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Keurig CopyCat</h3>
-        </a>
-        <p class="date">Fall 2024</p>
-        <p class="desc">
-          An exact replica of the Keurig website, including a fully functional
-          login/sign-up page and cart system, showcasing attention to detail and
-          interactive features.<br /> <br />Site I was meant to replicate:
-          <a
-            href="https://www.keurig.com/c/coffeemakers101?cm_sp=bo+cybermonday21-_-promo+hero+banner-_-shop+coffee+makers"
-            target="_blank"
-            class="here">Here</a
-          >
-        </p>
-        <div class="project-skills">
-          <span>MVC Model</span>
-          <span>SCSS</span>
-          <span>HTML</span>
-          <span>JavaScript</span>
-          <span>jQuery</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-box hidden">
-      <a href="https://bloodletting.vercel.app/" target="_blank">
-        <img src={BL} alt="" /></a
-      >
-
-      <div class="project-desc">
-        <a
-          href="https://github.com/megpalmq/bloodletting"
-          class="github"
-          target="_blank"
-        >
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a
-          href="https://bloodletting.vercel.app/"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://bloodletting.vercel.app/"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Bloodletting</h3>
-        </a>
-        <p class="date">Summer 2025</p>
-        <p class="desc">
-          I collaborated with Witless Crusade Games to design and develop the official website for their asymmetric board game, Bloodletting. The site introduces the game's dark, apocalyptic world through immersive visuals, smooth scroll animations, and responsive layouts. It highlights each of the four factions — War, Death, Famine, and Pestilence — with distinctive imagery and motion to reflect their unique identities, creating an atmospheric and engaging online showcase for the game.
-        </p>
-        <div class="project-skills">
-          <span>HTML5</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Responsive Designerk</span>
-          <span>UI Animation</span>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
-<div class="projects-wrapper" id="projects2">
-  <div class="projects-header">
-    <h1 class="graphic-title">My Graphic <br /> Design Projects 🎨</h1>
-  </div>
-  <div class="projects-header-under"></div>
-  <div class="project-boxes">
-    <div class="project-box hidden">
-      <a
-        href="https://www.behance.net/gallery/222967549/Osaka-2036-Olympics"
-        target="_blank"
-      >
-        <img src={Osaka} alt="" /></a
-      >
-      <div class="project-desc">
-        <a
-          href="https://www.behance.net/gallery/222967549/Osaka-2036-Olympics"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://www.behance.net/gallery/222967549/Osaka-2036-Olympics"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Osaka 2036 Olympics</h3>
-        </a>
-        <p class="date">Spring 2025</p>
-        <p class="desc">
-          For this project, I created a complete brand identity for the Olympics
-          in Osaka, Japan. I began by studying Osaka's culture, history, and
-          design influences. The project included designing a logo, brochure,
-          poster, custom pattern, event tickets, lanyard, and website mockup.
-          Drawing inspiration from Osaka's cityscape, traditional art, and
-          modern innovation, the branding captures the city's essence and the
-          spirit of the Olympic Games, resulting in a visually compelling and
-          culturally authentic brand.
-        </p>
-        <div class="project-skills">
-          <span>Branding</span>
-          <span>Indesign</span>
-          <span>Figma</span>
-          <span>Illustrator</span>
-          <span>Typography</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-box hidden">
-      <a
-        href="https://www.behance.net/gallery/223089271/Freeze-Dried? "
-        target="_blank"
-      >
-        <img src={FD} alt="" /></a
-      >
-      <div class="project-desc">
-        <a
-          href="https://www.behance.net/gallery/223089271/Freeze-Dried?"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://www.behance.net/gallery/223089271/Freeze-Dried?"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Freeze Dried</h3>
-        </a>
-        <p class="date">Spring 2025</p>
-        <p class="desc">
-          For this branding and packaging project, I designed a playful and
-          vibrant identity for a freeze-dried candy brand. Inspired by the cool,
-          frozen process of freeze-drying, I focused on using icy colors and
-          dynamic typography to reflect the candy's light, airy texture. The
-          packaging design features bold, modern elements that stand out on
-          shelves, aiming to capture the fun and refreshing qualities of the
-          product. This project showcases my ability to create engaging,
-          eye-catching designs that connect with a youthful audience.
-        </p>
-        <div class="project-skills">
-          <span>Branding</span>
-          <span>Product Design</span>
-          <span>Illustrator</span>
-          <span>Typography</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-box hidden">
-      <a
-        href="https://www.behance.net/gallery/218521699/Fragments-of-Vulnerability"
-        target="_blank"
-      >
-        <img src={FOV} alt="" /></a
-      >
-      <div class="project-desc">
-        <a
-          href="https://www.behance.net/gallery/218521699/Fragments-of-Vulnerability"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://www.behance.net/gallery/218521699/Fragments-of-Vulnerability"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Fragments of Vulnerability</h3>
-        </a>
-        <p class="date">Fall 2024</p>
-        <p class="desc">
-          The Vulnerability Zine is a typography-focused project that tells the
-          powerful, real-life story of an individual affected by human
-          trafficking. Through expressive typography and design, the zine
-          captures the emotional depth of the experience, using visual
-          storytelling to raise awareness and foster empathy for those impacted
-          by this issue.
-        </p>
-        <div class="project-skills">
-          <span>Indesign</span>
-          <span>Illustrator</span>
-          <span>Typography</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-box hidden">
-      <a
-        href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron"
-        target="_blank"
-      >
-        <img src={yonsei} alt="" /></a
-      >
-      <div class="project-desc">
-        <a
-          href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>Yonsei x Herron</h3>
-        </a>
-        <p class="date">Fall 2023</p>
-        <p class="desc">
-          A typography-driven design project that explores the collaboration
-          between Yonsei University and Herron School of Art and Design. The
-          project is 2 infographic poster that talk about food insecurity in
-          Seoul South Korea and Indianapolis Indiana.
-        </p>
-        <div class="project-skills">
-          <span>Indesign</span>
-          <span>Illustrator</span>
-          <span>Typography</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-box hidden">
-      <a
-        href="https://www.behance.net/gallery/211130921/The-Happiness-Project"
-        target="_blank"
-      >
-        <img src={happy} alt="" /></a
-      >
-
-      <div class="project-desc">
-        <a
-          href="https://www.behance.net/gallery/211130921/The-Happiness-Project"
-          class="arrow-link"
-          target="_blank"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a
-          href="https://www.behance.net/gallery/211130921/The-Happiness-Project"
-          class="project-title"
-          target="_blank"
-        >
-          <h3>The Happiness Project</h3>
-        </a>
-        <p class="date">Fall 2024</p>
-        <p class="desc">
-          A booklet-style project designed to educate and guide the audience
-          through the experience of a panic attack, offering insights into its
-          emotional and physical symptoms. The project also provides helpful
-          strategies and techniques for managing and overcoming panic attacks,
-          creating a compassionate and informative resource for those seeking
-          support.
-        </p>
-        <div class="project-skills">
-          <span>Indesign</span>
-          <span>Typography</span>
-          <span>Adobe Creative Suite</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="aboutme">
-    <a href="/about" class="aboutme-link"
-      >About Me <i class="fa-solid fa-arrow-right"></i></a
-    >
-  </div>
+<div class="aboutme">
+  <a href="/about" class="aboutme-link"
+    >About Me <i class="fa-solid fa-arrow-right"></i></a
+  >
 </div>

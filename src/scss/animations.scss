@@ -4,7 +4,9 @@
   border: 2px solid $white;
   border-radius: 60px;
   position: relative;
-  transition: ease 0.4s;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
 
   &::before {
     content: "";
@@ -17,16 +19,15 @@
     background-color: $white;
     border-radius: 50%;
     opacity: 1;
-    animation: wheel 2s infinite;
-    -webkit-animation: wheel 2s infinite;
+    animation: wheel 2.2s infinite;
+    -webkit-animation: wheel 2.2s infinite;
   }
   &:hover::before {
     background-color: $red;
-    transition: ease 0.2s;
   }
   &:hover {
     border: 2px solid $red;
-    transition: ease 0.2s;
+    transform: translateY(-1px);
   }
 }
 
@@ -45,8 +46,8 @@
 }
 
 .button-pulse {
-  animation: pulse 2s infinite 0.5s cubic-bezier(0.25, 0, 0, 1);
-  box-shadow: 0 0 0 0 rgba($color: $white, $alpha: 0.4);
+  animation: pulse 2.4s infinite 0.5s cubic-bezier(0.25, 0, 0, 1);
+  box-shadow: 0 0 0 0 rgba($color: $white, $alpha: 0.28);
 }
 @keyframes pulse {
   to {
@@ -55,8 +56,8 @@
 }
 
 .button-pulse-black {
-  animation: pulse2 2s infinite 0.5s cubic-bezier(0.25, 0, 0, 1);
-  box-shadow: 0 0 0 0 rgba($color: $black, $alpha: 0.4);
+  animation: pulse2 2.4s infinite 0.5s cubic-bezier(0.25, 0, 0, 1);
+  box-shadow: 0 0 0 0 rgba($color: $black, $alpha: 0.26);
 }
 @keyframes pulse2 {
   to {
@@ -150,7 +151,7 @@
 }
 
 .icon img {
-  animation: anim 2s ease infinite;
+  animation: anim 2.6s ease infinite;
   transform: scale(0, 0) rotateZ(180deg);
   will-change: transform, opacity;
 }
@@ -175,6 +176,16 @@
     -webkit-transform: scale(0, 0) rotateZ(90deg);
     transform: scale(0, 0) rotateZ(90deg);
     opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-down-ani::before,
+  .button-pulse,
+  .button-pulse-black,
+  .icon img {
+    animation: none !important;
+    -webkit-animation: none !important;
   }
 }
 
