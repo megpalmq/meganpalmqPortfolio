@@ -1,184 +1,160 @@
 .about-wrapper {
-  width: 80%;
-  margin: 160px auto 0 auto;
+  width: min(1200px, 92vw);
+  margin: clamp(110px, 11vw, 150px) auto 0;
 
   .about-main {
-    margin-top: 200px;
-    background-color: rgba($color: $white, $alpha: 0.09);
-    box-shadow: 0 0 0 12px rgba($color: $white, $alpha: 0.02);
-    height: 830px;
-    border-radius: 40px;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(260px, 0.95fr) minmax(0, 1.25fr);
+    gap: clamp(22px, 3vw, 42px);
     align-items: center;
-    justify-content: space-between;
-    padding: 24px;
-    transition: ease 0.4s;
-    .meg {
-      background-image: url(../lib/images/me2.png);
-      width: 28vw;
-      height: 65vh;
-      border-radius: 56px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    &:hover {
-      img {
-        filter: grayscale(0%);
-      }
-    }
+    padding: clamp(18px, 2.2vw, 30px);
+    border-radius: 34px;
+    background: linear-gradient(155deg, rgba($white, 0.24), rgba($white, 0.1));
+    border: 1px solid rgba($white, 0.28);
+    box-shadow:
+      0 20px 44px rgba(40, 20, 58, 0.14),
+      inset 0 0 0 1px rgba($white, 0.12);
   }
-  .about-desc {
-    height: 90%;
-    max-width: 60%;
-    h2 {
-      font-size: 50px;
-      color: rgb(87, 58, 104);
-      transition: ease 0.35s;
-      font-size: 45px;
-      span {
-        color: $white;
-        transition: ease 0.35s;
-      }
-    }
-    p {
-      margin-top: 10px;
-      font-family: pop;
-      line-height: 20px;
-      color: rgb(87, 58, 104);
-      .ha {
-        color: rgb(87, 58, 104);
-        transition: ease 0.35s;
-      }
-    }
-    .about-skills {
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 23px;
-      width: 100%;
 
-      h3 {
-        margin-bottom: 10px;
-        color: rgb(87, 58, 104);
-      }
-      .skills-category1,
-      .skills-category2 {
-        background-color: rgba($color: $white, $alpha: 0.4);
-        border-radius: 20px;
-        padding: 15px;
-      }
+  .meg {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 30px;
+    background-image: url(../lib/images/me2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 18px 34px rgba(28, 12, 38, 0.2);
+  }
+
+  .about-desc {
+    max-width: 100%;
+
+    h2 {
+      margin: 0;
+      font-size: clamp(34px, 4.8vw, 52px);
+      line-height: 0.98;
+      color: rgb(87, 58, 104);
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin: 14px 0 0;
+      color: rgb(87, 58, 104);
+      font-family: pop;
+      font-size: clamp(15px, 1.15vw, 18px);
+      line-height: 1.6;
+      max-width: 68ch;
+    }
+
+    .about-skills {
+      margin-top: clamp(18px, 2.5vw, 30px);
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
 
       .skills-category1,
       .skills-category2 {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
-        align-items: flex-start;
+        gap: 9px;
+        padding: 14px;
+        border-radius: 18px;
+        background: rgba($white, 0.36);
+        border: 1px solid rgba($white, 0.4);
+      }
+
+      h3 {
+        width: 100%;
+        margin: 0 0 4px;
+        color: rgb(87, 58, 104);
+        font-size: 17px;
+        letter-spacing: 0.01em;
       }
 
       span {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 30px;
+        padding: 4px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba($dark-red, 0.7);
+        background-color: $dark-red;
         color: $white;
         font-family: pop;
         font-weight: 500;
-        padding: 4px 12px;
-        background-color: $dark-red;
-        border-radius: 40px;
-        cursor: pointer;
-        border: 2px solid $dark-red;
-        transition: ease 0.2s;
+        font-size: 13px;
+        transition: 0.2s ease;
 
         &:hover {
-          border: 2px solid $white;
-          background-color: transparent;
+          background: transparent;
           color: rgb(87, 58, 104);
-        }
-      }
-    }
-    ut-skills {
-      margin-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 23px;
-      width: 100%;
-
-      .skills-category1 {
-        display: inline-block;
-        margin-top: 10px;
-        span {
-          color: $white;
-          font-family: pop;
-          font-weight: 500;
-          padding: 2px 12px;
-          background-color: $dark-red;
-          border-radius: 40px;
-          cursor: pointer;
-          border: 2px solid $dark-red;
-          transition: ease 0.2s;
-          margin-top: 10px;
-          &:hover {
-            border: 2px solid $white;
-            background-color: transparent;
-            color: rgb(87, 58, 104);
-          }
-        }
-      }
-      .skills-category2 {
-        display: inline-block;
-        margin-top: 10px;
-        span {
-          color: $white;
-          font-family: pop;
-          font-weight: 500;
-          margin: 0 3px;
-          padding: 2px 12px;
-          background-color: $dark-red;
-          border-radius: 40px;
-          cursor: pointer;
-          border: 2px solid $dark-red;
-          transition: ease 0.2s;
-          &:hover {
-            border: 2px solid $white;
-            background-color: transparent;
-            color: rgb(87, 58, 104);
-          }
+          border-color: rgba($white, 0.85);
         }
       }
     }
   }
 
   .companies {
-    margin-top: 300px;
+    margin-top: clamp(70px, 8vw, 130px);
+
     .company-header {
       display: flex;
       justify-content: center;
-      font-size: 26px;
+      text-align: center;
+      font-size: clamp(24px, 3vw, 34px);
+
       span {
         color: $dark-red2;
       }
+
+      h1 {
+        margin: 0;
+      }
     }
+
     .company-box {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      margin-top: 80px;
-      padding-bottom: 100px;
+      margin-top: clamp(26px, 4vw, 56px);
+      padding-bottom: clamp(40px, 7vw, 84px);
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(16px, 2.2vw, 30px);
+      align-items: stretch;
+
       .company-img {
-        background-color: rgba($color: $white, $alpha: 0.06);
-        box-shadow: 0 0 0 12px rgba($color: $white, $alpha: 0.01);
-        border-radius: 300px;
-        padding: 50px;
+        min-height: 190px;
+        background: rgba($white, 0.13);
+        border: 1px solid rgba($white, 0.3);
+        box-shadow: 0 12px 24px rgba(30, 14, 40, 0.1);
+        border-radius: 24px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        transition:
+          transform 0.22s ease,
+          box-shadow 0.22s ease;
+
         img {
-          width: 200px;
-          object-fit: cover;
+          width: min(100%, 190px);
+          object-fit: contain;
         }
+
         &:hover {
-          transform: scale(1.1);
+          transform: translateY(-4px);
+          box-shadow: 0 18px 28px rgba(30, 14, 40, 0.14);
+        }
+
+        .enj-credit {
+          margin: 0;
+          color: rgb(87, 58, 104);
+          font-family: pop;
+          font-size: 14px;
+          text-align: center;
         }
       }
     }

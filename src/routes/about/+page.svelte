@@ -29,38 +29,45 @@
     <div class="about-desc">
       <h2>Nice to meet you!</h2>
       <p>
-  Hi, I'm Megan. I'm into a lot of different corners of design—front-end web, UX/UI, brand design, etc. I like combining the technical side of coding with the creative side of design to build things that not only work but also feel good to use.
-  <br><br>
-  I'm studying Media Arts and Science at IU Indianapolis, specializing in Web Design, Development, and Digital Storytelling, with a minor in Graphic Design. That's given me the chance to dive into both the coding side of projects and the storytelling side of design.
-  <br><br>
-  What I really care about is how things feel. A page that scrolls just right, a logo that makes sense for the brand, a color palette that communicates before you even read the text. I like the details, the small things most people don't notice but would miss if it wasn't there.
-  <br><br>
-  I work with tools like React, Next.js, and jQuery for building, and Figma and Adobe for design. I love experimenting, breaking things, fixing them, and finding new ways to make my work a little more fun and a little more unexpected.
-  <br><br>
-  And yeah… I'm almost always thinking about fonts.
-</p>
+        Hi, I'm Megan. I work across front-end web development, UX/UI, and brand design, and I
+        love combining technical execution with strong visual storytelling.
+      </p>
+      <p>
+        I'm studying Media Arts and Science at IU Indianapolis, specializing in Web Design,
+        Development, and Digital Storytelling with a minor in Graphic Design. That mix lets me
+        design the experience and build it end-to-end.
+      </p>
+      <p>
+        I care deeply about the details: pacing, motion, typography, and color systems that make a
+        product feel intentional. My goal is always to create work that is clear, expressive, and
+        enjoyable to use.
+      </p>
+      <p>
+        I build with tools like React, Next.js, Svelte, and jQuery, and design in Figma and Adobe
+        Creative Suite. I like experimenting, refining, and pushing projects until they feel right.
+      </p>
+      <p>And yes, I'm almost always thinking about fonts.</p>
 
       <div class="about-skills">
 
         <div class="skills-category1">
-        <h3>Development:</h3>
+        <h3>Development</h3>
         <span>HTML</span>
         <span>CSS</span>
         <span>SCSS</span>
-        <span>Javascript</span>
+        <span>JavaScript</span>
         <span>WordPress</span>
         <span>jQuery</span>
-        <span>Typescript</span>
+        <span>TypeScript</span>
         <span>PHP</span>
         <span>SQL</span>
         <span>Svelte</span>
         <span>Next.js</span>
         </div>
         <div class="skills-category2">
-        <h3>Design:</h3>
+        <h3>Design</h3>
         <span>Figma</span>
         <span>Adobe Creative Suite</span>
-        <br>
         <span>UX/UI Design</span>
         <span>Branding</span>
         <span>Wireframing</span>
@@ -85,15 +92,13 @@
         >
       </div>
       <div class="company-img hidden-about">
-        <a href="https://www.yonsei.ac.kr/en_sc/index.do">
+        <a href="https://www.yonsei.ac.kr/en_sc/index.do" target="_blank" rel="noopener noreferrer">
           <img src={yonseiL} alt="IU" loading="lazy" decoding="async" />
         </a>
       </div>
       <div class="company-img hidden-about">
         <img src={ENJ} alt="Ever New Joy" loading="lazy" decoding="async" />
-        <br>
-        <br>
-        <p style="font-family: pop;  color: rgb(87, 58, 104);">I designed that ^  :) </p>
+        <p class="enj-credit">I designed that :)</p>
       </div>
     </div>
   </div>

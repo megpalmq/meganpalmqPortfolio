@@ -1114,3 +1114,114 @@
     }
   }
 }
+
+/* About page responsive refresh overrides */
+@media screen and (max-width: 1100px) {
+  .about-wrapper {
+    width: min(960px, 92vw);
+
+    .about-main {
+      grid-template-columns: minmax(230px, 0.9fr) minmax(0, 1.1fr);
+      min-height: 0;
+      height: auto;
+    }
+
+    .companies {
+      .company-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-wrapper {
+    margin-top: 108px;
+
+    .about-main {
+      grid-template-columns: 1fr;
+      max-width: 780px;
+      min-width: 0;
+      min-height: 0;
+      height: auto;
+      padding: 18px;
+    }
+
+    .meg {
+      width: min(100%, 360px);
+      margin: 0 auto;
+    }
+
+    .about-desc {
+      max-width: 100%;
+
+      .about-skills {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .companies {
+      margin-top: 72px;
+
+      .company-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about-wrapper {
+    width: 94vw;
+
+    .about-main {
+      border-radius: 24px;
+      padding: 14px;
+    }
+
+    .meg {
+      width: min(100%, 290px);
+      border-radius: 22px;
+    }
+
+    .about-desc {
+      h2 {
+        font-size: clamp(30px, 9vw, 38px);
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .about-skills {
+        gap: 12px;
+
+        .skills-category1,
+        .skills-category2 {
+          padding: 12px;
+          border-radius: 14px;
+        }
+      }
+    }
+
+    .companies {
+      .company-header {
+        font-size: 19px;
+      }
+
+      .company-box {
+        gap: 14px;
+
+        .company-img {
+          min-height: 160px;
+          border-radius: 18px;
+          padding: 18px;
+
+          img {
+            width: min(100%, 150px);
+          }
+        }
+      }
+    }
+  }
+}
