@@ -2087,6 +2087,12 @@ body {
     transform 0.22s ease,
     box-shadow 0.22s ease;
 }
+.about-wrapper .companies .company-box .company-img a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 .about-wrapper .companies .company-box .company-img img {
   width: min(100%, 190px);
   object-fit: contain;

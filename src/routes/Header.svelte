@@ -46,7 +46,7 @@
           href="/resume"
           class="resume-link button-pulse"
           class:active={isActive("/resume")}
-          >Resume</a
+          >Résumé</a
         >
       </li>
     </ul>

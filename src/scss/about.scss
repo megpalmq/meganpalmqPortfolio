@@ -138,6 +138,13 @@
           transform 0.22s ease,
           box-shadow 0.22s ease;
 
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        }
+
         img {
           width: min(100%, 190px);
           object-fit: contain;
