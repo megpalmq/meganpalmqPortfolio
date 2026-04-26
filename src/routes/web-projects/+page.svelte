@@ -129,7 +129,7 @@
         <img src={windcombe} alt="Windcombe website" loading="lazy" decoding="async" /></a
       >
       <div class="project-desc">
-        <a href="https://windcombe.com/" class="arrow-link" target="_blank">
+        <a href="https://www.behance.net/gallery/248254721/Windcombe" class="arrow-link" target="_blank">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a href="https://windcombe.com/" class="project-title" target="_blank">
