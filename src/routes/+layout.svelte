@@ -141,8 +141,14 @@
 
     const hamburgerIcon = document.querySelector(".hamburger-icon");
     const logo = document.querySelector(".logo");
+    const mobileMenuLinks = q(".mobile-menu a");
 
-    function toggleMobileMenu() {
+    function toggleMobileMenu(event) {
+      // Ignore clicks inside the expanded menu so links can navigate normally.
+      if (event?.target instanceof Element && event.target.closest(".mobile-menu")) {
+        return;
+      }
+
       hamburgerIcon?.classList.toggle("open");
       document.body.classList.toggle("mobile-overflow");
     }
@@ -155,6 +161,9 @@
     // MOBILE MENU
     hamburgerIcon?.addEventListener("click", toggleMobileMenu);
     logo?.addEventListener("click", closeMobileMenu);
+    mobileMenuLinks.forEach((link) => {
+      link.addEventListener("click", closeMobileMenu);
+    });
 
     // Create a single observer for each animation type
     const observerLeft = new IntersectionObserver((entries) => {
@@ -435,6 +444,9 @@
       clearTimeout(routeEnterTimer);
       hamburgerIcon?.removeEventListener("click", toggleMobileMenu);
       logo?.removeEventListener("click", closeMobileMenu);
+      mobileMenuLinks.forEach((link) => {
+        link.removeEventListener("click", closeMobileMenu);
+      });
       mutationObserver?.disconnect();
       observerLeft.disconnect();
       observerLeftDGA.disconnect();

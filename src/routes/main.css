@@ -511,6 +511,7 @@ h6 {
   font-size: 28px;
   font-family: pop, sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 .nav-holder .mobile-menu li .nav-links.active {
   background-position: 0;
@@ -1771,6 +1772,22 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .projects-wrapper.projects-page.graphic-grid .projects-header {
+    align-items: center;
+    text-align: center;
+  }
+  .projects-wrapper.projects-page.graphic-grid .projects-header .web-title-kicker {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projects-wrapper.projects-page.graphic-grid .projects-header .web-title {
+    justify-content: center;
+  }
+  .projects-wrapper.projects-page.graphic-grid .projects-header .web-title-sub {
+    text-align: center;
+  }
+}
 .projects-wrapper.story-stack .project-boxes {
   width: 100%;
 }
@@ -2824,11 +2841,19 @@ body {
     padding: 4px 10px;
   }
   .aboutme {
-    height: 150px;
+    height: auto;
+    min-height: 120px;
+    width: 92%;
+    padding-bottom: 14px;
   }
   .aboutme .aboutme-link {
-    font-size: 28px;
-    padding: 14px;
+    font-size: clamp(16px, 5.2vw, 20px);
+    line-height: 1.2;
+    white-space: nowrap;
+    gap: 8px;
+    padding: 12px 16px;
+    max-width: 100%;
+    margin-bottom: 24px;
   }
 }
 /* About page responsive refresh overrides */

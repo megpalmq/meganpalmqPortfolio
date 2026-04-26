@@ -56,7 +56,7 @@
     <div class="bar2"></div>
     <div class="bar3"></div>
     <ul class="mobile-menu">
-      <li>
+      <li class:active-item={isActive("/web-projects")}>
         <a
           href="/web-projects"
           class="nav-links"
@@ -64,7 +64,7 @@
           >Web Projects</a
         >
       </li>
-      <li>
+      <li class:active-item={isActive("/graphic-projects")}>
         <a
           href="/graphic-projects"
           class="nav-links"
@@ -72,12 +72,12 @@
           >Graphic Projects</a
         >
       </li>
-      <li>
+      <li class:active-item={isActive("/about")}>
         <a href="/about" class="nav-links" class:active={isActive("/about")}
           >About</a
         >
       </li>
-      <li>
+      <li class:active-item={isActive("/resume")}>
         <a
           href="/resume"
           class="resume-link button-pulse-black"

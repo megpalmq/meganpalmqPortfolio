@@ -212,7 +212,7 @@
     left: 0;
     height: calc(100vh - 96px);
     width: 100%;
-    background-color: rgba($color: $white, $alpha: 1);
+    background-color: rgba($white, 1);
     transition: ease 0.3s;
     z-index: 9999;
     justify-content: space-evenly;
@@ -239,10 +239,13 @@
         font-size: 28px;
         font-family: pop, sans-serif;
         font-weight: 700;
+        text-align: center;
+
         &.active {
           background-position: 0;
         }
       }
+
       .resume-link {
         border: 2px solid $black;
         color: $black;

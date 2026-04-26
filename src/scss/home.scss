@@ -1353,6 +1353,28 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .projects-wrapper.projects-page.graphic-grid {
+    .projects-header {
+      align-items: center;
+      text-align: center;
+
+      .web-title-kicker {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .web-title {
+        justify-content: center;
+      }
+
+      .web-title-sub {
+        text-align: center;
+      }
+    }
+  }
+}
+
 .projects-wrapper.story-stack {
   .project-boxes {
     width: 100%;
