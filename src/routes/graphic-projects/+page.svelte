@@ -27,7 +27,7 @@
 </svelte:head>
 
 <div class="projects-wrapper projects-page graphic-grid" id="projects2">
-  <div class="projects-header" data-parallax="0.08">
+  <div style="margin-top: 50px;" class="projects-header" stydata-parallax="0.08">
     <p class="web-title-kicker">Featured Work</p>
     <h1 class="reveal-title web-title" data-mask-reveal>
       <span>Graphic</span>

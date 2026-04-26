@@ -565,6 +565,7 @@ body {
 .project-hub {
   width: 80%;
   margin: 50px auto 0 auto;
+  margin-top: 100px;
 
   h2 {
     color: $dark-red;
@@ -707,7 +708,7 @@ body {
 }
 
 .project-boxes {
-  margin-top: 40px;
+  margin-top: 70px;
   z-index: 9;
 }
 
@@ -922,6 +923,21 @@ body {
 .projects-wrapper.projects-page.web-grid,
 .projects-wrapper.projects-page.graphic-grid {
   --web-grid-gap: clamp(20px, 2.2vw, 30px);
+  --web-card-bg:
+    radial-gradient(
+      circle at 12% 8%,
+      rgba(255, 255, 255, 0.24),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(
+      160deg,
+      rgba(255, 255, 255, 0.34),
+      rgba(255, 255, 255, 0.18)
+    );
+  --web-card-border: rgba(255, 255, 255, 0.38);
+
+  --web-card-shadow-hover:
+    0 22px 42px rgba(52, 19, 66, 0.24), inset 0 0 1px rgba(255, 255, 255, 0.25);
   width: min(1180px, 92vw);
   margin-top: 100px;
 
@@ -1023,16 +1039,47 @@ body {
   .project-box {
     width: 100%;
     margin: 0;
+    position: relative;
+    overflow: hidden;
     height: 100%;
     display: grid;
     grid-template-rows: auto 1fr;
     align-items: stretch;
     padding: 20px;
     border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.34);
-    box-shadow:
-      0 12px 28px rgba(30, 14, 40, 0.14),
-      inset 0 0 1px rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--web-card-border);
+    background: var(--web-card-bg);
+    box-shadow: var(--web-card-shadow);
+    backdrop-filter: blur(16px) saturate(148%);
+    -webkit-backdrop-filter: blur(16px) saturate(148%);
+    transition:
+      transform 0.24s ease,
+      box-shadow 0.24s ease,
+      border-color 0.24s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        130deg,
+        rgba(255, 255, 255, 0.12),
+        rgba(255, 255, 255, 0)
+      );
+      opacity: 0.45;
+      pointer-events: none;
+    }
+
+    &:hover {
+      transform: translateY(-7px);
+      border-color: rgba(255, 255, 255, 0.5);
+      box-shadow: var(--web-card-shadow-hover);
+
+      img {
+        transform: scale(1.02);
+        filter: grayscale(0%);
+      }
+    }
 
     img {
       width: 100%;
@@ -1040,8 +1087,12 @@ body {
       height: clamp(180px, 18vw, 240px);
       margin: 0;
       border-radius: 16px;
-      filter: grayscale(10%);
+      filter: grayscale(12%) saturate(102%);
       object-position: center;
+      box-shadow: 0 8px 24px rgba(27, 10, 35, 0.2);
+      transition:
+        transform 0.35s ease,
+        filter 0.35s ease;
     }
 
     .project-desc {
@@ -1049,7 +1100,7 @@ body {
       max-width: none;
       margin-left: 0;
       margin-top: 14px;
-      padding: 2px 4px 4px;
+      padding: 8px 4px 4px;
       display: flex;
       flex-direction: column;
       min-height: 0;
@@ -1060,19 +1111,24 @@ body {
         height: auto;
         font-size: clamp(20px, 2vw, 26px);
         margin-bottom: 4px;
+        color: rgba($dark-red, 0.98);
+        text-wrap: balance;
       }
 
       .date {
         font-size: 15px;
         margin-bottom: 12px;
+        color: rgba($dark-red, 0.78);
+        letter-spacing: 0.02em;
       }
 
       .desc {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.55;
         max-width: 100%;
         margin-bottom: 14px;
         flex-grow: 1;
+        color: rgba($dark-red, 0.92);
       }
 
       .project-skills {
@@ -1091,12 +1147,33 @@ body {
         padding: 5px 12px;
         font-size: 13px;
         letter-spacing: 0.2px;
-        border: 1px solid rgba(255, 255, 255, 0.26);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.22);
+        color: rgba($dark-red, 0.92);
       }
 
       .arrow-link,
       .github {
         top: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.42);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.54);
+        color: rgba($dark-red, 0.96);
+        transition:
+          transform 0.18s ease,
+          background-color 0.18s ease,
+          color 0.18s ease;
+
+        &:hover {
+          transform: translateY(-2px);
+          background: rgba($dark-red, 0.9);
+          color: $white;
+        }
       }
 
       .arrow-link {
@@ -1193,6 +1270,13 @@ body {
           min-height: 28px;
           padding: 4px 10px;
           font-size: 12px;
+        }
+
+        .arrow-link,
+        .github {
+          width: 28px;
+          height: 28px;
+          font-size: 13px;
         }
       }
     }

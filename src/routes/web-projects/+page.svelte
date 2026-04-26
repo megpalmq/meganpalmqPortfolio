@@ -5,6 +5,7 @@
   import BL from "$lib/images/bloodletting.png";
   import DT from "$lib/images/DT.png";
   import thomasF from "$lib/images/thomasfielding.png";
+  import windcombe from "$lib/images/windcombe.png";
   import { page } from "$app/stores";
   import { onMount } from "svelte";
 
@@ -124,34 +125,25 @@
     </div>
 
     <div class="project-box hidden">
-      <a href="https://keurigcopycat.vercel.app/" target="_blank">
-        <img src={keurig} alt="Keurig copycat website" loading="lazy" decoding="async" /></a
+      <a href="https://windcombe.com/" target="_blank">
+        <img src={windcombe} alt="Windcombe website" loading="lazy" decoding="async" /></a
       >
       <div class="project-desc">
-        <a href="https://github.com/megpalmq/315Final" class="github" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://keurigcopycat.vercel.app/" class="arrow-link" target="_blank">
+        <a href="https://windcombe.com/" class="arrow-link" target="_blank">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
-        <a href="https://keurigcopycat.vercel.app/" class="project-title" target="_blank">
-          <h3>Keurig CopyCat</h3>
+        <a href="https://windcombe.com/" class="project-title" target="_blank">
+          <h3>Windcombe </h3>
         </a>
-        <p class="date">Fall 2024</p>
+        <p class="date">Fall 2025</p>
         <p class="desc">
-          An exact replica of the Keurig website, including a fully functional login/sign-up page and cart system, showcasing attention to detail and interactive features.<br /><br />Site I was meant to replicate:
-          <a
-            href="https://www.keurig.com/c/coffeemakers101?cm_sp=bo+cybermonday21-_-promo+hero+banner-_-shop+coffee+makers"
-            target="_blank"
-            class="here">Here</a
-          >
+          Redesigned and developed a WordPress website for the <strong> Windcombe Neighborhood Association</strong>, transforming it into an interactive community hub. The site features user account logins, a resident community board, and a neighborhood map, along with organized pages for announcements, events, and resources to improve accessibility and engagement.
         </p>
         <div class="project-skills">
-          <span>MVC Model</span>
-          <span>SCSS</span>
-          <span>HTML</span>
-          <span>JavaScript</span>
-          <span>jQuery</span>
+          <span>WordPress</span>
+          <span>Client Engagement</span>
+          <span>Branding</span>
+          <span>Typography</span>
         </div>
       </div>
     </div>
