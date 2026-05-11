@@ -38,18 +38,17 @@
   <div class="projects-header-under"></div>
   <div class="project-boxes">
     <div class="project-box hidden">
-      <a href="https://www.behance.net/gallery/222967549/Osaka-2036-Olympics" target="_blank">
+      <a href="/graphic-projects/osaka-2036-olympics">
         <img src={Osaka} alt="Osaka 2036 Olympics design project" loading="lazy" decoding="async" /></a
       >
       <div class="project-desc">
         <a
-          href="https://www.behance.net/gallery/222967549/Osaka-2036-Olympics"
+          href="/graphic-projects/osaka-2036-olympics"
           class="arrow-link"
-          target="_blank"
         >
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
-        <a href="https://www.behance.net/gallery/222967549/Osaka-2036-Olympics" class="project-title" target="_blank">
+        <a href="/graphic-projects/osaka-2036-olympics" class="project-title">
           <h3>Osaka 2036 Olympics</h3>
         </a>
         <p class="date">Spring 2025</p>
@@ -67,14 +66,14 @@
     </div>
 
     <div class="project-box hidden">
-      <a href="https://www.behance.net/gallery/223089271/Freeze-Dried?" target="_blank">
+      <a href="/graphic-projects/freeze-dried">
         <img src={FD} alt="Freeze Dried branding project" loading="lazy" decoding="async" /></a
       >
       <div class="project-desc">
-        <a href="https://www.behance.net/gallery/223089271/Freeze-Dried?" class="arrow-link" target="_blank">
+        <a href="/graphic-projects/freeze-dried" class="arrow-link">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
-        <a href="https://www.behance.net/gallery/223089271/Freeze-Dried?" class="project-title" target="_blank">
+        <a href="/graphic-projects/freeze-dried" class="project-title">
           <h3>Freeze Dried</h3>
         </a>
         <p class="date">Spring 2025</p>
@@ -91,25 +90,17 @@
     </div>
 
     <div class="project-box hidden">
-      <a
-        href="https://www.behance.net/gallery/218521699/Fragments-of-Vulnerability"
-        target="_blank"
-      >
+      <a href="/graphic-projects/fragments-of-vulnerability">
         <img src={FOV} alt="Fragments of Vulnerability zine" loading="lazy" decoding="async" /></a
       >
       <div class="project-desc">
         <a
-          href="https://www.behance.net/gallery/218521699/Fragments-of-Vulnerability"
+          href="/graphic-projects/fragments-of-vulnerability"
           class="arrow-link"
-          target="_blank"
         >
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
-        <a
-          href="https://www.behance.net/gallery/218521699/Fragments-of-Vulnerability"
-          class="project-title"
-          target="_blank"
-        >
+        <a href="/graphic-projects/fragments-of-vulnerability" class="project-title">
           <h3>Fragments of Vulnerability</h3>
         </a>
         <p class="date">Fall 2024</p>
@@ -125,14 +116,14 @@
     </div>
 
     <div class="project-box hidden">
-      <a href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron" target="_blank">
+      <a href="/graphic-projects/yonsei-x-herron">
         <img src={yonsei} alt="Yonsei x Herron infographic" loading="lazy" decoding="async" /></a
       >
       <div class="project-desc">
-        <a href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron" class="arrow-link" target="_blank">
+        <a href="/graphic-projects/yonsei-x-herron" class="arrow-link">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
-        <a href="https://www.behance.net/gallery/213076287/Yonsei-x-Herron" class="project-title" target="_blank">
+        <a href="/graphic-projects/yonsei-x-herron" class="project-title">
           <h3>Yonsei x Herron</h3>
         </a>
         <p class="date">Fall 2023</p>
@@ -148,15 +139,15 @@
     </div>
 
     <div class="project-box hidden">
-      <a href="https://www.behance.net/gallery/211130921/The-Happiness-Project" target="_blank">
+      <a href="/graphic-projects/the-happiness-project">
         <img src={happy} alt="The Happiness Project booklet" loading="lazy" decoding="async" /></a
       >
 
       <div class="project-desc">
-        <a href="https://www.behance.net/gallery/211130921/The-Happiness-Project" class="arrow-link" target="_blank">
+        <a href="/graphic-projects/the-happiness-project" class="arrow-link">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
-        <a href="https://www.behance.net/gallery/211130921/The-Happiness-Project" class="project-title" target="_blank">
+        <a href="/graphic-projects/the-happiness-project" class="project-title">
           <h3>The Happiness Project</h3>
         </a>
         <p class="date">Fall 2024</p>
