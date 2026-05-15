@@ -26,6 +26,8 @@
     fadeEnd: 0,
   };
 
+  const currentYear = new Date().getFullYear();
+
   function routeShift(
     node,
     {
@@ -479,4 +481,23 @@
       </div>
     {/key}
   </div>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__content">
+        <div>
+          <p class="site-footer__title">Megan Palmquist</p>
+          <p class="site-footer__copy">{currentYear} · Front-end development and visual design.</p>
+          <div class="site-footer__links" aria-label="Footer links">
+            <a href="/about">About</a>
+            <a href="/web-projects">Web Projects</a>
+            <a href="/graphic-projects">Graphic Projects</a>
+            <a href="https://www.linkedin.com/in/megan-palmquist/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/megpalmq" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.instagram.com/megannstone_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+        <a href="mailto:mspstudios7@gmail.com" class="site-footer__email-btn">Let's Talk</a>
+      </div>
+    </div>
+  </footer>
 </div>

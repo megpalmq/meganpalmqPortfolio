@@ -7,6 +7,7 @@ import bran from "$lib/images/bran.png";
 import FD from "$lib/images/FreezeDry.png";
 import FOV from "$lib/images/FOV.png";
 import yonsei from "$lib/images/yonsei.png";
+import AH from "$lib/images/atrium.jpg";
 import yonseiLarge from "$lib/images/yonseiL.png";
 import happy from "$lib/images/happy.png";
 
@@ -87,6 +88,33 @@ export const graphicProjects = [
         label: "Outcome",
         title: "A polished Olympic brand built for multiple applications",
         copy: "The final presentation shows how the visual system adapts across formats while still feeling anchored in Osaka's energy, architecture, and cultural identity.",
+      },
+    ],
+  },
+  {
+    slug: "atrium-house",
+    title: "Atrium House",
+    date: "Spring 2026",
+    category: "Brand Identity",
+    summary:
+      "A luxury hotel and museum brand identity designed to blend immersive art experiences with refined, contemporary hospitality.",
+
+    heroImage: AH,
+    heroAlt: "Atrium House branding project",
+    accent: "#6cb8ff",
+    highlights: ["Branding", "Logo Design", "Illustrator", "Typography"],
+    overview:
+      "Atrium House is a conceptual branding project for a luxury hotel and museum experience centered around art, creativity, and immersive hospitality. The project focused on creating a cohesive visual identity that feels elegant, modern, and welcoming while appealing to creatively curious travelers and art enthusiasts.",
+    sections: [
+      {
+        label: "Concept",
+        title: "A hotel with a refined and contemporary atmosphere",
+        copy: "The concept behind Atrium House was to blend the sophistication of a high-end hotel with the cultural atmosphere of a contemporary art museum. I developed a refined identity system using elegant typography, rich plum tones, muted olive green accents, and minimal layouts to create a balance between luxury and artistic expression. The branding extends across environmental graphics, signage, packaging, and hospitality materials to create a fully immersive guest experience.",
+      },
+      {
+        label: "Result",
+        title: "An elegant identity that feels sophisticated and memorable",
+        copy: "The final outcome was a complete brand identity system that successfully communicates creativity, refinement, and comfort through both digital and physical applications. This project strengthened my skills in branding, typography, visual storytelling, and mockup presentation while showcasing my ability to create a cohesive and immersive design experience.",
       },
     ],
   },

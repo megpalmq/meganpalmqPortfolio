@@ -5,6 +5,7 @@
   import FOV from "$lib/images/FOV.png";
   import Osaka from "$lib/images/Osaka.jpg";
   import FD from "$lib/images/FreezeDry.png";
+  import atrium from "$lib/images/AH.png";
   import { page } from "$app/stores";
   import { onMount } from "svelte";
 
@@ -59,6 +60,31 @@
           <span>Branding</span>
           <span>Indesign</span>
           <span>Figma</span>
+          <span>Illustrator</span>
+          <span>Typography</span>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="project-box hidden">
+      <a href="/graphic-projects/atrium-house">
+        <img src={atrium} alt="Atrium House branding project" loading="lazy" decoding="async" /></a
+      >
+      <div class="project-desc">
+        <a href="/graphic-projects/atrium-house" class="arrow-link">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a href="/graphic-projects/atrium-house" class="project-title">
+          <h3>Atrium House</h3>
+        </a>
+        <p class="date">Spring 2026</p>
+        <p class="desc">
+          For this branding and packaging project, I designed a playful and vibrant identity for a freeze-dried candy brand. Inspired by the cool, frozen process of freeze-drying, I focused on using icy colors and dynamic typography to reflect the candy's light, airy texture. The packaging design features bold, modern elements that stand out on shelves, aiming to capture the fun and refreshing qualities of the product. This project showcases my ability to create engaging, eye-catching designs that connect with a youthful audience.
+        </p>
+        <div class="project-skills">
+          <span>Branding</span>
+          <span>Product Design</span>
           <span>Illustrator</span>
           <span>Typography</span>
         </div>
