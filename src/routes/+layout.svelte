@@ -38,7 +38,7 @@
       blurStart = 10,
       fadeStart = 0,
       fadeEnd = 1,
-    } = {}
+    } = {},
   ) {
     return {
       delay,
@@ -50,7 +50,8 @@
         const scale = scaleStart + (1 - scaleStart) * eased;
         const blur = (1 - eased) * blurStart;
         const opacity = fadeStart + (fadeEnd - fadeStart) * eased;
-        const filterRule = blur > 0.05 ? `filter: blur(${blur}px);` : "filter: none;";
+        const filterRule =
+          blur > 0.05 ? `filter: blur(${blur}px);` : "filter: none;";
 
         return `transform: translate3d(0, ${translateY}px, 0) scale(${scale}); ${filterRule} opacity: ${opacity};`;
       },
@@ -93,7 +94,9 @@
 
   onMount(() => {
     const connection =
-      navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+      navigator.connection ||
+      navigator.mozConnection ||
+      navigator.webkitConnection;
     const saveData = Boolean(connection && connection.saveData);
     const deviceMemory = Number(navigator.deviceMemory || 0);
     const hardwareThreads = Number(navigator.hardwareConcurrency || 0);
@@ -147,7 +150,10 @@
 
     function toggleMobileMenu(event) {
       // Ignore clicks inside the expanded menu so links can navigate normally.
-      if (event?.target instanceof Element && event.target.closest(".mobile-menu")) {
+      if (
+        event?.target instanceof Element &&
+        event.target.closest(".mobile-menu")
+      ) {
         return;
       }
 
@@ -212,7 +218,7 @@
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     const observedLeft = new WeakSet();
@@ -301,11 +307,11 @@
         const clamp = Math.max(-0.9, Math.min(0.9, normalized));
         el.style.setProperty(
           "--depth-tilt",
-          `${(-clamp * activeMotion.depthTilt).toFixed(2)}deg`
+          `${(-clamp * activeMotion.depthTilt).toFixed(2)}deg`,
         );
         el.style.setProperty(
           "--depth-lift",
-          `${(Math.abs(clamp) * -activeMotion.depthLift).toFixed(2)}px`
+          `${(Math.abs(clamp) * -activeMotion.depthLift).toFixed(2)}px`,
         );
 
         const media = el.querySelector("img");
@@ -388,7 +394,9 @@
           return true;
         }
 
-        return relevantSelectors.some((selector) => node.querySelector(selector));
+        return relevantSelectors.some((selector) =>
+          node.querySelector(selector),
+        );
       });
     }
 
@@ -419,7 +427,10 @@
         });
       });
 
-      mutationObserver.observe(document.body, { childList: true, subtree: true });
+      mutationObserver.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
     }
 
     function checkWindowHeight() {
@@ -486,17 +497,33 @@
       <div class="site-footer__content">
         <div>
           <p class="site-footer__title">Megan Palmquist</p>
-          <p class="site-footer__copy">{currentYear} · Front-end development and visual design.</p>
+          <p class="site-footer__copy">
+            {currentYear} · Front-end development and visual design.
+          </p>
           <div class="site-footer__links" aria-label="Footer links">
             <a href="/about">About</a>
             <a href="/web-projects">Web Projects</a>
             <a href="/graphic-projects">Graphic Projects</a>
-            <a href="https://www.linkedin.com/in/megan-palmquist/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/megpalmq" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.instagram.com/megannstone_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a
+              href="https://www.linkedin.com/in/megan-palmquist/"
+              target="_blank"
+              rel="noopener noreferrer">LinkedIn</a
+            >
+            <a
+              href="https://github.com/megpalmq"
+              target="_blank"
+              rel="noopener noreferrer">GitHub</a
+            >
+            <a
+              href="https://www.instagram.com/megannstone_/"
+              target="_blank"
+              rel="noopener noreferrer">Instagram</a
+            >
           </div>
         </div>
-        <a href="mailto:mspstudios7@gmail.com" class="site-footer__email-btn">Let's Talk</a>
+        <a href="mailto:mspstudios7@gmail.com" class="site-footer__email-btn"
+          >Let's Talk</a
+        >
       </div>
     </div>
   </footer>
