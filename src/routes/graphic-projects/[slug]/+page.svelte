@@ -4,26 +4,28 @@
   export let data;
 
   let lightboxOpen = false;
-  let lightboxSrc = '';
+  let lightboxSrc = "";
+  let lightboxClass = "";
 
-  function openLightbox(src) {
-    lightboxSrc = src;
+  function openLightbox(item) {
+    lightboxSrc = item?.src ?? "";
+    lightboxClass = item?.class ?? "";
     lightboxOpen = true;
   }
 
   function closeLightbox() {
     lightboxOpen = false;
-    lightboxSrc = '';
+    lightboxSrc = "";
   }
 
   onMount(() => {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 
     const escHandler = (e) => {
-      if (e.key === 'Escape' && lightboxOpen) closeLightbox();
+      if (e.key === "Escape" && lightboxOpen) closeLightbox();
     };
-    window.addEventListener('keydown', escHandler);
-    return () => window.removeEventListener('keydown', escHandler);
+    window.addEventListener("keydown", escHandler);
+    return () => window.removeEventListener("keydown", escHandler);
   });
 
   $: project = data.project;
@@ -53,6 +55,16 @@
           <span>{highlight}</span>
         {/each}
       </div>
+      {#if project.liveUrl}
+        <a
+          class="detail-view-btn"
+          href={project.liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View the site
+        </a>
+      {/if}
     </div>
 
     <aside class="detail-facts">
@@ -73,20 +85,74 @@
 
   <section class="detail-body">
     <div class="detail-media-column">
-      <figure class="detail-media-frame detail-media-frame-large">
-        <img src={project.heroImage} alt={project.heroAlt} loading="eager" decoding="async" />
-      </figure>
+      {#if project.liveUrl}
+        <a
+          class="detail-media-link"
+          href={project.liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`View ${project.title} live site`}
+        >
+          <figure class="detail-media-frame detail-media-frame-large">
+            <img
+              src={project.heroImage}
+              alt={project.heroAlt}
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
+        </a>
+      {:else}
+        <figure class="detail-media-frame detail-media-frame-large">
+          <img
+            src={project.heroImage}
+            alt={project.heroAlt}
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+      {/if}
 
       {#if project.secondaryImage}
         <figure class="detail-media-frame detail-media-frame-small">
-          <img src={project.secondaryImage} alt={project.secondaryAlt} loading="lazy" decoding="async" />
+          <img
+            src={project.secondaryImage}
+            alt={project.secondaryAlt}
+            loading="lazy"
+            decoding="async"
+          />
         </figure>
       {/if}
+
+      {#if project.videoSrc}
+        <figure
+          class="detail-media-frame detail-embed-frame detail-video-frame"
+        >
+          <video
+            src={project.videoSrc}
+            poster={project.videoPoster}
+            autoplay
+            muted
+            loop
+            playsinline
+            controls
+          />
+        </figure>
+      {/if}
+
       {#if project.gallery}
         <div class="detail-gallery-inline">
           {#each project.gallery as item}
-            <figure class="detail-gallery-item inline" on:click={() => openLightbox(item.src)}>
-              <img src={item.src} alt={item.alt} loading="lazy" decoding="async" />
+            <figure
+              class={"detail-gallery-item inline " + (item.class ?? "")}
+              on:click={() => openLightbox(item)}
+            >
+              <img
+                src={item.src}
+                alt={item.alt}
+                loading="lazy"
+                decoding="async"
+              />
             </figure>
           {/each}
         </div>
@@ -117,17 +183,41 @@
   <!-- gallery moved inline into the media column; keep this section removed -->
 
   {#if lightboxOpen}
-    <div class="lightbox" role="dialog" aria-modal="true" on:click={closeLightbox}>
-      <div class="lightbox-inner" on:click|stopPropagation>
-        <button class="lightbox-close" on:click={closeLightbox} aria-label="Close">×</button>
+    <div
+      class="lightbox"
+      role="dialog"
+      aria-modal="true"
+      on:click={closeLightbox}
+    >
+      <div
+        class={"lightbox-inner " + (lightboxClass ?? "")}
+        on:click|stopPropagation
+      >
+        <button
+          class="lightbox-close"
+          on:click={closeLightbox}
+          aria-label="Close">×</button
+        >
         <img src={lightboxSrc} alt="" />
       </div>
     </div>
   {/if}
+  {#if project.iframeSrc}
+    <figure class="detail-media-frame detail-embed-frame detail-iframe-frame">
+      <iframe
+        src={project.iframeSrc}
+        title={project.iframeTitle ?? `${project.title} iframe`}
+        loading="lazy"
+      ></iframe>
+    </figure>
+  {/if}
 
   <footer class="detail-footer">
     {#if navigation.previous}
-      <a class="detail-nav detail-nav-previous" href={`/graphic-projects/${navigation.previous.slug}`}>
+      <a
+        class="detail-nav detail-nav-previous"
+        href={`/graphic-projects/${navigation.previous.slug}`}
+      >
         <span>Previous</span>
         <strong>{navigation.previous.title}</strong>
       </a>
@@ -139,7 +229,10 @@
     </a>
 
     {#if navigation.next}
-      <a class="detail-nav detail-nav-next" href={`/graphic-projects/${navigation.next.slug}`}>
+      <a
+        class="detail-nav detail-nav-next"
+        href={`/graphic-projects/${navigation.next.slug}`}
+      >
         <span>Next</span>
         <strong>{navigation.next.title}</strong>
       </a>
@@ -169,7 +262,9 @@
     border: 1px solid rgba(255, 255, 255, 0.16);
     box-shadow: 0 10px 30px rgba(46, 9, 56, 0.16);
     backdrop-filter: blur(10px);
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease;
   }
 
   .back-link:hover {
@@ -183,7 +278,11 @@
     gap: 24px;
     padding: 28px;
     border-radius: 30px;
-    background: linear-gradient(145deg, rgba(46, 9, 56, 0.95), rgba(87, 58, 104, 0.9));
+    background: linear-gradient(
+      145deg,
+      rgba(46, 9, 56, 0.95),
+      rgba(87, 58, 104, 0.9)
+    );
     border: 1px solid rgba(255, 255, 255, 0.28);
     box-shadow: 0 24px 48px rgba(34, 13, 44, 0.22);
     color: #fff;
@@ -312,29 +411,68 @@
   }
 
   .detail-gallery-inline::-webkit-scrollbar-thumb {
-    background: rgba(0,0,0,0.18);
+    background: rgba(0, 0, 0, 0.18);
     border-radius: 10px;
   }
 
   .detail-gallery-inline .detail-gallery-item.inline {
-    display: inline-block;
+    display: inline-flex;
     vertical-align: top;
+    align-items: center;
+    justify-content: center;
     width: min(630px, 60vw);
     height: auto;
     margin-right: 16px;
-    overflow: hidden;
+    /* allow the image to determine height so it won't be clipped */
+    overflow: visible;
     border-radius: 18px;
-    border: 1px solid rgba(255,255,255,0.48);
-    box-shadow: 0 12px 22px rgba(46,9,56,0.06);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    box-shadow: 0 12px 22px rgba(46, 9, 56, 0.06);
     margin-bottom: 50px;
-   
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.02);
   }
 
   .detail-gallery-inline .detail-gallery-item.inline img {
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: auto;
+    max-width: 100%;
+    /* constrain by viewport height so tall images are fully visible */
+    max-height: 86vh;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  /* Hover/focus animation for gallery thumbnails */
+  .detail-gallery-inline .detail-gallery-item.inline {
+    transition:
+      transform 220ms cubic-bezier(0.2, 0.9, 0.3, 1),
+      box-shadow 220ms ease;
+  }
+
+  .detail-gallery-inline .detail-gallery-item.inline:focus,
+  .detail-gallery-inline .detail-gallery-item.inline:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(46, 9, 56, 0.12);
+  }
+
+  .detail-gallery-inline .detail-gallery-item.inline img {
+    transition: transform 280ms ease;
+  }
+
+  .detail-gallery-inline .detail-gallery-item.inline:focus img,
+  .detail-gallery-inline .detail-gallery-item.inline:hover img {
+    transform: scale(1.02);
+  }
+
+  /* shrink poster-style images so they don't dominate the inline gallery */
+  .detail-gallery-inline .detail-gallery-item.inline.is-poster {
+    width: min(380px, 36vw);
+  }
+
+  .detail-gallery-inline .detail-gallery-item.inline.is-poster img {
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.06);
   }
 
   /* captions removed for inline gallery items */
@@ -422,7 +560,9 @@
     color: #2e0938;
     border: 1px solid rgba(255, 255, 255, 0.46);
     box-shadow: 0 14px 26px rgba(46, 9, 56, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .detail-nav:hover {
@@ -444,7 +584,11 @@
   }
 
   .detail-nav-home {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.68));
+    background: linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.82),
+      rgba(255, 255, 255, 0.68)
+    );
   }
 
   /* Lightbox styles for click-to-enlarge */
@@ -453,28 +597,55 @@
     inset: 0;
     display: grid;
     place-items: center;
-    background: rgba(12,12,14,0.75);
+    background: rgba(12, 12, 14, 0.75);
     z-index: 1400;
-    padding: 28px;
+    /* offset the top padding so the lightbox content sits below any sticky nav/header */
+    padding: calc(var(--sticky-header-top, 112px) + 28px) 28px 28px 28px;
+    /* entrance animation */
+    animation: lightbox-fade 180ms ease both;
   }
 
   .lightbox-inner {
     position: relative;
-    max-width: 75vw;
-    max-height: 75vh;
+    max-width: 90vw;
+    /* reduce available height so top isn't obscured by a sticky header */
+    max-height: calc(100vh - var(--sticky-header-top, 112px) - 56px);
     width: auto;
     height: auto;
     display: grid;
     place-items: center;
     border-radius: 12px;
+    overflow: hidden;
+    padding: 12px;
+    /* pop-in animation for the inner card */
+    transform-origin: center center;
+    animation: lightbox-pop 220ms cubic-bezier(0.2, 0.85, 0.25, 1) both;
   }
 
   .lightbox-inner img {
     display: block;
-    max-width: 100%;
-    max-height: 100%;
+    /* slightly larger so images are more visible but still framed */
+    max-width: min(86vw, 760px);
+    max-height: calc(100vh - var(--sticky-header-top, 112px) - 100px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
     border-radius: 8px;
-    box-shadow: 0 30px 60px rgba(2,6,23,0.6);
+    box-shadow: 0 30px 60px rgba(2, 6, 23, 0.6);
+  }
+
+  /* when the opened image is a poster, scale it to fit the frame so the whole poster is visible */
+  .lightbox-inner.is-poster {
+    overflow: hidden;
+  }
+
+  .lightbox-inner.is-poster img {
+    /* posters a bit larger but contained so they fit comfortably */
+    max-width: min(80vw, 720px);
+    max-height: calc(100vh - var(--sticky-header-top, 112px) - 100px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
   }
 
   .lightbox-close {
@@ -491,7 +662,28 @@
     display: grid;
     place-items: center;
     cursor: pointer;
-    box-shadow: 0 8px 18px rgba(2,6,23,0.3);
+    box-shadow: 0 8px 18px rgba(2, 6, 23, 0.3);
+  }
+
+  /* Animations */
+  @keyframes lightbox-fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes lightbox-pop {
+    from {
+      transform: translateY(8px) scale(0.98);
+      opacity: 0.96;
+    }
+    to {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
   }
 
   @media (max-width: 960px) {

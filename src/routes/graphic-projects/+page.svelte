@@ -85,14 +85,10 @@
         </a>
         <p class="date">Spring 2025</p>
         <p class="desc">
-          For this project, I created a complete brand identity for the Olympics
-          in Osaka, Japan. I began by studying Osaka's culture, history, and
-          design influences. The project included designing a logo, brochure,
-          poster, custom pattern, event tickets, lanyard, and website mockup.
-          Drawing inspiration from Osaka's cityscape, traditional art, and
-          modern innovation, the branding captures the city's essence and the
-          spirit of the Olympic Games, resulting in a visually compelling and
-          culturally authentic brand.
+          I developed a complete brand identity for the Osaka Olympics,
+          including a logo, print materials, merchandise, and website mockup,
+          inspired by the city's culture, traditional art, and modern innovation
+          to create a visually compelling and authentic Olympic brand.
         </p>
         <div class="project-skills">
           <span>Branding</span>
@@ -122,14 +118,11 @@
         </a>
         <p class="date">Spring 2026</p>
         <p class="desc">
-          For this branding and packaging project, I designed a playful and
-          vibrant identity for a freeze-dried candy brand. Inspired by the cool,
-          frozen process of freeze-drying, I focused on using icy colors and
-          dynamic typography to reflect the candy's light, airy texture. The
-          packaging design features bold, modern elements that stand out on
-          shelves, aiming to capture the fun and refreshing qualities of the
-          product. This project showcases my ability to create engaging,
-          eye-catching designs that connect with a youthful audience.
+          Atrium House is a luxury hospitality brand inspired by the elegance of
+          boutique hotels and the cultural atmosphere of contemporary art
+          museums, featuring refined typography, rich plum and olive tones, and
+          immersive branding across signage, packaging, and guest experience
+          materials.
         </p>
         <div class="project-skills">
           <span>Branding</span>
@@ -158,14 +151,10 @@
         </a>
         <p class="date">Spring 2025</p>
         <p class="desc">
-          For this branding and packaging project, I designed a playful and
-          vibrant identity for a freeze-dried candy brand. Inspired by the cool,
-          frozen process of freeze-drying, I focused on using icy colors and
-          dynamic typography to reflect the candy's light, airy texture. The
-          packaging design features bold, modern elements that stand out on
-          shelves, aiming to capture the fun and refreshing qualities of the
-          product. This project showcases my ability to create engaging,
-          eye-catching designs that connect with a youthful audience.
+          For this branding and packaging project, I created a playful and
+          vibrant identity for a freeze-dried candy brand using icy colors,
+          dynamic typography, and bold packaging design to capture the product's
+          fun, airy texture and appeal to a youthful audience.
         </p>
         <div class="project-skills">
           <span>Branding</span>

@@ -1,4 +1,9 @@
 import Osaka from "$lib/images/Osaka.jpg";
+import brochureFront from "$lib/images/brochurefront.png";
+import brochureBack from "$lib/images/brochureback.png";
+import OsakaPoster from "$lib/images/Osaka2036Poster.jpg";
+import ticketsOsaka from "$lib/images/ticketsOsaka.png";
+import lanyard from "$lib/images/lanyard.png";
 import PB from "$lib/images/pb.png";
 import LI from "$lib/images/LI.png";
 import TF from "$lib/images/TF.png";
@@ -46,6 +51,11 @@ export const graphicProjects = [
     heroAlt: "Osaka 2036 Olympics design project",
     accent: "#f1a24f",
     highlights: ["Branding", "Indesign", "Figma", "Illustrator", "Typography"],
+    videoSrc: "/LogoAni2.mp4",
+    videoPoster: Osaka,
+    iframeSrc:
+      "https://www.figma.com/proto/ZUGoyihtPBPmJ3gq4ZXDtO/OsakaOlympicWebsite?node-id=3-2&p=f&t=othINy6y5pBhd4ns-0&scaling=contain&content-scaling=fixed&page-id=0%3A1",
+    iframeTitle: "Osaka 2036 Olympics website mockup",
     gallery: [
       {
         src: PB,
@@ -70,10 +80,42 @@ export const graphicProjects = [
         alt: "Placeholder pattern study for Osaka 2036 Olympics",
         caption: "Pattern and branding placeholder",
       },
+      {
+        src: brochureFront,
+        alt: "Osaka 2036 Olympics brochure (front)",
+        caption: "Brochure — front",
+      },
+      {
+        src: brochureBack,
+        alt: "Osaka 2036 Olympics brochure (back)",
+        caption: "Brochure — back",
+      },
+      {
+        src: OsakaPoster,
+        alt: "Osaka 2036 Olympics poster",
+        caption: "Poster",
+        class: "is-poster",
+      },
+      {
+        src: ticketsOsaka,
+        alt: "Osaka 2036 event tickets",
+        caption: "Tickets",
+      },
+      {
+        src: lanyard,
+        alt: "Event lanyard and pass",
+        caption: "Lanyard",
+      },
     ],
     overview:
       "This project explored how a global sports event could feel rooted in a specific place. I developed a logo, brochure, poster, pattern system, event tickets, lanyard, and website mockup so the identity could live consistently across print and digital touchpoints.",
     sections: [
+      {
+        label: "Description",
+        title: "Osaka 2036 Olympics overview",
+        copy:
+          "For this project, I created a complete brand identity for the Olympics in Osaka, Japan. I began by studying Osaka's culture, history, and design influences. The project included designing a logo, brochure, poster, custom pattern, event tickets, lanyard, and website mockup. Drawing inspiration from Osaka's cityscape, traditional art, and modern innovation, the branding captures the city's essence and the spirit of the Olympic Games, resulting in a visually compelling and culturally authentic brand.",
+      },
       {
         label: "Concept",
         title: "A city-led identity for a global event",
@@ -107,9 +149,15 @@ export const graphicProjects = [
       "Atrium House is a conceptual branding project for a luxury hotel and museum experience centered around art, creativity, and immersive hospitality. The project focused on creating a cohesive visual identity that feels elegant, modern, and welcoming while appealing to creatively curious travelers and art enthusiasts.",
     sections: [
       {
+        label: "Description",
+        title: "Atrium House overview",
+        copy:
+          "",
+      },
+      {
         label: "Concept",
         title: "A hotel with a refined and contemporary atmosphere",
-        copy: "The concept behind Atrium House was to blend the sophistication of a high-end hotel with the cultural atmosphere of a contemporary art museum. I developed a refined identity system using elegant typography, rich plum tones, muted olive green accents, and minimal layouts to create a balance between luxury and artistic expression. The branding extends across environmental graphics, signage, packaging, and hospitality materials to create a fully immersive guest experience.",
+        copy: "The concept behind Atrium House was to blend the sophistication of a high-end hotel with the cultural atmosphere of a contemporary art museum. I developed a refined identity system using elegant typography, rich plum tones, muted olive green accents, and minimal layouts to create a balance between luxury and artistic expression. The branding extends across environmental graphics, signage, packaging, and hospitality materials to create a fully immersive guest experience,"
       },
       {
         label: "Result",
@@ -132,6 +180,12 @@ export const graphicProjects = [
     overview:
       "I designed the identity for a freeze-dried candy brand with the goal of making it feel fun, energetic, and instantly recognizable. The visual direction leans into cool tones and dynamic lettering to echo the texture and personality of the product.",
     sections: [
+      {
+        label: "Description",
+        title: "Freeze Dried overview",
+        copy:
+          "For this branding and packaging project, I designed a playful and vibrant identity for a freeze-dried candy brand. Inspired by the cool, frozen process of freeze-drying, I focused on using icy colors and dynamic typography to reflect the candy's light, airy texture. The packaging design features bold, modern elements that stand out on shelves, aiming to capture the fun and refreshing qualities of the product. This project showcases my ability to create engaging, eye-catching designs that connect with a youthful audience.",
+      },
       {
         label: "Concept",
         title: "A candy brand with a cold, crisp personality",
@@ -163,6 +217,12 @@ export const graphicProjects = [
     overview:
       "This zine project centers typography as the primary storytelling tool. I designed the pages to guide viewers through an emotional narrative while keeping the reading experience thoughtful and legible.",
     sections: [
+      {
+        label: "Description",
+        title: "Fragments of Vulnerability overview",
+        copy:
+          "The Vulnerability Zine is a typography-focused project that tells the powerful, real-life story of an individual affected by human trafficking. Through expressive typography and design, the zine captures the emotional depth of the experience, using visual storytelling to raise awareness and foster empathy for those impacted by this issue.",
+      },
       {
         label: "Approach",
         title: "Typography as the emotional voice",
@@ -197,6 +257,12 @@ export const graphicProjects = [
     secondaryAlt: "Yonsei x Herron poster detail",
     sections: [
       {
+        label: "Description",
+        title: "Yonsei x Herron overview",
+        copy:
+          "A typography-driven design project that explores the collaboration between Yonsei University and Herron School of Art and Design. The project is 2 infographic poster that talk about food insecurity in Seoul South Korea and Indianapolis Indiana.",
+      },
+      {
         label: "Data",
         title: "Two cities, one visual conversation",
         copy: "The project looks at food insecurity in Seoul, South Korea and Indianapolis, Indiana. I translated the research into infographic layouts that keep the information readable while still feeling designed.",
@@ -227,6 +293,12 @@ export const graphicProjects = [
     overview:
       "This booklet-style project was designed as an educational resource. The visual structure needed to feel compassionate while still making the information easy to follow.",
     sections: [
+      {
+        label: "Description",
+        title: "The Happiness Project overview",
+        copy:
+          "A booklet-style project designed to educate and guide the audience through the experience of a panic attack, offering insights into its emotional and physical symptoms. The project also provides helpful strategies and techniques for managing and overcoming panic attacks, creating a compassionate and informative resource for those seeking support.",
+      },
       {
         label: "Intent",
         title: "A calm reading experience for a sensitive topic",
