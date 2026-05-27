@@ -15,6 +15,7 @@ import yonsei from "$lib/images/yonsei.png";
 import AH from "$lib/images/atrium.jpg";
 import yonseiLarge from "$lib/images/yonseiL.png";
 import happy from "$lib/images/happy.png";
+import kozenHero from "$lib/images/Koukibehance.jpg";
 
 function createPlaceholderArtwork(title, subtitle, colorA, colorB) {
   const svg = `
@@ -167,6 +168,46 @@ export const graphicProjects = [
     ],
   },
   {
+    slug: "kozen-skincare",
+    title: "Kozen Skincare",
+    date: "Spring 2026",
+    category: "Brand Identity",
+    summary:
+      "A skincare brand identity that pairs clean typography, soft color, and minimal packaging for a calm, premium feel.",
+    heroImage: kozenHero,
+    heroAlt: "Kozen Skincare branding project",
+    accent: "#8fb8a4",
+    highlights: ["Branding", "Packaging", "Illustrator", "Typography"],
+    overview:
+      "Kozen Skincare explores how a beauty brand can feel approachable and elevated at the same time. I focused on building a clear visual system that could carry across packaging, product storytelling, and supporting brand materials.",
+    sections: [
+      {
+        label: "Description",
+        title: "Kozen Skincare overview",
+        copy:
+          "For Kozen Skincare, I developed a brand identity centered on clarity, softness, and balance. The project was designed to feel modern and thoughtful, with packaging and graphics that communicate care, simplicity, and everyday luxury.",
+      },
+      {
+        label: "Concept",
+        title: "A calm, premium beauty brand",
+        copy:
+          "The concept behind Kozen was to create a skincare identity that feels clean without becoming sterile. I used restrained type, natural tones, and generous spacing to give the brand a calm presence that still feels polished and intentional.",
+      },
+      {
+        label: "Packaging",
+        title: "Minimal surfaces with room for the product to lead",
+        copy:
+          "The packaging system prioritizes hierarchy and simplicity so the product names and benefits remain easy to read. That structure helps the brand scale across different skincare items while keeping the line visually cohesive.",
+      },
+      {
+        label: "Result",
+        title: "A flexible identity that feels refined and approachable",
+        copy:
+          "The final direction gives Kozen a steady visual voice that could translate across boxes, bottles, presentation boards, and digital touchpoints. It reflects a skincare brand that is clean, calm, and visually memorable.",
+      },
+    ],
+  },
+  {
     slug: "freeze-dried",
     title: "Freeze Dried",
     date: "Spring 2025",
@@ -276,43 +317,6 @@ export const graphicProjects = [
         label: "Presentation",
         title: "A pair of posters built to stand alone and work together",
         copy: "Each poster can be viewed individually, but the system is most effective when the two pieces are read as a matched set.",
-      },
-    ],
-  },
-  {
-    slug: "the-happiness-project",
-    title: "The Happiness Project",
-    date: "Fall 2024",
-    category: "Book Design",
-    summary:
-      "A booklet designed to explain panic attacks with empathy, clarity, and supportive visual pacing.",
-    heroImage: happy,
-    heroAlt: "The Happiness Project booklet",
-    accent: "#c86fff",
-    highlights: ["Indesign", "Typography", "Adobe Creative Suite"],
-    overview:
-      "This booklet-style project was designed as an educational resource. The visual structure needed to feel compassionate while still making the information easy to follow.",
-    sections: [
-      {
-        label: "Description",
-        title: "The Happiness Project overview",
-        copy:
-          "A booklet-style project designed to educate and guide the audience through the experience of a panic attack, offering insights into its emotional and physical symptoms. The project also provides helpful strategies and techniques for managing and overcoming panic attacks, creating a compassionate and informative resource for those seeking support.",
-      },
-      {
-        label: "Intent",
-        title: "A calm reading experience for a sensitive topic",
-        copy: "I focused on keeping the layout approachable, with generous spacing and clear sectional breaks so the reader could move through the content without feeling rushed.",
-      },
-      {
-        label: "Design",
-        title: "A booklet built around guidance and support",
-        copy: "The typography and composition were chosen to make the information feel reassuring and organized. The project aims to educate while also offering a sense of care.",
-      },
-      {
-        label: "Takeaway",
-        title: "Editorial design with a practical purpose",
-        copy: "The finished piece shows how a small-format publication can help translate complex emotional information into something readable and useful.",
       },
     ],
   },

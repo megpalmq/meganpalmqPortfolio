@@ -6,6 +6,7 @@
   import Osaka from "$lib/images/Osaka.jpg";
   import FD from "$lib/images/FreezeDry.png";
   import atrium from "$lib/images/AH.png";
+  import kozen from "$lib/images/Kouki.png";
   import { page } from "$app/stores";
   import { onMount } from "svelte";
 
@@ -17,6 +18,7 @@
     3: false,
     4: false,
     5: false,
+    6: false,
   };
 
   $: currentUrl = $page.url.pathname;
@@ -134,6 +136,36 @@
     </div>
 
     <div class="project-box">
+      <a href="/graphic-projects/kozen-skincare">
+        <img
+          src={kozen}
+          alt="Kozen branding"
+          loading="lazy"
+          decoding="async"
+        /></a
+      >
+      <div class="project-desc" class:expanded={expandedDescriptions[2]}>
+        <a href="/graphic-projects/kozen-skincare" class="arrow-link">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a href="/graphic-projects/kozen-skincare" class="project-title">
+          <h3>Kozen Skincare</h3>
+        </a>
+        <p class="date">Spring 2026</p>
+        <p class="desc">
+          A skincare brand identity that pairs clean typography, soft color, and
+          minimal packaging for a calm, premium feel.
+        </p>
+        <div class="project-skills">
+          <span>Branding</span>
+          <span>Packaging</span>
+          <span>Illustrator</span>
+          <span>Typography</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-box">
       <a href="/graphic-projects/freeze-dried">
         <img
           src={FD}
@@ -142,7 +174,7 @@
           decoding="async"
         /></a
       >
-      <div class="project-desc" class:expanded={expandedDescriptions[2]}>
+      <div class="project-desc" class:expanded={expandedDescriptions[3]}>
         <a href="/graphic-projects/freeze-dried" class="arrow-link">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
@@ -174,7 +206,7 @@
           decoding="async"
         /></a
       >
-      <div class="project-desc" class:expanded={expandedDescriptions[3]}>
+      <div class="project-desc" class:expanded={expandedDescriptions[4]}>
         <a
           href="/graphic-projects/fragments-of-vulnerability"
           class="arrow-link"
@@ -213,7 +245,7 @@
           decoding="async"
         /></a
       >
-      <div class="project-desc" class:expanded={expandedDescriptions[4]}>
+      <div class="project-desc" class:expanded={expandedDescriptions[5]}>
         <a href="/graphic-projects/yonsei-x-herron" class="arrow-link">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
@@ -231,40 +263,6 @@
           <span>Indesign</span>
           <span>Illustrator</span>
           <span>Typography</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-box">
-      <a href="/graphic-projects/the-happiness-project">
-        <img
-          src={happy}
-          alt="The Happiness Project booklet"
-          loading="lazy"
-          decoding="async"
-        /></a
-      >
-
-      <div class="project-desc" class:expanded={expandedDescriptions[5]}>
-        <a href="/graphic-projects/the-happiness-project" class="arrow-link">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a href="/graphic-projects/the-happiness-project" class="project-title">
-          <h3>The Happiness Project</h3>
-        </a>
-        <p class="date">Fall 2024</p>
-        <p class="desc">
-          A booklet-style project designed to educate and guide the audience
-          through the experience of a panic attack, offering insights into its
-          emotional and physical symptoms. The project also provides helpful
-          strategies and techniques for managing and overcoming panic attacks,
-          creating a compassionate and informative resource for those seeking
-          support.
-        </p>
-        <div class="project-skills">
-          <span>Indesign</span>
-          <span>Typography</span>
-          <span>Adobe Creative Suite</span>
         </div>
       </div>
     </div>
