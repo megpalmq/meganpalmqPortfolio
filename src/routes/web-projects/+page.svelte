@@ -41,7 +41,7 @@
   <div class="project-boxes">
     {#each webProjects as project}
       <div
-        class="project-box hidden"
+        class="project-box"
         role="link"
         tabindex="0"
         on:click={() => goto(`/web-projects/${project.slug}`)}
