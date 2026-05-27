@@ -549,16 +549,24 @@ h6 {
     margin-top: 28px;
   }
   .nav-holder .logo a {
-    height: 64px;
-    width: 64px;
+    height: 56px;
+    width: 56px;
     margin-top: -4px;
   }
   .nav-holder .logo a img {
     width: 40px;
     margin-left: 12px;
   }
-  .nav-holder .logo a p {
-    font-size: 36px;
+  .nav-holder .logo a .reg-logo {
+    display: none;
+  }
+  .nav-holder .logo a .mobile-logo {
+    display: block;
+    position: static;
+    margin: 0;
+    margin-left: 0;
+    font-size: 24px;
+    line-height: 1;
   }
   .nav-holder .logo a:hover {
     width: 300px;
@@ -573,8 +581,16 @@ h6 {
   .nav-holder .logo a {
     margin-top: -4px;
   }
-  .nav-holder .logo a p {
+  .nav-holder .logo a .reg-logo {
+    display: none;
+  }
+  .nav-holder .logo a .mobile-logo {
+    display: block;
+    position: static;
+    margin: 0;
+    margin-left: 0;
     font-size: 22px;
+    line-height: 1;
   }
   .nav-holder .logo a:hover {
     width: 240px;
@@ -2064,7 +2080,7 @@ body {
   background-color: rgb(46, 9, 56);
 }
 
-@media (max-aspect-ratio: 1/1) {
+@media (max-aspect-ratio: 1/1) and (min-width: 901px) {
   .site-wrapper .nav-holder {
     height: 90px;
   }
@@ -3464,12 +3480,62 @@ body {
   .site-footer .site-footer__inner {
     flex-direction: column;
     align-items: stretch;
-    gap: 12px;
+    gap: 8px;
   }
   .site-footer .site-footer__content {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 3px;
+    text-align: center;
+  }
+
+  .site-footer .site-footer__content > div {
+    width: 100%;
+  }
+
+  .site-footer .site-footer__links {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px 10px;
+  }
+
+  .site-footer .site-footer__email-btn {
+    width: auto;
+    align-self: center;
+    text-align: center;
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    padding: 18px 0;
+  }
+
+  .site-footer .site-footer__inner {
+    width: min(1200px, calc(100vw - 18px));
     gap: 6px;
+  }
+
+  .site-footer .site-footer__title {
+    font-size: 16px;
+  }
+
+  .site-footer .site-footer__copy {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .site-footer .site-footer__links {
+    gap: 6px 8px;
+    font-size: 13px;
+  }
+
+  .site-footer .site-footer__email-btn {
+    width: auto;
+    padding: 9px 12px;
+    font-size: 14px;
   }
 }
 

@@ -728,5 +728,20 @@
     .detail-nav {
       padding: 18px;
     }
+
+    .detail-footer {
+      gap: 12px;
+      padding-bottom: 12px;
+    }
+
+    .detail-nav {
+      width: 100%;
+      gap: 6px;
+    }
+
+    .detail-nav strong {
+      font-size: 16px;
+      line-height: 1.3;
+    }
   }
 </style>

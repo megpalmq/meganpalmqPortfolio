@@ -6,7 +6,7 @@
   import Osaka from "$lib/images/Osaka.jpg";
   import FD from "$lib/images/FreezeDry.png";
   import atrium from "$lib/images/AH.png";
-  import kozen from "$lib/images/Kouki.png";
+  import kozen from "$lib/images/kouki.png";
   import { page } from "$app/stores";
   import { onMount } from "svelte";
 

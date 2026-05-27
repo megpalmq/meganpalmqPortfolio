@@ -286,15 +286,23 @@
     }
     .logo {
       a {
-        height: 64px;
-        width: 64px;
+        height: 56px;
+        width: 56px;
         margin-top: -4px;
         img {
           width: 40px;
           margin-left: 12px;
         }
-        p {
-          font-size: 36px;
+        .reg-logo {
+          display: none;
+        }
+        .mobile-logo {
+          display: block;
+          position: static;
+          margin: 0;
+          margin-left: 0;
+          font-size: 24px;
+          line-height: 1;
         }
         &:hover {
           width: 300px;
@@ -314,8 +322,16 @@
     .logo {
       a {
         margin-top: -4px;
-        p {
+        .reg-logo {
+          display: none;
+        }
+        .mobile-logo {
+          display: block;
+          position: static;
+          margin: 0;
+          margin-left: 0;
           font-size: 22px;
+          line-height: 1;
         }
         &:hover {
           width: 240px;
