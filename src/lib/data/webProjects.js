@@ -6,6 +6,7 @@ import PTR from "$lib/images/pb.png";
 import DT from "$lib/images/DT.png";
 import thomasF from "$lib/images/thomasfielding.png";
 import windcombe from "$lib/images/windcombe.png";
+import windcombePdf from "$lib/images/windcombe.pdf";
 import ap from "$lib/images/ap.png";
 
 export const webProjects = [
@@ -109,6 +110,10 @@ export const webProjects = [
       "A redesigned WordPress site for the Windcombe Neighborhood Association transformed into an interactive community hub with accounts, a community board, and neighborhood map.",
     heroImage: windcombe,
     heroAlt: "Windcombe website",
+    secondaryPdf: windcombePdf,
+    secondaryAlt:
+      "Windcombe PDF case study showing the site's key sections and design focus",
+    secondaryVideo: "/WindcombeVideo.mp4",
     liveUrl: "https://windcombe.com/",
     caseStudyUrl: "https://www.behance.net/gallery/248254721/Windcombe",
     highlights: ["WordPress", "Client Engagement", "Branding", "Typography"],

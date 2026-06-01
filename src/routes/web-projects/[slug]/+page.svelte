@@ -28,14 +28,10 @@
 
   $: project = data.project;
   $: navigation = data.navigation;
+  $: secondaryPdfSrc = project.secondaryPdf
+    ? `${project.secondaryPdf}#page=1&zoom=page-fit&toolbar=0&navpanes=0&scrollbar=0`
+    : "";
 </script>
-
-<svelte:head>
-  <title>{project.title} | Web Projects</title>
-  <meta name="description" content={project.summary} />
-  <meta property="og:image" content={project.heroImage} />
-  <meta property="og:description" content={project.summary} />
-</svelte:head>
 
 <div
   class="project-detail-page"
@@ -114,7 +110,56 @@
         </figure>
       {/if}
 
-      {#if project.secondaryImage}
+      {#if project.secondaryPdf}
+        <figure class="detail-media-frame detail-embed-frame detail-pdf-frame">
+          <iframe
+            src={secondaryPdfSrc}
+            title={project.secondaryAlt ?? `${project.title} PDF`}
+            loading="lazy"
+          ></iframe>
+        </figure>
+
+        {#if project.secondaryVideo}
+          <figure class="detail-media-frame detail-video-frame">
+            <video
+              src={project.secondaryVideo}
+              poster={project.secondaryVideoPoster}
+              controls
+              playsinline
+              preload="metadata"
+            >
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        {:else}
+          <figure
+            class="detail-media-frame detail-video-placeholder"
+            aria-hidden="true"
+          >
+            <div class="video-placeholder-inner">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#5e2a72"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ><path d="M23 7l-7 5 7 5V7z"></path><rect
+                  x="1"
+                  y="5"
+                  width="14"
+                  height="14"
+                  rx="2"
+                ></rect></svg
+              >
+              <p>Video coming soon</p>
+            </div>
+          </figure>
+        {/if}
+      {:else if project.secondaryImage}
         <figure class="detail-media-frame detail-media-frame-small">
           <img
             src={project.secondaryImage}
@@ -213,3 +258,33 @@
 </div>
 
 <!-- styles are provided by src/scss/detail-project.scss (imported in src/scss/styles.scss) -->
+
+<style>
+  .detail-pdf-frame iframe {
+    width: 100%;
+    height: calc(100vh - 140px);
+    min-height: 680px;
+  }
+
+  .detail-video-placeholder {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.02)
+    );
+    min-height: 240px;
+    padding: 24px;
+    border-radius: 18px;
+  }
+
+  .video-placeholder-inner {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: #5e2a72;
+    font-weight: 700;
+    font-family: pop, sans-serif;
+  }
+</style>

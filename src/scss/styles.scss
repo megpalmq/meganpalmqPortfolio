@@ -8,3 +8,6 @@
 @import "media.scss";
 @import "detail-project.scss";
 @import "footer.scss";
+
+/* Import legacy compiled rules so SCSS output includes existing global styles. */
+@import "legacy-main.scss";
