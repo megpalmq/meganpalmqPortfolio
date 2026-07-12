@@ -24,16 +24,25 @@
 </svelte:head>
 
 <div class="frosted-glass">
-  <video autoplay muted loop playsinline preload="metadata" src="/Background.mp4" type="video/mp4"
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    src="/Background.mp4"
+    type="video/mp4"
   ></video>
   <div class="home-wrapper" id="home">
     <div class="home-desc-wrapper">
       <div class="background"></div>
       <div class="home-desc">
         <div class="home-con hiddenbottom2">
-          <p class="intro">Hello, my name is</p>
+          <p class="intro">Hello, welcome to</p>
           <div class="megpal fancy-text"></div>
-          <h2>I bring creativity to life through design, detail, and purpose.</h2>
+          <h2>
+            I bring creativity to life through design, detail, and purpose.
+          </h2>
         </div>
 
         <div class="socials hiddenbottom3">
@@ -45,10 +54,18 @@
             >
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/megpalmq" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/megpalmq"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/megannstone_/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/megannstone_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="fa-brands fa-instagram"></i>
             </a>
           </div>
@@ -69,7 +86,12 @@
   <h2 class="reveal-title" data-mask-reveal>Explore My Work</h2>
   <div class="hub-grid">
     <a href="/web-projects" class="hub-card hidden">
-      <img src={DT} alt="Preview of web projects" loading="lazy" decoding="async" />
+      <img
+        src={DT}
+        alt="Preview of web projects"
+        loading="lazy"
+        decoding="async"
+      />
       <div class="hub-copy">
         <h3>Web Projects</h3>
         <p>Interactive builds, UI/UX thinking, and front-end development.</p>
@@ -78,7 +100,12 @@
     </a>
 
     <a href="/graphic-projects" class="hub-card hidden">
-      <img src={Osaka} alt="Preview of graphic design projects" loading="lazy" decoding="async" />
+      <img
+        src={Osaka}
+        alt="Preview of graphic design projects"
+        loading="lazy"
+        decoding="async"
+      />
       <div class="hub-copy">
         <h3>Graphic Design Projects</h3>
         <p>Brand identity, typography systems, and visual storytelling.</p>

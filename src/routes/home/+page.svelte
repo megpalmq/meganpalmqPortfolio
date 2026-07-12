@@ -29,7 +29,7 @@
   <div class="home-desc-wrapper">
     <div class="home-desc">
       <div class="home-desc-container hiddenbottom2">
-        <p class="intro">Hi, my name is</p>
+        <p class="intro">Hi, welcome to</p>
         <h1>Megan Palmquist.</h1>
         <h1>
           I am a <span>web developer/ graphic designer/ and UX/UI designer</span

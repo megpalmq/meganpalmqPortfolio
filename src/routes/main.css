@@ -758,25 +758,30 @@ body {
   -webkit-text-stroke: 1px #5e2a72;
   font-size: 24px;
   letter-spacing: 1px;
+  padding-bottom: 20px;
 }
 .home-desc .megpal {
   font-family: pop, sans-serif;
   font-weight: 700;
   font-size: 50px;
   color: rgb(46, 9, 56);
-  background-image: url(../lib/images/SVG/Asset4.svg);
+  background-image: url(../lib/images/MSPStudiologo.svg);
   width: 100%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 18vh;
+  padding-bottom: 20px;
 }
+
 .home-desc .fancy-text {
   font-family: pop, sans-serif;
   font-size: 3rem;
   font-variant-ligatures: discretionary-ligatures;
   font-feature-settings: "swsh" 1, "liga" 1, "dlig" 1;
   line-height: 1.2;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 .home-desc h2 {
   color: rgb(46, 9, 56);
@@ -788,6 +793,8 @@ body {
   white-space: nowrap;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 40px;
+
 }
 
 .socials {
@@ -826,7 +833,7 @@ body {
 }
 .socials .social-box a:hover {
   color: rgb(46, 9, 56);
-  background-color: rgba(255, 255, 255, 0.84);
+  background-color: rgba(138, 237, 250, 0.84);
   transform: translateY(-2px);
 }
 
@@ -1046,7 +1053,7 @@ body {
 .projects-header {
   font-size: 36px;
   background-color: rgb(46, 9, 56);
-  margin-top: 300px;
+padding: 20px;
   box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.01);
   width: 55vw;
   border-radius: 20px;
@@ -3472,16 +3479,18 @@ body {
   }
 }
 .site-footer {
-  padding: 48px 0;
+  padding: 30px 0;
+  background-color: #fefefe;
 }
 .site-footer .site-footer {
-  padding: 48px 0;
+  padding: 20px 0;
   background: linear-gradient(180deg, rgba(46, 9, 56, 0.04), rgba(87, 58, 104, 0.02));
   border-top: 1px solid rgba(46, 9, 56, 0.04);
   color: #2e0938;
+  
 }
 .site-footer .site-footer__inner {
-  width: min(1200px, 92vw);
+  width: min(1200px, 99vw);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -3498,7 +3507,9 @@ body {
   margin: 0;
   font-weight: 800;
   font-size: 18px;
+  color: #3f094e;
 }
+
 .site-footer .site-footer__copy {
   margin: 0;
   color: rgba(46, 9, 56, 0.8);
@@ -3509,7 +3520,7 @@ body {
   align-items: center;
 }
 .site-footer .site-footer__links a {
-  color: inherit;
+  color: #3f094e;
   text-decoration: none;
   font-weight: 600;
   opacity: 0.9;

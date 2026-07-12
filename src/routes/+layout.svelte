@@ -497,23 +497,29 @@
       <div class="site-footer__content">
         <div>
           <p class="site-footer__title">Megan Palmquist</p>
+          <div class="site-footer__title"></div>
           <p class="site-footer__copy">
             {currentYear} · Front-end development and visual design.
           </p>
           <div class="site-footer__links" aria-label="Footer links">
             <a href="/about">About</a>
+            <span>|</span>
             <a href="/web-projects">Web Projects</a>
+            <span>|</span>
             <a href="/graphic-projects">Graphic Projects</a>
+            <span>|</span>
             <a
               href="https://www.linkedin.com/in/megan-palmquist/"
               target="_blank"
               rel="noopener noreferrer">LinkedIn</a
             >
+            <span>|</span>
             <a
               href="https://github.com/megpalmq"
               target="_blank"
               rel="noopener noreferrer">GitHub</a
             >
+            <span>|</span>
             <a
               href="https://www.instagram.com/megannstone_/"
               target="_blank"
