@@ -2,7 +2,7 @@
   import port from "$lib/images/portfolio.png";
   import yonsei from "$lib/images/yonsei.png";
   import happy from "$lib/images/happy.png";
-  import FOV from "$lib/images/FOV.png";
+  import sunny from "$lib/images/sunny.png";
   import Osaka from "$lib/images/Osaka.jpg";
   import FD from "$lib/images/FreezeDry.png";
   import atrium from "$lib/images/AH.png";
@@ -198,35 +198,29 @@
     </div>
 
     <div class="project-box">
-      <a href="/graphic-projects/fragments-of-vulnerability">
+      <a href="/graphic-projects/sun-drift">
         <img
-          src={FOV}
-          alt="Fragments of Vulnerability zine"
+          src={sunny}
+          alt="Sun Drift music festival brand identity and schedule design"
           loading="lazy"
           decoding="async"
         /></a
       >
       <div class="project-desc" class:expanded={expandedDescriptions[4]}>
-        <a
-          href="/graphic-projects/fragments-of-vulnerability"
-          class="arrow-link"
-        >
+        <a href="/graphic-projects/sun-drift" class="arrow-link">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
-        <a
-          href="/graphic-projects/fragments-of-vulnerability"
-          class="project-title"
-        >
-          <h3>Fragments of Vulnerability</h3>
+        <a href="/graphic-projects/sun-drift" class="project-title">
+          <h3>Sun Drift</h3>
         </a>
         <p class="date">Fall 2024</p>
         <p class="desc">
-          The Vulnerability Zine is a typography-focused project that tells the
-          powerful, real-life story of an individual affected by human
-          trafficking. Through expressive typography and design, the zine
-          captures the emotional depth of the experience, using visual
-          storytelling to raise awareness and foster empathy for those impacted
-          by this issue.
+          Sun Drift is a conceptual music festival set in Joshua Tree,
+          California. I developed a complete visual identity that combines
+          expressive typography, psychedelic patterns, and a bold color palette
+          to capture the energy of an outdoor music festival. The identity was
+          designed as a flexible system that could stay recognizable across
+          promotional, informational, environmental, and wearable applications.
         </p>
         <div class="project-skills">
           <span>Indesign</span>

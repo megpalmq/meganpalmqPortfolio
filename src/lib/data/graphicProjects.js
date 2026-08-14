@@ -10,7 +10,7 @@ import TF from "$lib/images/TF.png";
 import LO from "$lib/images/LO.png";
 import bran from "$lib/images/bran.png";
 import FD from "$lib/images/FreezeDry.png";
-import FOV from "$lib/images/FOV.png";
+import Sundrift from "$lib/images/Sundrift.png";
 import yonsei from "$lib/images/yonsei.png";
 import AH from "$lib/images/atrium.jpg";
 import yonseiLarge from "$lib/images/yonseiL.png";
@@ -245,42 +245,67 @@ export const graphicProjects = [
     ],
   },
   {
-    slug: "fragments-of-vulnerability",
-    title: "Fragments of Vulnerability",
-    date: "Fall 2024",
-    category: "Editorial Design",
-    summary:
-      "A typography-driven zine that uses layout and scale to tell a difficult real-world story with care.",
-    heroImage: FOV,
-    heroAlt: "Fragments of Vulnerability zine",
-    accent: "#d45f7f",
-    highlights: ["Indesign", "Illustrator", "Typography"],
-    overview:
-      "This zine project centers typography as the primary storytelling tool. I designed the pages to guide viewers through an emotional narrative while keeping the reading experience thoughtful and legible.",
-    sections: [
-      {
-        label: "Description",
-        title: "Fragments of Vulnerability overview",
-        copy:
-          "The Vulnerability Zine is a typography-focused project that tells the powerful, real-life story of an individual affected by human trafficking. Through expressive typography and design, the zine captures the emotional depth of the experience, using visual storytelling to raise awareness and foster empathy for those impacted by this issue.",
-      },
-      {
-        label: "Approach",
-        title: "Typography as the emotional voice",
-        copy: "The layout uses scale, pacing, and contrast to reflect the intensity of the subject matter. Type carries the message first, with composition doing much of the emotional work.",
-      },
-      {
-        label: "Structure",
-        title: "Editorial rhythm that balances tension and clarity",
-        copy: "I organized the zine to move between dense, expressive moments and quieter breathing space. That rhythm helps the content remain powerful without becoming visually overwhelming.",
-      },
-      {
-        label: "Impact",
-        title: "A sensitive project shaped for reflection",
-        copy: "The final book is meant to be read closely. The design supports empathy and awareness by giving the story a clear visual cadence.",
-      },
-    ],
-  },
+  slug: "sun-drift",
+  title: "Sun Drift",
+  date: "Spring 2026",
+  category: "Brand Identity",
+  summary:
+    "A vibrant music festival identity inspired by desert sunsets, psychedelic visuals, and the energy of live music.",
+    heroImage: Sundrift,
+  heroAlt: "Sun Drift music festival brand identity and schedule design",
+
+  accent: "#8a3f8f",
+
+  highlights: [
+    "Illustrator",
+    "Photoshop",
+    "Brand Identity",
+    "Typography",
+    "Art Direction"
+  ],
+
+  overview:
+    "Sun Drift is a conceptual music festival set in Joshua Tree, California. I developed a complete visual identity that combines expressive typography, psychedelic patterns, and a bold color palette to capture the energy of an outdoor music festival. The identity was designed as a flexible system that could stay recognizable across promotional, informational, environmental, and wearable applications.",
+
+  sections: [
+    {
+      label: "Description",
+      title: "Creating the Sun Drift festival identity",
+      copy:
+        "Sun Drift is a conceptual indie music festival inspired by the atmosphere of Joshua Tree and the visual culture surrounding live music. I created the festival's identity and extended it across posters, schedules, street banners, wristbands, signage, and merchandise to explore how one visual system could shape an entire festival experience.",
+    },
+    {
+      label: "Approach",
+      title: "A psychedelic identity inspired by the desert",
+      copy:
+        "The visual direction combines flowing psychedelic patterns, expressive typography, and sun-inspired graphics. Purple and aqua reference the cooler tones of the desert at dusk, while bright yellow introduces the warmth and energy of the sun. Together, these elements create a playful identity that feels energetic, nostalgic, and immersive.",
+    },
+    {
+      label: "System",
+      title: "Building a flexible visual language",
+      copy:
+        "Rather than treating each deliverable as a separate design, I developed a visual system that could adapt across different formats. The Sun Drift wordmark, sun motif, grid, color palette, and flowing patterns repeat throughout the identity while changing in scale and composition depending on the application.",
+    },
+    {
+      label: "Information Design",
+      title: "Turning a complex lineup into a clear schedule",
+      copy:
+        "The festival schedule required the visual identity to become functional as well as expressive. I organized performances by stage and time using modular blocks, strong hierarchy, and color contrast so attendees could quickly navigate the lineup while the schedule still felt connected to the larger Sun Drift brand.",
+    },
+    {
+      label: "Applications",
+      title: "Extending the identity into the festival experience",
+      copy:
+        "The identity was applied to environmental graphics and attendee touchpoints including street banners, festival signage, admission wristbands, schedules, and merchandise. Designing across different scales allowed me to explore how the brand could remain recognizable from a small wristband to large outdoor signage.",
+    },
+    {
+      label: "Outcome",
+      title: "More than a poster — a complete festival system",
+      copy:
+        "The final project demonstrates how a visual identity can grow into a cohesive event experience. By establishing a flexible set of recognizable brand elements, Sun Drift maintains its personality across print, environmental, informational, and wearable applications while allowing each piece to serve a different purpose.",
+    },
+  ],
+},
   {
     slug: "yonsei-x-herron",
     title: "Yonsei x Herron",

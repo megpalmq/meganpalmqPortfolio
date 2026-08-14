@@ -5,17 +5,115 @@
 
   let lightboxOpen = false;
   let lightboxSrc = "";
+  let lightboxAlt = "";
   let lightboxClass = "";
+  let lightboxZoom = 1;
+  let panX = 0;
+  let panY = 0;
+  let isPanning = false;
+  let pointerStartX = 0;
+  let pointerStartY = 0;
+  let panStartX = 0;
+  let panStartY = 0;
+  let isPinching = false;
+  let pinchStartDistance = 0;
+  let pinchStartZoom = 1;
+  const MIN_ZOOM = 1;
+  const MAX_ZOOM = 3;
+  const ZOOM_STEP = 0.25;
+
+  function clampZoom(value) {
+    return Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, +value.toFixed(2)));
+  }
 
   function openLightbox(item) {
     lightboxSrc = item?.src ?? "";
+    lightboxAlt = item?.alt ?? "";
     lightboxClass = item?.class ?? "";
+    lightboxZoom = 1;
+    panX = 0;
+    panY = 0;
+    isPanning = false;
     lightboxOpen = true;
   }
 
   function closeLightbox() {
     lightboxOpen = false;
     lightboxSrc = "";
+    lightboxAlt = "";
+    lightboxZoom = 1;
+    panX = 0;
+    panY = 0;
+    isPanning = false;
+  }
+
+  function zoomIn() {
+    lightboxZoom = clampZoom(lightboxZoom + ZOOM_STEP);
+  }
+
+  function zoomOut() {
+    lightboxZoom = clampZoom(lightboxZoom - ZOOM_STEP);
+  }
+
+  function resetZoom() {
+    lightboxZoom = 1;
+  }
+
+  function startPan(event) {
+    if (lightboxZoom <= 1 || isPinching) return;
+    isPanning = true;
+    pointerStartX = event.clientX;
+    pointerStartY = event.clientY;
+    panStartX = panX;
+    panStartY = panY;
+    event.currentTarget.setPointerCapture(event.pointerId);
+  }
+
+  function movePan(event) {
+    if (!isPanning) return;
+    panX = panStartX + (event.clientX - pointerStartX);
+    panY = panStartY + (event.clientY - pointerStartY);
+  }
+
+  function endPan(event) {
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    }
+    isPanning = false;
+  }
+
+  function getTouchDistance(touchA, touchB) {
+    const deltaX = touchA.clientX - touchB.clientX;
+    const deltaY = touchA.clientY - touchB.clientY;
+    return Math.hypot(deltaX, deltaY);
+  }
+
+  function handleTouchStart(event) {
+    if (event.touches.length !== 2) return;
+    isPinching = true;
+    isPanning = false;
+    pinchStartDistance = getTouchDistance(event.touches[0], event.touches[1]);
+    pinchStartZoom = lightboxZoom;
+    event.preventDefault();
+  }
+
+  function handleTouchMove(event) {
+    if (!isPinching || event.touches.length !== 2) return;
+    const currentDistance = getTouchDistance(
+      event.touches[0],
+      event.touches[1],
+    );
+    if (pinchStartDistance === 0) return;
+    const scaleRatio = currentDistance / pinchStartDistance;
+    lightboxZoom = clampZoom(pinchStartZoom * scaleRatio);
+    event.preventDefault();
+  }
+
+  function handleTouchEnd(event) {
+    if (event.touches.length < 2) {
+      isPinching = false;
+      pinchStartDistance = 0;
+    }
   }
 
   onMount(() => {
@@ -30,6 +128,11 @@
 
   $: project = data.project;
   $: navigation = data.navigation;
+  $: if (lightboxZoom === 1) {
+    panX = 0;
+    panY = 0;
+    isPanning = false;
+  }
 </script>
 
 <svelte:head>
@@ -103,7 +206,20 @@
           </figure>
         </a>
       {:else}
-        <figure class="detail-media-frame detail-media-frame-large">
+        <figure
+          class="detail-media-frame detail-media-frame-large detail-media-frame-clickable"
+          role="button"
+          tabindex="0"
+          aria-label={`Open ${project.title} image`}
+          on:click={() =>
+            openLightbox({ src: project.heroImage, alt: project.heroAlt })}
+          on:keydown={(event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              openLightbox({ src: project.heroImage, alt: project.heroAlt });
+            }
+          }}
+        >
           <img
             src={project.heroImage}
             alt={project.heroAlt}
@@ -114,7 +230,26 @@
       {/if}
 
       {#if project.secondaryImage}
-        <figure class="detail-media-frame detail-media-frame-small">
+        <figure
+          class="detail-media-frame detail-media-frame-small detail-media-frame-clickable"
+          role="button"
+          tabindex="0"
+          aria-label={`Open ${project.title} secondary image`}
+          on:click={() =>
+            openLightbox({
+              src: project.secondaryImage,
+              alt: project.secondaryAlt,
+            })}
+          on:keydown={(event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              openLightbox({
+                src: project.secondaryImage,
+                alt: project.secondaryAlt,
+              });
+            }
+          }}
+        >
           <img
             src={project.secondaryImage}
             alt={project.secondaryAlt}
@@ -193,12 +328,56 @@
         class={"lightbox-inner " + (lightboxClass ?? "")}
         on:click|stopPropagation
       >
+        <div
+          class="lightbox-controls"
+          role="toolbar"
+          aria-label="Image zoom controls"
+        >
+          <button
+            class="lightbox-control-btn"
+            on:click={zoomOut}
+            disabled={lightboxZoom <= MIN_ZOOM}
+            aria-label="Zoom out">−</button
+          >
+          <button
+            class="lightbox-control-btn"
+            on:click={resetZoom}
+            disabled={lightboxZoom === 1}
+            aria-label="Reset zoom">{Math.round(lightboxZoom * 100)}%</button
+          >
+          <button
+            class="lightbox-control-btn"
+            on:click={zoomIn}
+            disabled={lightboxZoom >= MAX_ZOOM}
+            aria-label="Zoom in">+</button
+          >
+        </div>
         <button
           class="lightbox-close"
           on:click={closeLightbox}
           aria-label="Close">×</button
         >
-        <img src={lightboxSrc} alt="" />
+        <div
+          class={`lightbox-image-stage ${lightboxZoom > 1 ? "is-zoomed" : ""} ${
+            isPanning ? "is-panning" : ""
+          }`}
+          on:pointerdown={startPan}
+          on:pointermove={movePan}
+          on:pointerup={endPan}
+          on:pointercancel={endPan}
+          on:pointerleave={endPan}
+          on:touchstart={handleTouchStart}
+          on:touchmove={handleTouchMove}
+          on:touchend={handleTouchEnd}
+          on:touchcancel={handleTouchEnd}
+        >
+          <img
+            src={lightboxSrc}
+            alt={lightboxAlt}
+            draggable="false"
+            style={`transform: translate(${panX}px, ${panY}px) scale(${lightboxZoom});`}
+          />
+        </div>
       </div>
     </div>
   {/if}
@@ -504,6 +683,15 @@
     height: auto;
   }
 
+  .detail-media-frame-clickable {
+    cursor: zoom-in;
+  }
+
+  .detail-media-frame-clickable:focus-visible {
+    outline: 3px solid rgba(138, 63, 143, 0.55);
+    outline-offset: 4px;
+  }
+
   .detail-card {
     padding: 24px;
     border-radius: 26px;
@@ -600,21 +788,23 @@
     background: rgba(12, 12, 14, 0.75);
     z-index: 1400;
     /* offset the top padding so the lightbox content sits below any sticky nav/header */
-    padding: calc(var(--sticky-header-top, 112px) + 28px) 28px 28px 28px;
+    padding: calc(var(--sticky-header-top, 112px) + 20px) 20px
+      calc(20px + env(safe-area-inset-bottom, 0px)) 20px;
     /* entrance animation */
     animation: lightbox-fade 180ms ease both;
   }
 
   .lightbox-inner {
     position: relative;
-    max-width: 90vw;
+    width: min(92vw, 980px);
+    max-width: 980px;
     /* reduce available height so top isn't obscured by a sticky header */
     max-height: calc(100vh - var(--sticky-header-top, 112px) - 56px);
     width: auto;
     height: auto;
     display: grid;
     place-items: center;
-    border-radius: 12px;
+    border-radius: 14px;
     overflow: hidden;
     padding: 12px;
     /* pop-in animation for the inner card */
@@ -632,6 +822,25 @@
     object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 30px 60px rgba(2, 6, 23, 0.6);
+    transform-origin: center center;
+    transition: transform 0.2s ease;
+    user-select: none;
+  }
+
+  .lightbox-image-stage {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    touch-action: none;
+  }
+
+  .lightbox-image-stage.is-zoomed {
+    cursor: grab;
+  }
+
+  .lightbox-image-stage.is-zoomed.is-panning {
+    cursor: grabbing;
   }
 
   /* when the opened image is a poster, scale it to fit the frame so the whole poster is visible */
@@ -649,9 +858,9 @@
   }
 
   .lightbox-close {
-    position: absolute;
-    top: -10px;
-    right: -10px;
+    position: fixed;
+    top: calc(10px + env(safe-area-inset-top, 0px));
+    right: max(10px, env(safe-area-inset-right, 0px));
     background: #fff;
     border: none;
     width: 44px;
@@ -663,6 +872,55 @@
     place-items: center;
     cursor: pointer;
     box-shadow: 0 8px 18px rgba(2, 6, 23, 0.3);
+    z-index: 1403;
+  }
+
+  .lightbox-controls {
+    position: fixed;
+    left: 50%;
+    bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+    transform: translateX(-50%);
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 999px;
+    background: rgba(18, 20, 28, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 14px 28px rgba(2, 6, 23, 0.38);
+    z-index: 1402;
+  }
+
+  .lightbox-control-btn {
+    min-width: 44px;
+    height: 40px;
+    padding: 0 12px;
+    border: none;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.96);
+    color: #1f0a28;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(2, 6, 23, 0.25);
+    transition:
+      transform 0.16s ease,
+      background-color 0.16s ease;
+  }
+
+  .lightbox-control-btn:hover {
+    transform: translateY(-1px);
+    background: #ffffff;
+  }
+
+  .lightbox-control-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
   }
 
   /* Animations */
@@ -742,6 +1000,42 @@
     .detail-nav strong {
       font-size: 16px;
       line-height: 1.3;
+    }
+
+    .lightbox {
+      padding: calc(var(--sticky-header-top, 112px) + 14px) 10px
+        calc(10px + env(safe-area-inset-bottom, 0px)) 10px;
+    }
+
+    .lightbox-controls {
+      bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+      left: 50%;
+      transform: translateX(-50%);
+      gap: 6px;
+      padding: 6px;
+      max-width: calc(100vw - 16px);
+    }
+
+    .lightbox-control-btn {
+      min-width: 40px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-height: 760px) {
+    .lightbox {
+      padding-top: max(12px, env(safe-area-inset-top, 0px));
+    }
+
+    .lightbox-inner,
+    .lightbox-inner.is-poster img,
+    .lightbox-inner img {
+      max-height: calc(100dvh - 96px);
+    }
+
+    .lightbox-controls {
+      bottom: calc(8px + env(safe-area-inset-bottom, 0px));
     }
   }
 </style>
