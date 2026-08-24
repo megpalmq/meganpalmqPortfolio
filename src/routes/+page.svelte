@@ -29,7 +29,7 @@
     muted
     loop
     playsinline
-    preload="metadata"
+    preload="auto"
     src="/Background.mp4"
     type="video/mp4"
   ></video>

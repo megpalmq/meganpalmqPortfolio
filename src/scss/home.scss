@@ -9,6 +9,7 @@
   overflow: hidden;
   isolation: isolate;
 
+  // Keep the background video on its own simple rendering layer.
   video {
     position: absolute;
     inset: 0;
@@ -16,78 +17,54 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    z-index: 0;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    contain: paint;
+    z-index: -1;
     pointer-events: none;
   }
+
+  // Lightweight glass surface. Avoid backdrop-filter over the video.
+  background: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 0.38),
+    rgba(255, 255, 255, 0.14)
+  );
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16);
+  color: #fff;
+  text-align: center;
 }
 
 @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.frosted-glass {
-  background: linear-gradient(
-    140deg,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.08)
-  );
-  border-radius: 24px;
-  backdrop-filter: blur(18px) saturate(165%);
-  -webkit-backdrop-filter: blur(18px) saturate(165%);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16);
-  padding: 2rem;
-  color: #fff;
-  text-align: center;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
 }
 
 @keyframes floatGlow {
   0%,
   100% {
-    transform: translate(0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
   }
   50% {
-    transform: translate(20px, 10px) scale(1.1);
+    transform: translate3d(20px, 10px, 0) scale(1.1);
   }
 }
 
 .site-wrapper {
+  // The hero video already provides motion; keep the page background static.
   background: linear-gradient(
-    300deg,
+    135deg,
     #a59fbf,
-    #99d9e3,
-    #f7d1e5,
-    #ededec,
-    #bea5be,
-    #a59fbf,
-    #99d9e3,
-    #f7d1e5,
-    #ededec,
+    #99d9e3 28%,
+    #f7d1e5 55%,
+    #ededec 78%,
     #bea5be
   );
-  background-size: 200% 200%;
-  animation: gradient-animation 22s ease infinite;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -110,18 +87,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .home-wrapper {
   position: relative;
   max-width: 1060px;
@@ -131,12 +96,10 @@ body {
   text-align: center;
   background: linear-gradient(
     152deg,
-    rgba(255, 255, 255, 0.34),
-    rgba(255, 255, 255, 0.12)
+    rgba(255, 255, 255, 0.62),
+    rgba(255, 255, 255, 0.28)
   );
   border: 1px solid var(--surface-border);
-  backdrop-filter: blur(20px) saturate(150%);
-  -webkit-backdrop-filter: blur(20px) saturate(150%);
   box-shadow:
     var(--elev-soft),
     inset 0 0 1px rgba(255, 255, 255, 0.2);
@@ -164,9 +127,8 @@ body {
 
   .home-con {
     opacity: 0;
-    transform: translateY(15px);
-    animation: fadeInUp 1s forwards;
-    animation-delay: 0.3s;
+    transform: translate3d(0, 18px, 0);
+    animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
 
     p.intro {
       font-size: 1.4rem;
@@ -204,7 +166,7 @@ body {
     font-weight: 700;
     font-size: 50px;
     color: $dark-red;
-    background-image: url(../lib/images/SVG/Asset4.svg);
+    background-image: url(../lib/images/MSPStudiologo.svg);
     width: 100%;
     background-size: contain;
     background-position: center;
@@ -403,75 +365,65 @@ body {
 
 .hidden {
   opacity: 0;
-  filter: blur(2px);
-  transform: translate3d(-80px, 0, 0) scale(0.985);
+  transform: translate3d(-40px, 0, 0);
   transition:
-    transform 0.75s ease,
-    opacity 0.75s ease,
-    filter 0.75s ease;
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.6s ease;
 }
 
 .hidden-about {
   opacity: 0;
-  filter: blur(2px);
-  transform: translateX(-100%);
-  transition: ease 0.7s;
+  transform: translate3d(-40px, 0, 0);
+  transition:
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.6s ease;
 }
 
 .hidden-about-logo {
   opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: ease 4s;
+  transform: translate3d(-40px, 0, 0);
+  transition:
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.7s ease;
 }
 
 .show-about-logo {
   opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-  transition: ease 4s;
+  transform: translate3d(0, 0, 0);
 }
 
 .show {
   opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
 }
 
 .hiddenbottom {
   opacity: 0;
-  filter: blur(2px);
-  transform: translate3d(0, -70px, 0) scale(0.985);
+  transform: translate3d(0, -30px, 0);
   transition:
-    transform 0.9s ease,
-    opacity 0.9s ease,
-    filter 0.9s ease;
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.6s ease;
 }
 
 .hiddenbottom2 {
   opacity: 0;
-  filter: blur(2px);
-  transform: translate3d(0, -60px, 0) scale(0.985);
+  transform: translate3d(0, -25px, 0);
   transition:
-    transform 0.85s ease,
-    opacity 0.85s ease,
-    filter 0.85s ease;
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.65s ease;
 }
 
 .hiddenbottom3 {
   opacity: 0;
-  filter: blur(2px);
-  transform: translate3d(0, 60px, 0) scale(0.985);
+  transform: translate3d(0, 25px, 0);
   transition:
-    transform 0.95s ease,
-    opacity 0.95s ease,
-    filter 0.95s ease;
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.7s ease;
 }
 
 .showtop {
   opacity: 1;
-  filter: blur(0);
-  transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0);
 }
 
 .project-hub,
@@ -502,32 +454,7 @@ body {
   transform: translate3d(0, var(--parallax-shift, 0px), 0);
   will-change: transform;
 }
-.border {
-  height: 110px;
-  width: 100%;
-  top: -30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  z-index: 999;
-  background: rgba($white, 0.12);
-  backdrop-filter: blur(20px) saturate(150%);
-  -webkit-backdrop-filter: blur(20px) saturate(150%);
 
-  .seemore {
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    display: flex;
-    font-size: 60px;
-    margin-top: 30px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 20px;
-    font-family: pop;
-  }
-}
 #projects,
 .projects-wrapper {
   border-radius: 50px;
@@ -594,8 +521,6 @@ body {
     );
     border-radius: 25px;
     border: 1px solid var(--surface-border);
-    backdrop-filter: blur(20px) saturate(150%);
-    -webkit-backdrop-filter: blur(20px) saturate(150%);
     box-shadow:
       var(--elev-soft),
       inset 0 0 1px rgba(255, 255, 255, 0.2);
@@ -618,15 +543,12 @@ body {
       width: 100%;
       height: 270px;
       object-fit: cover;
-      filter: grayscale(8%);
       transform: scale(var(--media-scale, 1));
-      transition:
-        transform 0.45s ease,
-        filter 0.35s ease;
+      transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     &:hover img {
-      filter: grayscale(0%);
+      transform: scale(1.02);
     }
 
     .hub-copy {
@@ -733,8 +655,6 @@ body {
     );
     border-radius: 25px;
     border: 1px solid var(--surface-border);
-    backdrop-filter: blur(20px) saturate(150%);
-    -webkit-backdrop-filter: blur(20px) saturate(150%);
     box-shadow:
       var(--elev-soft),
       inset 0 0 1px rgba(255, 255, 255, 0.2);
@@ -746,7 +666,6 @@ body {
       transform 0.45s ease,
       box-shadow 0.4s ease;
     z-index: 9;
-    will-change: transform, opacity;
     &:hover {
       transform: perspective(1200px) rotateX(var(--depth-tilt))
         translateY(var(--hover-lift, -8px)) scale(var(--hover-scale, 1.02));
@@ -766,7 +685,6 @@ body {
       width: 210px;
       margin-top: 4px;
       height: 230px;
-      filter: grayscale(36%);
       &:hover {
         transform: scale(calc(var(--media-scale, 1) + 0.02));
       }
@@ -862,7 +780,7 @@ body {
         position: relative;
         max-width: 450px;
         height: 50px;
-        transition: all 0.14s ease-in-out;
+        transition: background-position 0.14s ease-in-out;
         color: $dark-red;
         border: none;
         font-size: 24px;
@@ -916,6 +834,15 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
   [data-parallax],
   .project-box,
   .hub-card,
@@ -923,9 +850,19 @@ body {
   .hidden,
   .hiddenbottom,
   .hiddenbottom2,
-  .hiddenbottom3 {
+  .hiddenbottom3,
+  .hidden-about,
+  .hidden-about-logo {
     transform: none !important;
-    transition: none !important;
+  }
+
+  .hidden,
+  .hiddenbottom,
+  .hiddenbottom2,
+  .hiddenbottom3,
+  .hidden-about,
+  .hidden-about-logo {
+    opacity: 1 !important;
   }
 
   .reveal-title {
@@ -1018,7 +955,6 @@ body {
       border: 1px solid rgba(255, 255, 255, 0.32);
       border-radius: 999px;
       padding: 6px 12px;
-      backdrop-filter: blur(4px);
     }
 
     .web-title {
@@ -1078,8 +1014,6 @@ body {
     border: 1px solid var(--web-card-border);
     background: var(--web-card-bg);
     box-shadow: var(--web-card-shadow);
-    backdrop-filter: blur(16px) saturate(148%);
-    -webkit-backdrop-filter: blur(16px) saturate(148%);
     transition:
       transform 0.24s ease,
       box-shadow 0.24s ease,
@@ -1105,7 +1039,6 @@ body {
 
       img {
         transform: scale(1.02);
-        filter: grayscale(0%);
       }
     }
 
@@ -1115,12 +1048,9 @@ body {
       height: clamp(180px, 18vw, 240px);
       margin: 0;
       border-radius: 16px;
-      filter: grayscale(12%) saturate(102%);
       object-position: center;
       box-shadow: 0 8px 24px rgba(27, 10, 35, 0.2);
-      transition:
-        transform 0.35s ease,
-        filter 0.35s ease;
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     .project-desc {
@@ -1461,5 +1391,21 @@ body {
         0 20px 42px rgba($dark-red, 0.34),
         inset 0 1px 0 rgba($white, 0.22);
     }
+  }
+}
+
+/* Performance guardrails for long pages and low-power devices. */
+img {
+  content-visibility: auto;
+}
+
+@media (max-width: 900px) {
+  // Keep the laptop/tablet version visually rich without adding GPU-heavy blur.
+  .home-wrapper {
+    background: linear-gradient(
+      152deg,
+      rgba(255, 255, 255, 0.72),
+      rgba(255, 255, 255, 0.34)
+    );
   }
 }
