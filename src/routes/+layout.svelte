@@ -511,7 +511,7 @@
       </div>
 
       <!-- =========================================
-         FOOTER NAVIGATION
+         NAVIGATION
     ========================================== -->
 
       <div class="site-footer__links">
@@ -523,35 +523,42 @@
           <a href="/web-projects"> Web Projects </a>
 
           <a href="/graphic-projects"> Graphic Projects </a>
+        </div>
 
+        <!-- SOCIAL ICONS -->
+
+        <div class="site-footer__socials" aria-label="Social media links">
           <a
             href="https://www.linkedin.com/in/megan-palmquist/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
-            LinkedIn
+            <i class="fa-brands fa-linkedin-in"></i>
           </a>
 
           <a
             href="https://github.com/megpalmq"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
-            GitHub
+            <i class="fa-brands fa-github"></i>
           </a>
 
           <a
             href="https://www.instagram.com/megannstone_/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram"
           >
-            Instagram
+            <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
 
       <!-- =========================================
-         CONTACT BUTTON
+         CONTACT
     ========================================== -->
 
       <a href="mailto:mspstudios7@gmail.com" class="site-footer__email-btn">

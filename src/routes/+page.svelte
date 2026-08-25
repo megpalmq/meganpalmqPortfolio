@@ -1,6 +1,6 @@
 <script>
   import port from "$lib/images/portfolio.png";
-  import Osaka from "$lib/images/Osaka.jpg";
+  import Kouki from "$lib/images/kouki.png";
   import DT from "$lib/images/DT.png";
   import { page } from "$app/stores";
   import { onMount } from "svelte";
@@ -75,7 +75,6 @@
   </div>
 </div>
 
-
 <section class="project-hub hiddenbottom" id="projects">
   <h2 class="reveal-title" data-mask-reveal>Explore My Work</h2>
   <div class="hub-grid">
@@ -95,7 +94,7 @@
 
     <a href="/graphic-projects" class="hub-card hidden">
       <img
-        src={Osaka}
+        src={Kouki}
         alt="Preview of graphic design projects"
         loading="lazy"
         decoding="async"
