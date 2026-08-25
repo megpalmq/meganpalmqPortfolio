@@ -409,7 +409,7 @@
     <div class="cta-action">
       <p>I'd love to hear about it.</p>
 
-      <a href="mailto:" class="cta-button">
+      <a href="mailto:mspstudios7@gmail.com" class="cta-button">
         Let's Connect
         <i class="fa-regular fa-paper-plane"></i>
       </a>
