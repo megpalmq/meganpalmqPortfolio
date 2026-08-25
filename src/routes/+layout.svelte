@@ -502,7 +502,7 @@
         <p class="site-footer__eyebrow">Megan Palmquist</p>
 
         <p class="site-footer__title">
-          Design <span>×</span> Development
+          Design <span>x</span> Development
         </p>
 
         <p class="site-footer__copy">

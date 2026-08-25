@@ -96,7 +96,7 @@
         <h1>
           Nice to meet you.
 
-          <strong> I'm Megan. </strong>
+          <strong style="color:	#8451A6"> I'm Megan. </strong>
         </h1>
 
         <div class="hero-line"></div>
