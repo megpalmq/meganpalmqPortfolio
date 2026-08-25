@@ -2080,9 +2080,6 @@ img {
     margin-top: 60px;
   }
 }
-/* =========================================================
-   ABOUT PAGE
-========================================================= */
 .about-page {
   --about-plum: #5e2a72;
   --about-deep: #2f1546;
@@ -2092,8 +2089,10 @@ img {
   --about-white: rgba(255, 255, 255, 0.72);
   --about-border: rgba(255, 255, 255, 0.7);
   width: min(1180px, 92vw);
+  max-width: 100%;
   margin: clamp(100px, 9vw, 140px) auto 100px;
   color: var(--about-deep);
+  box-sizing: border-box;
   /* =======================================================
      SHARED PANEL
   ======================================================= */
@@ -2133,6 +2132,30 @@ img {
   /* =======================================================
      RESPONSIVE
   ======================================================= */
+}
+.about-page *,
+.about-page *::before,
+.about-page *::after {
+  box-sizing: border-box;
+}
+.about-page p,
+.about-page blockquote,
+.about-page h1,
+.about-page h2,
+.about-page a,
+.about-page span {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.about-page .about-hero-content > *,
+.about-page .about-split-section > *,
+.about-page .what-layout > *,
+.about-page .skills-columns > *,
+.about-page .type-feature > *,
+.about-page .experience-grid > *,
+.about-page .about-cta > * {
+  min-width: 0;
 }
 .about-page [use\:reveal] {
   opacity: 0;
@@ -2210,7 +2233,9 @@ img {
 .about-page .about-hero h1 {
   position: relative;
   margin: 30px 0 0;
-  width: 100vw;
+  width: auto;
+  max-width: 100%;
+  overflow-wrap: anywhere;
   font-family: pop, sans-serif;
   font-size: clamp(40px, 5vw, 78px);
   font-weight: 500;
@@ -2738,11 +2763,14 @@ img {
     padding: 42px 34px;
   }
   .about-page .about-hero-content {
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.75fr);
+    grid-template-columns: 1fr;
     gap: 30px;
   }
+  .about-page .about-hero-image {
+    min-height: 400px;
+  }
   .about-page .portrait-wrap {
-    width: min(300px, 82%);
+    width: min(320px, 78%);
   }
   .about-page .about-split-section {
     grid-template-columns: 1fr;
@@ -2758,13 +2786,13 @@ img {
     display: none;
   }
   .about-page .experience-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (max-width: 720px) {
   .about-page {
-    width: 94vw;
-    margin-top: 90px;
+    width: calc(100% - 24px);
+    margin: 82px auto 64px;
   }
   .about-page .about-hero {
     padding: 32px 24px;
@@ -2772,6 +2800,9 @@ img {
   .about-page .about-hero-content {
     grid-template-columns: 1fr;
     text-align: left;
+  }
+  .about-page .about-hero h1 {
+    font-size: clamp(40px, 12vw, 58px);
   }
   .about-page .about-hero-image {
     min-height: 360px;
@@ -2785,7 +2816,9 @@ img {
     bottom: 11%;
   }
   .about-page .hero-number {
-    left: 76px;
+    top: -34px;
+    left: 54px;
+    font-size: clamp(96px, 28vw, 140px);
   }
   .about-page .what-layout {
     grid-template-columns: 1fr;
@@ -2815,6 +2848,9 @@ img {
   .about-page .experience-grid {
     grid-template-columns: 1fr;
   }
+  .about-page .experience-card {
+    min-height: 155px;
+  }
   .about-page .about-cta {
     grid-template-columns: 1fr;
     gap: 18px;
@@ -2824,22 +2860,73 @@ img {
     height: 1px;
   }
 }
+@media (max-width: 560px) {
+  .about-page .discipline-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .about-page p,
+  .about-page .hero-intro,
+  .about-page .approach p,
+  .about-page .type-description,
+  .about-page .cta-action p,
+  .about-page .discipline-item p,
+  .about-page .experience-type {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+  .about-page .discipline-item,
+  .about-page .cta-action,
+  .about-page .type-copy,
+  .about-page .type-description {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
 @media (max-width: 480px) {
+  .about-page {
+    width: calc(100% - 16px);
+    margin-top: 72px;
+  }
   .about-page .about-hero {
-    padding: 28px 20px;
+    padding: 28px 18px;
+    margin-top: 150px;
     border-radius: 22px;
   }
   .about-page .about-hero h1 {
-    font-size: 48px;
+    font-size: clamp(36px, 12vw, 48px);
+    line-height: 1;
   }
   .about-page .hero-intro {
     font-size: 14px;
+    width: 100%;
+  }
+  .about-page .approach p,
+  .about-page .type-description,
+  .about-page .cta-action p,
+  .about-page .discipline-item p,
+  .about-page .experience-type {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
   .about-page .about-hero-image {
-    min-height: 320px;
+    min-height: 300px;
   }
   .about-page .portrait-wrap {
-    width: 78%;
+    width: min(250px, 82%);
+  }
+  .about-page .orbit-line {
+    width: min(330px, 120%);
+    height: 120px;
+  }
+  .about-page .portrait-note {
+    right: 3%;
   }
   .about-page .what-layout h2,
   .about-page .approach blockquote {
@@ -2851,6 +2938,10 @@ img {
   }
   .about-page .skills-section,
   .about-page .experience-section {
+    padding: 24px 20px;
+  }
+  .about-page .what-i-do,
+  .about-page .approach {
     padding: 24px 20px;
   }
   .about-page .skill-list span {
@@ -2867,6 +2958,14 @@ img {
   }
   .about-page .cta-question {
     font-size: 30px;
+  }
+  .about-page .hero-link,
+  .about-page .cta-button {
+    min-height: 44px;
+  }
+  .about-page .ghost-section-number,
+  .about-page .cta-globe {
+    font-size: 100px;
   }
 }
 
