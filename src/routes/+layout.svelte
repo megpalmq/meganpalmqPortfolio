@@ -494,43 +494,81 @@
   </div>
   <footer class="site-footer">
     <div class="site-footer__inner">
+      <!-- =========================================
+         BRAND / DESCRIPTION
+    ========================================== -->
+
       <div class="site-footer__content">
-        <div>
-          <p class="site-footer__title">Megan Palmquist</p>
-          <div class="site-footer__title"></div>
-          <p class="site-footer__copy">
-            {currentYear} · Front-end development and visual design.
-          </p>
-          <div class="site-footer__links" aria-label="Footer links">
-            <a href="/about">About</a>
-            <span>|</span>
-            <a href="/web-projects">Web Projects</a>
-            <span>|</span>
-            <a href="/graphic-projects">Graphic Projects</a>
-            <span>|</span>
-            <a
-              href="https://www.linkedin.com/in/megan-palmquist/"
-              target="_blank"
-              rel="noopener noreferrer">LinkedIn</a
-            >
-            <span>|</span>
-            <a
-              href="https://github.com/megpalmq"
-              target="_blank"
-              rel="noopener noreferrer">GitHub</a
-            >
-            <span>|</span>
-            <a
-              href="https://www.instagram.com/megannstone_/"
-              target="_blank"
-              rel="noopener noreferrer">Instagram</a
-            >
-          </div>
-        </div>
-        <a href="mailto:mspstudios7@gmail.com" class="site-footer__email-btn"
-          >Let's Talk</a
-        >
+        <p class="site-footer__eyebrow">Megan Palmquist</p>
+
+        <p class="site-footer__title">
+          Design <span>×</span> Development
+        </p>
+
+        <p class="site-footer__copy">
+          {currentYear} · Front-end development and visual design.
+        </p>
       </div>
+
+      <!-- =========================================
+         FOOTER NAVIGATION
+    ========================================== -->
+
+      <div class="site-footer__links">
+        <p class="site-footer__links-label">Explore</p>
+
+        <div class="site-footer__links-row">
+          <a href="/about"> About </a>
+
+          <a href="/web-projects"> Web Projects </a>
+
+          <a href="/graphic-projects"> Graphic Projects </a>
+
+          <a
+            href="https://www.linkedin.com/in/megan-palmquist/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/megpalmq"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.instagram.com/megannstone_/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <!-- =========================================
+         CONTACT BUTTON
+    ========================================== -->
+
+      <a href="mailto:mspstudios7@gmail.com" class="site-footer__email-btn">
+        Let's Talk
+      </a>
+    </div>
+
+    <!-- =========================================
+       FOOTER BOTTOM
+  ========================================== -->
+
+    <div class="site-footer__bottom">
+      <p>
+        © {currentYear} Megan Palmquist
+      </p>
+
+      <a href="#top" class="site-footer__back-top"> Back to top </a>
     </div>
   </footer>
 </div>

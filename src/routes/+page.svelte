@@ -74,13 +74,7 @@
     </div>
   </div>
 </div>
-<div class="border">
-  <!-- <div class="seemore">
-    <a style="text-decoration: none; color: black" href="#projects">
-      See my projects <i class="fa-solid fa-angle-down"></i></a
-    >
-  </div> -->
-</div>
+
 
 <section class="project-hub hiddenbottom" id="projects">
   <h2 class="reveal-title" data-mask-reveal>Explore My Work</h2>

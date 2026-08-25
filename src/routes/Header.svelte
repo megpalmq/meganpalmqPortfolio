@@ -1,10 +1,23 @@
 <script>
   import { page } from "$app/stores";
+  import { base } from "$app/paths";
 
-  $: currentPath = $page.url.pathname;
+  $: currentPath = $page.url.pathname.replace(/\/+$/, "") || "/";
 
   function isActive(path) {
-    return currentPath === path;
+    const normalizedPath = `${base}${path}`.replace(/\/+$/, "") || "/";
+
+    // Exact match for the main page
+    if (currentPath === normalizedPath) {
+      return true;
+    }
+
+    // Keep the parent nav item active on its project detail pages
+    if (path !== "/" && currentPath.startsWith(`${normalizedPath}/`)) {
+      return true;
+    }
+
+    return false;
   }
 </script>
 
@@ -22,31 +35,36 @@
     <ul>
       <li>
         <a
-          href="/web-projects"
+          href={`${base}/web-projects`}
           class="nav-links"
           class:active={isActive("/web-projects")}
-          >Web Projects</a
         >
+          Web Projects
+        </a>
       </li>
       <li>
         <a
-          href="/graphic-projects"
+          href={`${base}/graphic-projects`}
           class="nav-links"
           class:active={isActive("/graphic-projects")}
-          >Graphic Design Projects</a
         >
+          Graphic Design Projects
+        </a>
       </li>
       <li>
-        <a href="/about" class="nav-links" class:active={isActive("/about")}
-          >About</a
+        <a
+          href={`${base}/about`}
+          class="nav-links"
+          class:active={isActive("/about")}
         >
+          About
+        </a>
       </li>
       <li>
         <a
           href="/resume"
           class="resume-link button-pulse"
-          class:active={isActive("/resume")}
-          >Résumé</a
+          class:active={isActive("/resume")}>Résumé</a
         >
       </li>
     </ul>
@@ -60,16 +78,14 @@
         <a
           href="/web-projects"
           class="nav-links"
-          class:active={isActive("/web-projects")}
-          >Web Projects</a
+          class:active={isActive("/web-projects")}>Web Projects</a
         >
       </li>
       <li class:active-item={isActive("/graphic-projects")}>
         <a
           href="/graphic-projects"
           class="nav-links"
-          class:active={isActive("/graphic-projects")}
-          >Graphic Projects</a
+          class:active={isActive("/graphic-projects")}>Graphic Projects</a
         >
       </li>
       <li class:active-item={isActive("/about")}>
@@ -81,11 +97,11 @@
         <a
           href="/resume"
           class="resume-link button-pulse-black"
-          class:active={isActive("/resume")}
-          >Resume</a
+          class:active={isActive("/resume")}>Resume</a
         >
       </li>
       <li class="mobile-last">.</li>
     </ul>
   </div>
 </div>
+<div id="top"></div>

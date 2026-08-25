@@ -47,6 +47,10 @@ body {
   font-family: sino;
   src: url(../lib/fonts/Sinoreta.otf);
 }
+@font-face {
+  font-family: milk;
+  src: url(../lib/fonts/milk.otf);
+}
 p {
   margin-bottom: 16px;
   color: $white;
