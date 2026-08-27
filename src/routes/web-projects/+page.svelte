@@ -17,86 +17,62 @@
   });
 </script>
 
-
 <svelte:head>
-  <title>Web Projects | Megan Palmquist</title>
+  <title>Web Design Projects | Megan Palmquist | MSP Studios</title>
 
   <meta
     name="description"
-    content="Web development projects by Megan Palmquist"
+    content="Explore web design and development projects by Megan Palmquist of MSP Studios, featuring responsive websites, UI/UX design, front-end development, and interactive digital experiences."
   />
 
+  <!-- Open Graph / Social Sharing -->
   <meta
-    property="og:image"
-    content={port}
+    property="og:title"
+    content="Web Design Projects | Megan Palmquist | MSP Studios"
   />
 
   <meta
     property="og:description"
-    content="Megan Palmquist Web Projects"
+    content="Explore web design, UI/UX, front-end development, and interactive digital projects created by Megan Palmquist of MSP Studios."
   />
+
+  <meta property="og:image" content={port} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MSP Studios" />
 </svelte:head>
 
-
-<div
-  class="projects-wrapper projects-page web-grid"
-  id="projects"
->
-
+<div class="projects-wrapper projects-page web-grid" id="projects">
   <!-- =========================================
        PROJECT HEADER
   ========================================== -->
 
-  <div
-    class="projects-header"
-    data-parallax="0.08"
-  >
-
-    <p class="web-title-kicker">
-      Featured Work
-    </p>
-
+  <div class="projects-header" data-parallax="0.08">
+    <p class="web-title-kicker">Featured Work</p>
 
     <h1 class="reveal-title web-title" data-mask-reveal>
+      <span> Web </span>
 
-      <span>
-        Web
-      </span>
-
-      <span class="title-accent">
-        Projects
-      </span>
-
+      <span class="title-accent"> Projects </span>
     </h1>
-
 
     <p class="web-title-sub">
       Crafted interfaces, branded systems, and polished interactions.
     </p>
-
   </div>
 
-
   <div class="projects-header-under"></div>
-
 
   <!-- =========================================
        PROJECT CARDS
   ========================================== -->
 
   <div class="project-boxes">
-
     {#each webProjects as project, index}
-
       <div
         class="project-box"
         role="link"
         tabindex="0"
-
-        on:click={() =>
-          goto(`/web-projects/${project.slug}`)
-        }
-
+        on:click={() => goto(`/web-projects/${project.slug}`)}
         on:keydown={(e) => {
           if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
@@ -105,54 +81,39 @@
           }
         }}
       >
-
         <!-- PROJECT IMAGE -->
 
         <div class="project-media">
-
           <a
             href={`/web-projects/${project.slug}`}
             on:click|stopPropagation
             aria-label={`View ${project.title} project`}
           >
-
             <img
               src={project.heroImage}
               alt={project.heroAlt}
               loading="lazy"
               decoding="async"
             />
-
           </a>
-
         </div>
-
 
         <!-- PROJECT INFORMATION -->
 
         <div class="project-desc">
-
           <!-- PROJECT NUMBER -->
-
-    
 
           <!-- TITLE + ACTION BUTTONS -->
 
           <div class="project-title-row">
-
             <div class="project-title">
-
               <h3>
                 {project.title}
               </h3>
-
             </div>
 
-
             <div class="project-actions">
-
               {#if project.githubUrl}
-
                 <a
                   href={project.githubUrl}
                   class="github"
@@ -161,16 +122,11 @@
                   aria-label={`View ${project.title} on GitHub`}
                   on:click|stopPropagation
                 >
-
                   <i class="fa-brands fa-github"></i>
-
                 </a>
-
               {/if}
 
-
               {#if project.caseStudyUrl ?? project.liveUrl}
-
                 <a
                   href={project.caseStudyUrl ?? project.liveUrl}
                   class="arrow-link"
@@ -179,17 +135,11 @@
                   aria-label={`Open ${project.title}`}
                   on:click|stopPropagation
                 >
-
                   <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
                 </a>
-
               {/if}
-
             </div>
-
           </div>
-
 
           <!-- DATE -->
 
@@ -197,13 +147,11 @@
             {project.date}
           </p>
 
-
           <!-- DESCRIPTION -->
 
           <p class="desc">
             {project.summary}
           </p>
-
 
           <!-- VIEW PROJECT -->
 
@@ -217,45 +165,29 @@
             <i class="fa-solid fa-arrow-right"></i>
           </a>
 
-
           <!-- SKILLS -->
 
           <div class="project-skills">
-
             {#each project.highlights as skill}
-
               <span>
                 {skill}
               </span>
-
             {/each}
-
           </div>
-
         </div>
-
       </div>
-
     {/each}
-
   </div>
-
 </div>
-
 
 <!-- =========================================
      NEXT PORTFOLIO SECTION
 ========================================== -->
 
 <div class="aboutme">
-
-  <a
-    href="/graphic-projects"
-    class="aboutme-link"
-  >
+  <a href="/graphic-projects" class="aboutme-link">
     See Graphic Work
 
     <i class="fa-solid fa-arrow-right"></i>
   </a>
-
 </div>

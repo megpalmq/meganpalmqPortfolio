@@ -17,10 +17,23 @@
 </script>
 
 <svelte:head>
-  <title>Megan Palmquist</title>
-  <meta name="description" content="Megan Palmquistvpersonal portfolio" />
+  <title>Megan Palmquist | MSP Studios | Web & Graphic Designer</title>
+
+  <meta
+    name="description"
+    content="Megan Palmquist is a web and graphic designer and the founder of MSP Studios, specializing in web design, branding, graphic design, and digital experiences."
+  />
+
+  <meta property="og:title" content="Megan Palmquist | MSP Studios" />
+
+  <meta
+    property="og:description"
+    content="Web design, branding, graphic design, and digital experiences by Megan Palmquist and MSP Studios."
+  />
+
   <meta property="og:image" content={port} />
-  <meta property="og:description" content="Megan Palmquist Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MSP Studios" />
 </svelte:head>
 
 <div class="frosted-glass">

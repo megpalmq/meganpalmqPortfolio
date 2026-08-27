@@ -68,14 +68,23 @@
 </script>
 
 <svelte:head>
-  <title>About | Megan Palmquist</title>
+  <title>About Megan Palmquist | MSP Studios</title>
 
   <meta
     name="description"
-    content="Learn more about Megan Palmquist, a front-end developer and multidisciplinary designer."
+    content="Learn more about Megan Palmquist, founder of MSP Studios and a multidisciplinary designer specializing in web design, front-end development, branding, and graphic design."
+  />
+
+  <meta property="og:title" content="About Megan Palmquist | MSP Studios" />
+
+  <meta
+    property="og:description"
+    content="Meet Megan Palmquist, founder of MSP Studios and a multidisciplinary designer specializing in web design, development, branding, and graphic design."
   />
 
   <meta property="og:image" content={port} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MSP Studios" />
 </svelte:head>
 
 <div class="about-page">
@@ -102,9 +111,9 @@
         <div class="hero-line"></div>
 
         <p class="hero-intro">
-          I'm a front-end developer and multidisciplinary designer who loves
-          building thoughtful digital experiences that are both beautiful and
-          functional.
+          I'm Megan Palmquist, founder of <strong>MSP Studios</strong> and a front-end
+          developer and multidisciplinary designer who loves creating thoughtful
+          digital experiences that are both beautiful and functional.
         </p>
 
         <a href="/web-projects" class="hero-link">

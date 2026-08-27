@@ -544,16 +544,19 @@
   .what-layout {
     display: grid;
 
+    /* Keep the copy and discipline list readable at desktop + tablet widths. */
     grid-template-columns:
       minmax(0, 1fr)
       1px
-      minmax(150px, 0.6fr);
+      minmax(150px, 0.72fr);
 
-    gap: 24px;
+    gap: 20px;
 
     align-items: center;
 
     margin-top: 34px;
+
+    min-width: 0;
   }
 
   .what-layout h2 {
@@ -586,6 +589,9 @@
     flex-direction: column;
 
     gap: 18px;
+
+    width: 100%;
+    min-width: 0;
   }
 
   .discipline-item {
@@ -597,6 +603,13 @@
 
     p {
       margin: 0;
+
+      flex: 1 1 auto;
+      min-width: 0;
+      max-width: 100%;
+      white-space: normal;
+      overflow-wrap: normal;
+      word-break: normal;
 
       font-family: pop, sans-serif;
 
@@ -1164,6 +1177,102 @@
     color: rgba(255, 255, 255, 0.14);
 
     pointer-events: none;
+  }
+
+  /* =======================================================
+     TABLET / IPAD
+  ======================================================= */
+
+  @media (max-width: 1100px) and (min-width: 961px) {
+    width: min(1020px, calc(100% - 44px));
+    margin: 92px auto 80px;
+
+    .about-hero {
+      min-height: 500px;
+      padding: 38px 36px;
+      border-radius: 26px;
+    }
+
+    .about-hero-content {
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.9fr);
+      gap: 34px;
+    }
+
+    .about-hero h1 {
+      font-size: clamp(42px, 5vw, 64px);
+    }
+
+    .hero-intro {
+      max-width: 48ch;
+      font-size: 16px;
+    }
+
+    .about-hero-image {
+      min-height: 410px;
+    }
+
+    .portrait-wrap {
+      width: min(310px, 82%);
+    }
+
+    .orbit-line {
+      width: min(360px, 112%);
+    }
+
+    .about-split-section {
+      gap: 16px;
+    }
+
+    .what-i-do,
+    .approach,
+    .skills-section,
+    .experience-section {
+      padding: 30px;
+    }
+
+    .what-layout {
+      grid-template-columns:
+        minmax(0, 1fr)
+        1px
+        minmax(170px, 0.82fr);
+      gap: 18px;
+    }
+
+    .discipline-list {
+      padding-left: 18px;
+      gap: 14px;
+    }
+
+    .skills-columns {
+      gap: 22px;
+    }
+
+    .skills-column + .skills-column {
+      padding-left: 22px;
+    }
+
+    .type-feature {
+      grid-template-columns: minmax(0, 1.15fr) 1px minmax(150px, 0.8fr);
+      gap: 20px;
+      padding: 26px 30px;
+    }
+
+    .type-display {
+      font-size: clamp(90px, 12vw, 140px);
+    }
+
+    .experience-grid {
+      gap: 16px;
+    }
+
+    .experience-card {
+      padding: 20px;
+    }
+
+    .about-cta {
+      gap: 22px;
+      padding: 28px 34px;
+    }
   }
 
   /* =======================================================

@@ -725,6 +725,9 @@ body {
   z-index: 20;
   text-align: center;
   margin: 0 auto;
+  width: min(100%, 920px);
+  max-width: 100%;
+  min-width: 0;
 }
 .home-desc .intro {
   -webkit-text-stroke: 1px #5e2a72;
@@ -756,10 +759,12 @@ body {
   padding-top: 14px;
   line-height: 1.35;
   max-width: 920px;
-  width: 100%;
-  white-space: nowrap;
+  width: min(100%, 920px);
   margin-left: auto;
   margin-right: auto;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 .socials {
@@ -825,6 +830,23 @@ body {
   .home-wrapper {
     padding: 2rem 1.5rem;
   }
+  .home-desc-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .home-desc {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 0.5rem;
+  }
+  .home-desc h2 {
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
   .home-con p.intro {
     font-size: 1.2rem;
   }
@@ -849,6 +871,21 @@ body {
   .socials .social-box a {
     font-size: 22px;
     padding: 6px 8px;
+  }
+}
+/* Small tablets / narrow intro card guardrail (<= 700px) */
+@media (max-width: 700px) and (min-width: 481px) {
+  .home-wrapper {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .home-desc h2 {
+    font-size: clamp(18px, 4.5vw, 22px);
+    line-height: 1.4;
+    padding-inline: 0;
+  }
+  .home-desc .intro {
+    font-size: clamp(20px, 4.2vw, 24px);
   }
 }
 /* Small phones (<= 480px) */
@@ -2130,6 +2167,9 @@ img {
      CTA
   ======================================================= */
   /* =======================================================
+     TABLET / IPAD
+  ======================================================= */
+  /* =======================================================
      RESPONSIVE
   ======================================================= */
 }
@@ -2416,10 +2456,12 @@ img {
 }
 .about-page .what-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 1px minmax(150px, 0.6fr);
-  gap: 24px;
+  /* Keep the copy and discipline list readable at desktop + tablet widths. */
+  grid-template-columns: minmax(0, 1fr) 1px minmax(150px, 0.72fr);
+  gap: 20px;
   align-items: center;
   margin-top: 34px;
+  min-width: 0;
 }
 .about-page .what-layout h2 {
   margin: 0;
@@ -2439,6 +2481,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  width: 100%;
+  min-width: 0;
 }
 .about-page .discipline-item {
   display: flex;
@@ -2447,6 +2491,12 @@ img {
 }
 .about-page .discipline-item p {
   margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
   font-family: pop, sans-serif;
   font-size: 12px;
   line-height: 1.3;
@@ -2756,6 +2806,78 @@ img {
   line-height: 0.7;
   color: rgba(255, 255, 255, 0.14);
   pointer-events: none;
+}
+@media (max-width: 1100px) and (min-width: 961px) {
+  .about-page {
+    width: min(1020px, 100% - 44px);
+    margin: 92px auto 80px;
+  }
+  .about-page .about-hero {
+    min-height: 500px;
+    padding: 38px 36px;
+    border-radius: 26px;
+  }
+  .about-page .about-hero-content {
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.9fr);
+    gap: 34px;
+  }
+  .about-page .about-hero h1 {
+    font-size: clamp(42px, 5vw, 64px);
+  }
+  .about-page .hero-intro {
+    max-width: 48ch;
+    font-size: 16px;
+  }
+  .about-page .about-hero-image {
+    min-height: 410px;
+  }
+  .about-page .portrait-wrap {
+    width: min(310px, 82%);
+  }
+  .about-page .orbit-line {
+    width: min(360px, 112%);
+  }
+  .about-page .about-split-section {
+    gap: 16px;
+  }
+  .about-page .what-i-do,
+  .about-page .approach,
+  .about-page .skills-section,
+  .about-page .experience-section {
+    padding: 30px;
+  }
+  .about-page .what-layout {
+    grid-template-columns: minmax(0, 1fr) 1px minmax(170px, 0.82fr);
+    gap: 18px;
+  }
+  .about-page .discipline-list {
+    padding-left: 18px;
+    gap: 14px;
+  }
+  .about-page .skills-columns {
+    gap: 22px;
+  }
+  .about-page .skills-column + .skills-column {
+    padding-left: 22px;
+  }
+  .about-page .type-feature {
+    grid-template-columns: minmax(0, 1.15fr) 1px minmax(150px, 0.8fr);
+    gap: 20px;
+    padding: 26px 30px;
+  }
+  .about-page .type-display {
+    font-size: clamp(90px, 12vw, 140px);
+  }
+  .about-page .experience-grid {
+    gap: 16px;
+  }
+  .about-page .experience-card {
+    padding: 20px;
+  }
+  .about-page .about-cta {
+    gap: 22px;
+    padding: 28px 34px;
+  }
 }
 @media (max-width: 960px) {
   .about-page .about-hero {
