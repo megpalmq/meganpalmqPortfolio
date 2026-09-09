@@ -52,10 +52,21 @@
       <div class="home-desc">
         <div class="home-con hiddenbottom2">
           <p class="intro">Hello, welcome to</p>
-          <div class="megpal fancy-text"></div>
-          <h2>
-            I bring creativity to life through design, detail, and purpose.
+
+          <h1 class="studio-heading">
+            <span class="sr-only">MSP Studios</span>
+            <span class="megpal fancy-text" aria-hidden="true"></span>
+          </h1>
+
+          <h2 class="h2">
+            Web Design, Graphic Design &amp; Digital Experiences
           </h2>
+
+          <p class="hero-description">
+            MSP Studios is a creative studio founded by Megan Palmquist,
+            specializing in web design, branding, graphic design, and
+            interactive digital experiences.
+          </p>
         </div>
 
         <div class="socials hiddenbottom3">
