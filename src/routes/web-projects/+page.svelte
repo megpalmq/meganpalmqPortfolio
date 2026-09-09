@@ -39,6 +39,11 @@
   <meta property="og:image" content={port} />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="MSP Studios" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.mspstudios.co/web-projects" />
+
+  <meta property="og:url" content="https://www.mspstudios.co/web-projects" />
 </svelte:head>
 
 <div class="projects-wrapper projects-page web-grid" id="projects">

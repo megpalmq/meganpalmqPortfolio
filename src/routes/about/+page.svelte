@@ -85,6 +85,8 @@
   <meta property="og:image" content={port} />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="MSP Studios" />
+
+  <link rel="canonical" href="https://www.mspstudios.co/about" />
 </svelte:head>
 
 <div class="about-page">

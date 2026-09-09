@@ -16,9 +16,28 @@
 </script>
 
 <svelte:head>
-  <title>Résumé</title>
-  <meta name="description" content="My resume" />
+  <title>Résumé | Megan Palmquist | MSP Studios</title>
+
+  <meta
+    name="description"
+    content="View the résumé of Megan Palmquist, founder of MSP Studios, with experience in web design, front-end development, branding, and graphic design."
+  />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.mspstudios.co/resume" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Résumé | Megan Palmquist | MSP Studios" />
+
+  <meta
+    property="og:description"
+    content="Explore Megan Palmquist's experience in web design, front-end development, branding, and graphic design."
+  />
+
   <meta property="og:image" content={port} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MSP Studios" />
+  <meta property="og:url" content="https://www.mspstudios.co/resume" />
 </svelte:head>
 
 <div class="resume-wrapper">
