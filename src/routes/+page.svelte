@@ -17,11 +17,11 @@
 </script>
 
 <svelte:head>
-  <title>Megan Palmquist | MSP Studios | Web & Graphic Designer</title>
+  <title>MSP Studios | Web & Graphic Design by Megan Palmquist</title>
 
   <meta
     name="description"
-    content="Megan Palmquist is a web and graphic designer and the founder of MSP Studios, specializing in web design, branding, graphic design, and digital experiences."
+    content="MSP Studios is a web and graphic design studio founded by Megan Palmquist, specializing in custom websites, branding, graphic design, and digital experiences."
   />
 
   <meta property="og:title" content="Megan Palmquist | MSP Studios" />
@@ -86,7 +86,7 @@
               <i class="fa-brands fa-github"></i>
             </a>
             <a
-              href="https://www.instagram.com/megannstone_/"
+              href="https://www.instagram.com/mspstudios_/"
               target="_blank"
               rel="noopener noreferrer"
             >

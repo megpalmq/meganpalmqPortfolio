@@ -547,7 +547,7 @@
           </a>
 
           <a
-            href="https://www.instagram.com/megannstone_/"
+            href="https://www.instagram.com/mspstudios_/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
