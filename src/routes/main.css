@@ -878,8 +878,8 @@ body {
     font-size: 1rem;
   }
   .home-wrapper .home-con .megpal {
-    width: 95%;
-    height: clamp(100px, 26vw, 160px);
+    width: 88%;
+    height: clamp(90px, 23vw, 145px);
   }
   .home-wrapper .home-con h2 {
     width: min(100%, 620px);
@@ -897,13 +897,16 @@ body {
     margin-top: 1.75rem;
   }
   .socials .social-box {
-    width: min(100%, 340px);
-    padding: 9px 14px;
+    width: min(100%, 300px);
+    padding: 7px 10px;
+  }
+  .socials .social-box i {
+    font-size: 1.45rem;
   }
   .socials .social-box a {
-    width: 42px;
-    height: 42px;
-    font-size: 1.2rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
   }
   .project-hub {
     width: calc(100% - 2rem);
@@ -970,8 +973,8 @@ body {
     letter-spacing: 0.03em;
   }
   .home-wrapper .home-con .megpal {
-    width: 100%;
-    height: clamp(85px, 27vw, 135px);
+    width: 92%;
+    height: clamp(78px, 24vw, 120px);
   }
   .home-wrapper .home-con h2 {
     margin-top: 1.5rem;
@@ -985,15 +988,19 @@ body {
   }
   .socials {
     margin-top: 1.5rem;
+    font-size: 1rem;
   }
   .socials .social-box {
-    width: min(100%, 300px);
-    padding: 8px 12px;
+    width: min(100%, 270px);
+    padding: 6px 8px;
+  }
+  .socials .social-box i {
+    font-size: 1.3rem;
   }
   .socials .social-box a {
-    width: 40px;
-    height: 40px;
-    font-size: 1.15rem;
+    width: 34px;
+    height: 34px;
+    font-size: 0.95rem;
   }
   .project-hub {
     width: calc(100% - 1.25rem);
@@ -1050,8 +1057,9 @@ body {
     margin-bottom: 0.65rem;
   }
   .home-wrapper .home-con .megpal {
-    width: 100%;
-    height: clamp(75px, 28vw, 115px);
+    width: 90%;
+    height: clamp(55px, 21vw, 105px);
+    margin-top: 0.5rem;
   }
   .home-wrapper .home-con h2 {
     margin-top: 1.2rem;
@@ -1064,15 +1072,18 @@ body {
   }
   .socials {
     margin-top: 1.35rem;
+    font-size: 1rem;
   }
   .socials .social-box {
-    width: 260px;
-    padding: 7px 10px;
+    width: 240px;
+    padding: 5px 7px;
+  }
+  .socials .social-box i {
+    font-size: 1.15rem;
   }
   .socials .social-box a {
-    width: 36px;
-    height: 36px;
-    font-size: 1rem;
+    width: 32px;
+    height: 32px;
   }
   .project-hub {
     width: calc(100% - 1rem);
@@ -1116,7 +1127,7 @@ body {
     font-size: 0.82rem;
   }
   .home-wrapper .home-con .megpal {
-    height: 82px;
+    height: 74px;
   }
   .home-wrapper .home-con h2 {
     font-size: 1rem;
@@ -1127,12 +1138,15 @@ body {
     font-size: 0.78rem;
   }
   .socials .social-box {
-    width: 245px;
+    width: 225px;
+  }
+  .socials .social-box i {
+    font-size: 1rem;
   }
   .socials .social-box a {
-    width: 34px;
-    height: 34px;
-    font-size: 0.95rem;
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
   }
   .project-hub {
     width: calc(100% - 0.75rem);
