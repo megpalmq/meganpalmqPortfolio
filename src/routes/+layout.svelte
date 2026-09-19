@@ -523,6 +523,8 @@
           <a href="/web-projects"> Web Projects </a>
 
           <a href="/graphic-projects"> Graphic Projects </a>
+
+          <a href="/resume"> Résumé </a>
         </div>
 
         <!-- SOCIAL ICONS -->

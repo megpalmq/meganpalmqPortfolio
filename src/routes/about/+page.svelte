@@ -118,7 +118,7 @@
         </p>
 
         <a href="/web-projects" class="hero-link">
-          More about my work
+          See my web work
           <i class="fa-solid fa-arrow-right"></i>
         </a>
 
@@ -429,7 +429,7 @@
     <div class="cta-action">
       <p>I'd love to hear about it.</p>
 
-      <a href="mailto:mspstudios7@gmail.com" class="cta-button">
+      <a href="https://www.mspstudios.co/contact" class="cta-button">
         Let's Connect
         <i class="fa-regular fa-paper-plane"></i>
       </a>

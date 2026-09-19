@@ -2728,7 +2728,7 @@ img {
   flex-direction: column;
   gap: 18px;
   width: 100%;
-  min-width: 0;
+  min-width: 150px;
 }
 .about-page .discipline-item {
   display: flex;
