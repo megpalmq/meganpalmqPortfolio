@@ -175,13 +175,14 @@ body {
       width: min(90%, 720px);
       max-width: 100%;
       height: clamp(130px, 16vw, 180px);
-
-      margin: 0 auto;
-
-      background-image: url(../lib/images/MSPStudiologo.svg);
-      background-repeat: no-repeat;
-      background-position: center center;
+      background-image: url("/src/lib/images/asset11.svg");
       background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0 auto;
+      color: #5e2a72;
+      font-size: clamp(3rem, 9vw, 7rem);
+      letter-spacing: 0;
     }
 
     .fancy-text {
@@ -245,6 +246,11 @@ body {
 
     i {
       color: #fff;
+      font-size: 2rem;
+
+      &:hover {
+        color: $dark-red;
+      }
     }
 
     a {

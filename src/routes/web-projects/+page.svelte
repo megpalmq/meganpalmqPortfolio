@@ -18,32 +18,24 @@
 </script>
 
 <svelte:head>
-  <title>Web Design Projects | Megan Palmquist | MSP Studios</title>
+  <title>Web Design Projects | Megan Palmquist</title>
 
   <meta
     name="description"
-    content="Explore web design and development projects by Megan Palmquist of MSP Studios, featuring responsive websites, UI/UX design, front-end development, and interactive digital experiences."
+    content="Explore web design and development projects by Megan Palmquist, featuring responsive websites, UI/UX design, front-end development, and interactive digital experiences."
   />
 
   <!-- Open Graph / Social Sharing -->
-  <meta
-    property="og:title"
-    content="Web Design Projects | Megan Palmquist | MSP Studios"
-  />
+  <meta property="og:title" content="Web Design Projects | Megan Palmquist" />
 
   <meta
     property="og:description"
-    content="Explore web design, UI/UX, front-end development, and interactive digital projects created by Megan Palmquist of MSP Studios."
+    content="Explore web design, UI/UX, front-end development, and interactive digital projects created by Megan Palmquist."
   />
 
   <meta property="og:image" content={port} />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="MSP Studios" />
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://www.mspstudios.co/web-projects" />
-
-  <meta property="og:url" content="https://www.mspstudios.co/web-projects" />
+  <meta property="og:site_name" content="Megan Palmquist Portfolio" />
 </svelte:head>
 
 <div class="projects-wrapper projects-page web-grid" id="projects">

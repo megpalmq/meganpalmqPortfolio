@@ -94,29 +94,27 @@
 </script>
 
 <svelte:head>
-  <title>Graphic Design Projects | Megan Palmquist | MSP Studios</title>
+  <title>Graphic Design Projects | Megan Palmquist</title>
 
   <meta
     name="description"
-    content="Explore graphic design projects by Megan Palmquist of MSP Studios, featuring branding, typography, packaging, print design, and visual storytelling."
+    content="Explore graphic design projects by Megan Palmquist, featuring branding, typography, packaging, print design, and visual storytelling."
   />
 
   <!-- Open Graph / Social Sharing -->
   <meta
     property="og:title"
-    content="Graphic Design Projects | Megan Palmquist | MSP Studios"
+    content="Graphic Design Projects | Megan Palmquist"
   />
 
   <meta
     property="og:description"
-    content="Explore branding, typography, packaging, print, and visual design projects created by Megan Palmquist of MSP Studios."
+    content="Explore branding, typography, packaging, print, and visual design projects created by Megan Palmquist."
   />
 
   <meta property="og:image" content={port} />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="MSP Studios" />
-
-  <link rel="canonical" href="https://www.mspstudios.co/graphic-projects" />
+  <meta property="og:site_name" content="Megan Palmquist Portfolio" />
 </svelte:head>
 
 <div class="projects-wrapper projects-page graphic-grid" id="projects">

@@ -19,31 +19,28 @@
 </script>
 
 <svelte:head>
-  <title>MSP Studios | Web Design & Graphic Design</title>
+  <title>Megan Palmquist | Web Design & Graphic Design Portfolio</title>
 
   <meta
     name="description"
-    content="MSP Studios is a web design and graphic design studio by Megan Palmquist, specializing in custom websites, branding, front-end development, and visual design."
+    content="Megan Palmquist's portfolio of custom websites, branding, front-end development, and visual design."
   />
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://www.mspstudios.co/" />
-
   <!-- Open Graph / Social Sharing -->
   <meta
     property="og:title"
-    content="MSP Studios | Web Design & Graphic Design"
+    content="Megan Palmquist | Web Design & Graphic Design Portfolio"
   />
 
   <meta
     property="og:description"
-    content="MSP Studios is a web design and graphic design studio by Megan Palmquist, creating custom websites, branding, and digital experiences."
+    content="Web design, branding, graphic design, and digital experiences by Megan Palmquist."
   />
 
   <meta property="og:image" content={port} />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="MSP Studios" />
-  <meta property="og:url" content="https://www.mspstudios.co/" />
+  <meta property="og:site_name" content="Megan Palmquist Portfolio" />
 </svelte:head>
 
 <div class="home-wrapper" id="home">

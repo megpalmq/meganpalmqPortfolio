@@ -17,23 +17,26 @@
 </script>
 
 <svelte:head>
-  <title>MSP Studios | Web & Graphic Design by Megan Palmquist</title>
+  <title>Megan Palmquist | Web & Graphic Design Portfolio</title>
 
   <meta
     name="description"
-    content="MSP Studios is a web and graphic design studio founded by Megan Palmquist, specializing in custom websites, branding, graphic design, and digital experiences."
+    content="Megan Palmquist is a multidisciplinary designer and front-end developer specializing in custom websites, branding, graphic design, and digital experiences."
   />
 
-  <meta property="og:title" content="Megan Palmquist | MSP Studios" />
+  <meta
+    property="og:title"
+    content="Megan Palmquist | Web & Graphic Design Portfolio"
+  />
 
   <meta
     property="og:description"
-    content="Web design, branding, graphic design, and digital experiences by Megan Palmquist and MSP Studios."
+    content="Web design, branding, graphic design, and digital experiences by Megan Palmquist."
   />
 
   <meta property="og:image" content={port} />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="MSP Studios" />
+  <meta property="og:site_name" content="Megan Palmquist Portfolio" />
 </svelte:head>
 
 <div class="frosted-glass">
@@ -51,21 +54,19 @@
       <div class="background"></div>
       <div class="home-desc">
         <div class="home-con hiddenbottom2">
-          <p class="intro">Hello, welcome to</p>
+          <p class="intro">Hi, my name is</p>
 
           <h1 class="studio-heading">
-            <span class="sr-only">MSP Studios</span>
+            <span class="sr-only">Megan Palmquist</span>
             <span class="megpal fancy-text" aria-hidden="true"></span>
           </h1>
 
-          <h2 class="h2">
-            Web Design, Graphic Design &amp; Digital Experiences
-          </h2>
+          <h2 class="h2">I design thoughtful digital experiences.</h2>
 
           <p class="hero-description">
-            MSP Studios is a creative studio founded by Megan Palmquist,
-            specializing in web design, branding, graphic design, and
-            interactive digital experiences.
+            I'm a designer and front-end developer working across websites,
+            visual identities, and digital experiences. Explore a selection of
+            my work.
           </p>
         </div>
 

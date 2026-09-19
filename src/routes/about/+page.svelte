@@ -68,25 +68,23 @@
 </script>
 
 <svelte:head>
-  <title>About Megan Palmquist | MSP Studios</title>
+  <title>About Megan Palmquist | Portfolio</title>
 
   <meta
     name="description"
-    content="Learn more about Megan Palmquist, founder of MSP Studios and a multidisciplinary designer specializing in web design, front-end development, branding, and graphic design."
+    content="Learn more about Megan Palmquist, a multidisciplinary designer specializing in web design, front-end development, branding, and graphic design."
   />
 
-  <meta property="og:title" content="About Megan Palmquist | MSP Studios" />
+  <meta property="og:title" content="About Megan Palmquist | Portfolio" />
 
   <meta
     property="og:description"
-    content="Meet Megan Palmquist, founder of MSP Studios and a multidisciplinary designer specializing in web design, development, branding, and graphic design."
+    content="Meet Megan Palmquist, a multidisciplinary designer specializing in web design, development, branding, and graphic design."
   />
 
   <meta property="og:image" content={port} />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="MSP Studios" />
-
-  <link rel="canonical" href="https://www.mspstudios.co/about" />
+  <meta property="og:site_name" content="Megan Palmquist Portfolio" />
 </svelte:head>
 
 <div class="about-page">
@@ -113,14 +111,25 @@
         <div class="hero-line"></div>
 
         <p class="hero-intro">
-          I'm Megan Palmquist, founder of <strong>MSP Studios</strong> and a front-end
-          developer and multidisciplinary designer who loves creating thoughtful
-          digital experiences that are both beautiful and functional.
+          I'm Megan Palmquist, a front-end developer and multidisciplinary
+          designer who loves creating thoughtful digital experiences that are
+          both beautiful and functional. I'm also the founder and owner of MSP
+          Studios, my independent design studio.
         </p>
 
         <a href="/web-projects" class="hero-link">
           More about my work
           <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a
+          href="https://www.mspstudios.co"
+          class="hero-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit MSP Studios
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
       </div>
 

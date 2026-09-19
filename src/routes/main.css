@@ -734,11 +734,14 @@ body {
   width: min(90%, 720px);
   max-width: 100%;
   height: clamp(130px, 16vw, 180px);
-  margin: 0 auto;
-  background-image: url(../lib/images/MSPStudiologo.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-image: url("/src/lib/images/asset11.svg");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  color: #5e2a72;
+  font-size: clamp(3rem, 9vw, 7rem);
+  letter-spacing: 0;
 }
 .home-wrapper .home-con .fancy-text {
   font-family: pop, sans-serif;
@@ -797,6 +800,10 @@ body {
 }
 .socials .social-box i {
   color: #fff;
+  font-size: 2rem;
+}
+.socials .social-box i:hover {
+  color: rgb(46, 9, 56);
 }
 .socials .social-box a {
   width: 44px;
@@ -3350,7 +3357,7 @@ img {
   font-size: 40px;
 }
 .resume-wrapper .resume-header span {
-  color: #ffffff;
+  color: rgb(87, 58, 104);
 }
 .resume-wrapper .resume-pdf {
   width: 100vw;
