@@ -419,19 +419,27 @@
     <div class="cta-stars">✦</div>
 
     <div class="cta-question">
-      Have a project, opportunity,
+      Let's Create Something
       <br />
-      or idea in mind?
+      Great
     </div>
 
     <div class="cta-divider"></div>
 
     <div class="cta-action">
-      <p>I'd love to hear about it.</p>
+      <p>
+        I'm currently open to full-time opportunities in web development and
+        graphic design. If you think I'd be a good fit for your team, I'd love
+        to connect.
+      </p>
 
-      <a href="https://www.mspstudios.co/contact" class="cta-button">
+      <a href="mailto:meganpalmquist@outlook.com" class="cta-button">
         Let's Connect
         <i class="fa-regular fa-paper-plane"></i>
+      </a>
+      <a href="/resume" class="cta-button">
+        View Résumé
+        <i class="fa-regular fa-file"></i>
       </a>
     </div>
 
