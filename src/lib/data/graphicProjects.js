@@ -19,7 +19,7 @@ import kozenHero from "$lib/images/Koukibehance.jpg";
 import kozensocial from "$lib/images/kozensocial.gif";
 import kozensocial2 from "$lib/images/kozensocial2.png";
 import atriumSocial from "$lib/images/atriumSocial.png";
-import atriumSocial2 from "$lib/images/atriumSocial2.gif";
+import atriumSocial2 from "$lib/images/atriumsocial2.gif";
 function createPlaceholderArtwork(title, subtitle, colorA, colorB) {
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="${title}">
