@@ -1,19 +1,22 @@
 <script>
   import { page } from "$app/stores";
-  import { base } from "$app/paths";
 
-  $: currentPath = $page.url.pathname.replace(/\/+$/, "") || "/";
+  function normalizePath(path) {
+    return path.replace(/\/+$/, "") || "/";
+  }
 
-  function isActive(path) {
-    const normalizedPath = `${base}${path}`.replace(/\/+$/, "") || "/";
+  $: currentRoute = normalizePath($page.url.pathname);
+
+  function isActive(path, route) {
+    const normalizedPath = normalizePath(path);
 
     // Exact match for the main page
-    if (currentPath === normalizedPath) {
+    if (route === normalizedPath) {
       return true;
     }
 
     // Keep the parent nav item active on its project detail pages
-    if (path !== "/" && currentPath.startsWith(`${normalizedPath}/`)) {
+    if (path !== "/" && route.startsWith(`${normalizedPath}/`)) {
       return true;
     }
 
@@ -35,27 +38,30 @@
     <ul>
       <li>
         <a
-          href={`${base}/web-projects`}
+          href="/web-projects"
           class="nav-links"
-          class:active={isActive("/web-projects")}
+          class:active={isActive("/web-projects", currentRoute)}
+          aria-current={isActive("/web-projects", currentRoute) ? "page" : undefined}
         >
           Web Projects
         </a>
       </li>
       <li>
         <a
-          href={`${base}/graphic-projects`}
+          href="/graphic-projects"
           class="nav-links"
-          class:active={isActive("/graphic-projects")}
+          class:active={isActive("/graphic-projects", currentRoute)}
+          aria-current={isActive("/graphic-projects", currentRoute) ? "page" : undefined}
         >
           Graphic Design Projects
         </a>
       </li>
       <li>
         <a
-          href={`${base}/about`}
+          href="/about"
           class="nav-links"
-          class:active={isActive("/about")}
+          class:active={isActive("/about", currentRoute)}
+          aria-current={isActive("/about", currentRoute) ? "page" : undefined}
         >
           About
         </a>
@@ -64,7 +70,8 @@
         <a
           href="/resume"
           class="resume-link button-pulse"
-          class:active={isActive("/resume")}>Résumé</a
+          class:active={isActive("/resume", currentRoute)}
+          aria-current={isActive("/resume", currentRoute) ? "page" : undefined}>Résumé</a
         >
       </li>
     </ul>
@@ -74,30 +81,37 @@
     <div class="bar2"></div>
     <div class="bar3"></div>
     <ul class="mobile-menu">
-      <li class:active-item={isActive("/web-projects")}>
+      <li class:active-item={isActive("/web-projects", currentRoute)}>
         <a
           href="/web-projects"
           class="nav-links"
-          class:active={isActive("/web-projects")}>Web Projects</a
+          class:active={isActive("/web-projects", currentRoute)}
+          aria-current={isActive("/web-projects", currentRoute) ? "page" : undefined}>Web Projects</a
         >
       </li>
-      <li class:active-item={isActive("/graphic-projects")}>
+      <li class:active-item={isActive("/graphic-projects", currentRoute)}>
         <a
           href="/graphic-projects"
           class="nav-links"
-          class:active={isActive("/graphic-projects")}>Graphic Projects</a
+          class:active={isActive("/graphic-projects", currentRoute)}
+          aria-current={isActive("/graphic-projects", currentRoute) ? "page" : undefined}>Graphic Projects</a
         >
       </li>
-      <li class:active-item={isActive("/about")}>
-        <a href="/about" class="nav-links" class:active={isActive("/about")}
+      <li class:active-item={isActive("/about", currentRoute)}>
+        <a
+          href="/about"
+          class="nav-links"
+          class:active={isActive("/about", currentRoute)}
+          aria-current={isActive("/about", currentRoute) ? "page" : undefined}
           >About</a
         >
       </li>
-      <li class:active-item={isActive("/resume")}>
+      <li class:active-item={isActive("/resume", currentRoute)}>
         <a
           href="/resume"
           class="resume-link button-pulse-black"
-          class:active={isActive("/resume")}>Resume</a
+          class:active={isActive("/resume", currentRoute)}
+          aria-current={isActive("/resume", currentRoute) ? "page" : undefined}>Resume</a
         >
       </li>
       <li class="mobile-last">.</li>
