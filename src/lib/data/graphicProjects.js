@@ -16,7 +16,10 @@ import AH from "$lib/images/atrium.jpg";
 import yonseiLarge from "$lib/images/yonseiL.png";
 import happy from "$lib/images/happy.png";
 import kozenHero from "$lib/images/Koukibehance.jpg";
-
+import kozensocial from "$lib/images/kozensocial.gif";
+import kozensocial2 from "$lib/images/kozensocial2.png";
+import atriumSocial from "$lib/images/atriumSocial.png";
+import atriumSocial2 from "$lib/images/atriumSocial2.gif";
 function createPlaceholderArtwork(title, subtitle, colorA, colorB) {
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="${title}">
@@ -114,8 +117,7 @@ export const graphicProjects = [
       {
         label: "Description",
         title: "Osaka 2036 Olympics overview",
-        copy:
-          "For this project, I created a complete brand identity for the Olympics in Osaka, Japan. I began by studying Osaka's culture, history, and design influences. The project included designing a logo, brochure, poster, custom pattern, event tickets, lanyard, and website mockup. Drawing inspiration from Osaka's cityscape, traditional art, and modern innovation, the branding captures the city's essence and the spirit of the Olympic Games, resulting in a visually compelling and culturally authentic brand.",
+        copy: "For this project, I created a complete brand identity for the Olympics in Osaka, Japan. I began by studying Osaka's culture, history, and design influences. The project included designing a logo, brochure, poster, custom pattern, event tickets, lanyard, and website mockup. Drawing inspiration from Osaka's cityscape, traditional art, and modern innovation, the branding captures the city's essence and the spirit of the Olympic Games, resulting in a visually compelling and culturally authentic brand.",
       },
       {
         label: "Concept",
@@ -148,17 +150,28 @@ export const graphicProjects = [
     highlights: ["Branding", "Logo Design", "Illustrator", "Typography"],
     overview:
       "Atrium House is a conceptual branding project for a luxury hotel and museum experience centered around art, creativity, and immersive hospitality. The project focused on creating a cohesive visual identity that feels elegant, modern, and welcoming while appealing to creatively curious travelers and art enthusiasts.",
+    socialPosts: [
+      {
+        src: atriumSocial,
+        alt: "Atrium House social media post",
+        caption: "Atrium House social media posts",
+      },
+      {
+        src: atriumSocial2,
+        alt: "Atrium House social media posts",
+        caption: "Atrium House gif concept",
+      },
+    ],
     sections: [
       {
         label: "Description",
         title: "Atrium House overview",
-        copy:
-          "",
+        copy: "",
       },
       {
         label: "Concept",
         title: "A hotel with a refined and contemporary atmosphere",
-        copy: "The concept behind Atrium House was to blend the sophistication of a high-end hotel with the cultural atmosphere of a contemporary art museum. I developed a refined identity system using elegant typography, rich plum tones, muted olive green accents, and minimal layouts to create a balance between luxury and artistic expression. The branding extends across environmental graphics, signage, packaging, and hospitality materials to create a fully immersive guest experience,"
+        copy: "The concept behind Atrium House was to blend the sophistication of a high-end hotel with the cultural atmosphere of a contemporary art museum. I developed a refined identity system using elegant typography, rich plum tones, muted olive green accents, and minimal layouts to create a balance between luxury and artistic expression. The branding extends across environmental graphics, signage, packaging, and hospitality materials to create a fully immersive guest experience,",
       },
       {
         label: "Result",
@@ -180,30 +193,38 @@ export const graphicProjects = [
     highlights: ["Branding", "Packaging", "Illustrator", "Typography"],
     overview:
       "Kozen Skincare explores how a beauty brand can feel approachable and elevated at the same time. I focused on building a clear visual system that could carry across packaging, product storytelling, and supporting brand materials.",
+    socialPosts: [
+      {
+        src: kozensocial,
+        alt: "Kozen skincare social media animation",
+        caption: "Kozen social media gif",
+      },
+      {
+        src: kozensocial2,
+        alt: "Kozen skincare social media animation",
+        caption: "Kozen social media concepts",
+      },
+    ],
     sections: [
       {
         label: "Description",
         title: "Kozen Skincare overview",
-        copy:
-          "For Kozen Skincare, I developed a brand identity centered on clarity, softness, and balance. The project was designed to feel modern and thoughtful, with packaging and graphics that communicate care, simplicity, and everyday luxury.",
+        copy: "For Kozen Skincare, I developed a brand identity centered on clarity, softness, and balance. The project was designed to feel modern and thoughtful, with packaging and graphics that communicate care, simplicity, and everyday luxury.",
       },
       {
         label: "Concept",
         title: "A calm, premium beauty brand",
-        copy:
-          "The concept behind Kozen was to create a skincare identity that feels clean without becoming sterile. I used restrained type, natural tones, and generous spacing to give the brand a calm presence that still feels polished and intentional.",
+        copy: "The concept behind Kozen was to create a skincare identity that feels clean without becoming sterile. I used restrained type, natural tones, and generous spacing to give the brand a calm presence that still feels polished and intentional.",
       },
       {
         label: "Packaging",
         title: "Minimal surfaces with room for the product to lead",
-        copy:
-          "The packaging system prioritizes hierarchy and simplicity so the product names and benefits remain easy to read. That structure helps the brand scale across different skincare items while keeping the line visually cohesive.",
+        copy: "The packaging system prioritizes hierarchy and simplicity so the product names and benefits remain easy to read. That structure helps the brand scale across different skincare items while keeping the line visually cohesive.",
       },
       {
         label: "Result",
         title: "A flexible identity that feels refined and approachable",
-        copy:
-          "The final direction gives Kozen a steady visual voice that could translate across boxes, bottles, presentation boards, and digital touchpoints. It reflects a skincare brand that is clean, calm, and visually memorable.",
+        copy: "The final direction gives Kozen a steady visual voice that could translate across boxes, bottles, presentation boards, and digital touchpoints. It reflects a skincare brand that is clean, calm, and visually memorable.",
       },
     ],
   },
@@ -224,8 +245,7 @@ export const graphicProjects = [
       {
         label: "Description",
         title: "Freeze Dried overview",
-        copy:
-          "For this branding and packaging project, I designed a playful and vibrant identity for a freeze-dried candy brand. Inspired by the cool, frozen process of freeze-drying, I focused on using icy colors and dynamic typography to reflect the candy's light, airy texture. The packaging design features bold, modern elements that stand out on shelves, aiming to capture the fun and refreshing qualities of the product. This project showcases my ability to create engaging, eye-catching designs that connect with a youthful audience.",
+        copy: "For this branding and packaging project, I designed a playful and vibrant identity for a freeze-dried candy brand. Inspired by the cool, frozen process of freeze-drying, I focused on using icy colors and dynamic typography to reflect the candy's light, airy texture. The packaging design features bold, modern elements that stand out on shelves, aiming to capture the fun and refreshing qualities of the product. This project showcases my ability to create engaging, eye-catching designs that connect with a youthful audience.",
       },
       {
         label: "Concept",
@@ -245,67 +265,61 @@ export const graphicProjects = [
     ],
   },
   {
-  slug: "sun-drift",
-  title: "Sun Drift",
-  date: "Spring 2026",
-  category: "Brand Identity",
-  summary:
-    "A vibrant music festival identity inspired by desert sunsets, psychedelic visuals, and the energy of live music.",
+    slug: "sun-drift",
+    title: "Sun Drift",
+    date: "Spring 2026",
+    category: "Brand Identity",
+    summary:
+      "A vibrant music festival identity inspired by desert sunsets, psychedelic visuals, and the energy of live music.",
     heroImage: Sundrift,
-  heroAlt: "Sun Drift music festival brand identity and schedule design",
+    heroAlt: "Sun Drift music festival brand identity and schedule design",
 
-  accent: "#8a3f8f",
+    accent: "#8a3f8f",
 
-  highlights: [
-    "Illustrator",
-    "Photoshop",
-    "Brand Identity",
-    "Typography",
-    "Art Direction"
-  ],
+    highlights: [
+      "Illustrator",
+      "Photoshop",
+      "Brand Identity",
+      "Typography",
+      "Art Direction",
+    ],
 
-  overview:
-    "Sun Drift is a conceptual music festival set in Joshua Tree, California. I developed a complete visual identity that combines expressive typography, psychedelic patterns, and a bold color palette to capture the energy of an outdoor music festival. The identity was designed as a flexible system that could stay recognizable across promotional, informational, environmental, and wearable applications.",
+    overview:
+      "Sun Drift is a conceptual music festival set in Joshua Tree, California. I developed a complete visual identity that combines expressive typography, psychedelic patterns, and a bold color palette to capture the energy of an outdoor music festival. The identity was designed as a flexible system that could stay recognizable across promotional, informational, environmental, and wearable applications.",
 
-  sections: [
-    {
-      label: "Description",
-      title: "Creating the Sun Drift festival identity",
-      copy:
-        "Sun Drift is a conceptual indie music festival inspired by the atmosphere of Joshua Tree and the visual culture surrounding live music. I created the festival's identity and extended it across posters, schedules, street banners, wristbands, signage, and merchandise to explore how one visual system could shape an entire festival experience.",
-    },
-    {
-      label: "Approach",
-      title: "A psychedelic identity inspired by the desert",
-      copy:
-        "The visual direction combines flowing psychedelic patterns, expressive typography, and sun-inspired graphics. Purple and aqua reference the cooler tones of the desert at dusk, while bright yellow introduces the warmth and energy of the sun. Together, these elements create a playful identity that feels energetic, nostalgic, and immersive.",
-    },
-    {
-      label: "System",
-      title: "Building a flexible visual language",
-      copy:
-        "Rather than treating each deliverable as a separate design, I developed a visual system that could adapt across different formats. The Sun Drift wordmark, sun motif, grid, color palette, and flowing patterns repeat throughout the identity while changing in scale and composition depending on the application.",
-    },
-    {
-      label: "Information Design",
-      title: "Turning a complex lineup into a clear schedule",
-      copy:
-        "The festival schedule required the visual identity to become functional as well as expressive. I organized performances by stage and time using modular blocks, strong hierarchy, and color contrast so attendees could quickly navigate the lineup while the schedule still felt connected to the larger Sun Drift brand.",
-    },
-    {
-      label: "Applications",
-      title: "Extending the identity into the festival experience",
-      copy:
-        "The identity was applied to environmental graphics and attendee touchpoints including street banners, festival signage, admission wristbands, schedules, and merchandise. Designing across different scales allowed me to explore how the brand could remain recognizable from a small wristband to large outdoor signage.",
-    },
-    {
-      label: "Outcome",
-      title: "More than a poster — a complete festival system",
-      copy:
-        "The final project demonstrates how a visual identity can grow into a cohesive event experience. By establishing a flexible set of recognizable brand elements, Sun Drift maintains its personality across print, environmental, informational, and wearable applications while allowing each piece to serve a different purpose.",
-    },
-  ],
-},
+    sections: [
+      {
+        label: "Description",
+        title: "Creating the Sun Drift festival identity",
+        copy: "Sun Drift is a conceptual indie music festival inspired by the atmosphere of Joshua Tree and the visual culture surrounding live music. I created the festival's identity and extended it across posters, schedules, street banners, wristbands, signage, and merchandise to explore how one visual system could shape an entire festival experience.",
+      },
+      {
+        label: "Approach",
+        title: "A psychedelic identity inspired by the desert",
+        copy: "The visual direction combines flowing psychedelic patterns, expressive typography, and sun-inspired graphics. Purple and aqua reference the cooler tones of the desert at dusk, while bright yellow introduces the warmth and energy of the sun. Together, these elements create a playful identity that feels energetic, nostalgic, and immersive.",
+      },
+      {
+        label: "System",
+        title: "Building a flexible visual language",
+        copy: "Rather than treating each deliverable as a separate design, I developed a visual system that could adapt across different formats. The Sun Drift wordmark, sun motif, grid, color palette, and flowing patterns repeat throughout the identity while changing in scale and composition depending on the application.",
+      },
+      {
+        label: "Information Design",
+        title: "Turning a complex lineup into a clear schedule",
+        copy: "The festival schedule required the visual identity to become functional as well as expressive. I organized performances by stage and time using modular blocks, strong hierarchy, and color contrast so attendees could quickly navigate the lineup while the schedule still felt connected to the larger Sun Drift brand.",
+      },
+      {
+        label: "Applications",
+        title: "Extending the identity into the festival experience",
+        copy: "The identity was applied to environmental graphics and attendee touchpoints including street banners, festival signage, admission wristbands, schedules, and merchandise. Designing across different scales allowed me to explore how the brand could remain recognizable from a small wristband to large outdoor signage.",
+      },
+      {
+        label: "Outcome",
+        title: "More than a poster — a complete festival system",
+        copy: "The final project demonstrates how a visual identity can grow into a cohesive event experience. By establishing a flexible set of recognizable brand elements, Sun Drift maintains its personality across print, environmental, informational, and wearable applications while allowing each piece to serve a different purpose.",
+      },
+    ],
+  },
   {
     slug: "yonsei-x-herron",
     title: "Yonsei x Herron",
@@ -325,8 +339,7 @@ export const graphicProjects = [
       {
         label: "Description",
         title: "Yonsei x Herron overview",
-        copy:
-          "A typography-driven design project that explores the collaboration between Yonsei University and Herron School of Art and Design. The project is 2 infographic poster that talk about food insecurity in Seoul South Korea and Indianapolis Indiana.",
+        copy: "A typography-driven design project that explores the collaboration between Yonsei University and Herron School of Art and Design. The project is 2 infographic poster that talk about food insecurity in Seoul South Korea and Indianapolis Indiana.",
       },
       {
         label: "Data",

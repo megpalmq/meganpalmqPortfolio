@@ -303,6 +303,50 @@
         </article>
       {/each}
 
+      {#if project.socialPosts}
+        <section class="detail-card social-posts-card" aria-labelledby="social-posts-title">
+          <p class="detail-card-label">Social media</p>
+          <h2 id="social-posts-title">{project.title} in the feed</h2>
+          <p>
+            Social posts that extend the {project.title} identity into digital
+            storytelling and audience touchpoints.
+          </p>
+
+          {#if project.socialPosts.length > 0}
+            <div class="social-post-grid">
+              {#each project.socialPosts as post}
+                <figure class="social-post">
+                  <button
+                    type="button"
+                    class="social-post-button"
+                    on:click={() => openLightbox(post)}
+                    aria-label={`Open ${post.alt}`}
+                  >
+                    <img
+                      src={post.src}
+                      alt={post.alt}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </button>
+                  {#if post.caption}
+                    <figcaption>{post.caption}</figcaption>
+                  {/if}
+                </figure>
+              {/each}
+            </div>
+          {:else}
+            <div class="social-post-empty">
+              <strong>Add your social posts here</strong>
+              <span>
+                Import each image in <code>graphicProjects.js</code> and add it
+                to this project's <code>socialPosts</code> array.
+              </span>
+            </div>
+          {/if}
+        </section>
+      {/if}
+
       <div class="detail-card detail-callout">
         <p class="detail-card-label">At a glance</p>
         <div class="detail-list">
@@ -712,6 +756,90 @@
     margin: 0;
     color: rgba(46, 9, 56, 0.86);
     line-height: 1.7;
+  }
+
+  .social-posts-card {
+    display: grid;
+    gap: 12px;
+  }
+
+  .social-post-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 6px;
+  }
+
+  .social-post {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+  }
+
+  .social-post-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid rgba(46, 9, 56, 0.12);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: zoom-in;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .social-post-button:hover,
+  .social-post-button:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(46, 9, 56, 0.14);
+  }
+
+  .social-post-button:focus-visible {
+    outline: 3px solid var(--project-accent);
+    outline-offset: 3px;
+  }
+
+  .social-post-button img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .social-post figcaption {
+    padding: 0 4px;
+    color: rgba(46, 9, 56, 0.68);
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .social-post-empty {
+    display: grid;
+    gap: 6px;
+    margin-top: 6px;
+    padding: 20px;
+    border: 1px dashed rgba(46, 9, 56, 0.28);
+    border-radius: 16px;
+    background: rgba(143, 184, 164, 0.12);
+  }
+
+  .social-post-empty strong {
+    color: #2e0938;
+  }
+
+  .social-post-empty span {
+    color: rgba(46, 9, 56, 0.72);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .social-post-empty code {
+    padding: 2px 5px;
+    border-radius: 4px;
+    background: rgba(46, 9, 56, 0.08);
+    font-size: 0.9em;
   }
 
   .detail-list {
