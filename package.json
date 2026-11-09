@@ -24,6 +24,6 @@
     "jquery": "^3.7.1"
   },
   "engines": {
-    "node": "20.x"
+    "node": "26.x"
   }
 }
