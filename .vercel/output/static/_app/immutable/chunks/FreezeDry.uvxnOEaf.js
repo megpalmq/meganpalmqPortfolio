@@ -1,1 +1,0 @@
-const s=""+new URL("../assets/yonsei.Z06l9D_F.png",import.meta.url).href,e=""+new URL("../assets/Osaka.J9ALAJCF.jpg",import.meta.url).href,t=""+new URL("../assets/FreezeDry.GtdcDbuO.png",import.meta.url).href;export{t as F,e as O,s as y};

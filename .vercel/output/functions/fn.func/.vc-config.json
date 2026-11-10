@@ -1,6 +1,0 @@
-{
-	"runtime": "nodejs26.x",
-	"handler": "..\\..\\..\\..\\..\\..\\Users\\megan\\OneDrive\\eportolios\\megpalmqPortfolio\\.svelte-kit\\vercel-tmp\\index.js",
-	"launcherType": "Nodejs",
-	"experimentalResponseStreaming": true
-}
